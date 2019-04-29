@@ -4,10 +4,10 @@
 
 export const environment = {
   production: false,
-  awsRegion: 'us-west-2',
-  cognitoClientId: '4bmg8poiupd8tppaftim6dfvpq',
-  cognitoUserPoolId: 'us-west-2_Jtlar1x1K',
-  smsGateway: 'http://localhost:8765'
+   awsRegion: 'us-east-1',
+  cognitoClientId: '4mafdnad6u1o1ugokulsmbrl96',
+  cognitoUserPoolId: 'us-east-1_6hCFlGZHZ',
+  smsGateway: 'http://localhost:8765',
 };
 
 /*

@@ -1,0 +1,156 @@
+<body>
+  <button class="pure-button" (click)='open(content)' style="display: inline; font-size: 10px;">
+    <i class="material-icons">person</i>
+    Add Employee
+  </button>
+  <div id="InternalAssociates">
+
+    <div id="associatesHeader">
+      <div style="display: inline;">
+        <input type='text' [(ngModel)]='listFilter' id="filterByThisAssociate" />
+      </div>
+      <span style="display: inline; margin-left: 10px; margin-right: 10px;"> Internal Associates</span>
+      <div style="display: inline;">
+        <!-- (change)="nrSelect(value)" -->
+        <select id="selectElement" (change)="optionSelect()">
+          <option value="All">All</option>
+          <option value="Associates">Associates</option>
+          <option value="Trainer">Trainer</option>
+          <option value="Staging Managers">Staging Managers</option>
+          <option value="Admin">Admin</option>
+        </select>
+      </div>
+
+      <br>
+      <button id="editButton" (click)="editAllRoles()" style=" font-size: 10px;"> Edit Mode </button>
+    </div>
+    <table id="associateTable">
+      <tr>
+        <th class="spreadColumn">Name</th>
+        <th class="spreadColumn">Role</th>
+        <th class="spreadColumn">Email</th>
+      </tr>
+      <tr *ngFor='let temp of filteredEmployees'>
+  
+
+        <td>{{temp.firstName}} {{temp.lastName}}</td>
+        <td id={{temp.email}}><button class="cantBelieveItsNotButton" (click)="editRole(temp.email)">
+            {{functionTest(temp.email)}}</button></td>
+        <td>{{temp.email}}</td>
+      </tr>
+     
+    </table>
+
+  </div>
+
+
+  <!-- modal zone---------------------------------------------------------- -->
+  <ng-template #content let-modal>
+    <div [ngSwitch]="ngswitchCase">
+      <div class="modal-header">
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" *ngSwitchCase="'addAssociate'">
+        <h4 class="modal-title" id="modal-basic-title">Add Employee</h4>
+        <form #addAssociateForm='ngForm' (ngSubmit)='addAssociate(addAssociateForm)'>
+          <div class="form-group">
+            <label for="Name">First Name</label>
+            <div class="input-group">
+              <input id="FName" ngModel class="form-control" placeholder="First Name" name="dp1">
+
+            </div>
+            <br>
+            <label for="LName">Last Name</label>
+            <div class="input-group">
+              <input id="LName" ngModel class="form-control" placeholder="Last Name" name="dp2">
+            </div>
+            <br>
+            <label for="Email">Email</label>
+            <div class="input-group">
+              <input id="Email" ngModel class="form-control" placeholder="Email@email.com" name="dp3">
+
+            </div>
+            <br>
+            <label for="phone">Contact Number</label>
+            <div class="input-group">
+              <input id="phone" ngModel class="form-control" placeholder="555 555 5555" name="dp4">
+
+            </div>
+            <br>
+            <label for="status">Status</label>
+            <div class="input-group">
+              <select name='status' id="GeneralSelection" (change)="generalStatus()" ngModel>
+                <option value="Training">Training</option>
+                <option value="Staging">Staging</option>
+              </select>
+            </div>
+            <br>
+            <div class="input-group" id="specificStatusElmnt1">
+              <select name='SpecStatus' ngModel>
+                <option value="Dropped">Dropped</option>
+                <option value="Training">Training</option>
+                <option value="Complete">Complete</option>
+              </select>
+            </div>
+            <br>
+            <div class="input-group" id="specificStatusElmnt2">
+              <select name='SpecStatus' ngModel>
+                <option value="Staging">Staging</option>
+                <option value="Bench">Bench</option>
+                <option value="Waiting for Paperwork">Waiting for Paperwork</option>
+                <option value="Confirmed">Confirmed</option>
+                <option value="Project Started">Project Started</option>
+                <option value="Paused">Paused</option>
+                <option value="Panel Pending">Panel Pending</option>
+              </select>
+              <label for="virtual">Virtual</label>
+              <input type="checkbox" (change)="checkboxChecked()" name="virtual" />
+            </div>
+            <br>
+            <div class="input-group">
+              <label for="location">Training Location</label>
+              <select ngModel name='location'>
+                <option *ngFor='let temp of addressList' [value]="temp.addressId">{{temp.city}}, {{temp.state}}</option>
+              </select>
+            </div>
+            <br>
+            <label for="Role">Choose Role</label><br>
+            <select name='Role' ngModel>
+              <option value="1">Associate</option>
+              <option value="2">Staging Manager</option>
+              <option value="3">Admin </option>
+              <option value="4">Trainer</option>
+            </select>
+            <br> <br>
+            <button type="button" id="hideBut" (click)="hidePAddress()" style="display: none;"> Hide</button>
+            <button type="button" id="showP" (click)="dispalyPAddress()"> Include Personal Address </button>
+            <div class="input-group" id="pAddress">
+              <input id="pstreet" ngModel name="pstreet" placeholder="643 Deer Street"> <br>
+              <input id="pcity" ngModal name="pcity" placeholder="New York"><br>
+              <input id=" pstate" ngModal name="pstate" placeholder="North Carolina"><br>
+              <input id="pzip" ngModal name="pzip" placeholder="73013">
+            </div>
+            <br>
+            <button type='submit'>Submit</button>
+          </div>
+        </form>
+      </div>
+      <!-- <div *ngSwitchCase="'editAssociates'">
+        <div *ngIf='modalShow'>
+
+          <app-cohort-modal [cohort]='exportedCohort'></app-cohort-modal>
+
+        </div>
+      </div> -->
+
+      <div class="modal-footer">
+
+        <button type="button" class="btn btn-outline-dark" (click)="close()">Save</button>
+
+      </div>
+    </div>
+  </ng-template>
+  <!-- modal zone-------------------------------------------------------- -->
+</body>

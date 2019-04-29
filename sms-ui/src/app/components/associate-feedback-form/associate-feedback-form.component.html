@@ -1,0 +1,57 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="main">
+        <div class="main-center">
+            <form class="" method="post" action="#">
+
+                <div class="form-group">
+                    <label for="name">Date of interview notification</label>
+                    <div class="input-group">
+                        <link href="https://cdn.syncfusion.com/ej2/material.css" rel="stylesheet" />
+                        <ejs-datepicker id='datepicker' placeholder='Select a date' [value]='value' [min]='minDate' [max]='maxDate'></ejs-datepicker>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="24hourNoitce">24 Hour Notice?</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                        <label>Yes</label><input type="radio" class="form-control" name="dayNoticeYes" value="true" [(ngModel)]="dayNotice" />
+                        <label>No</label><input type="radio" class="form-control" name="dayNoticeNo" value="false" [(ngModel)]="dayNotice" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="username">Job Description Provided?</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                        <label>Yes</label><input type="radio" class="form-control" name="descriptionYes" value="true" [(ngModel)]="descriptionProvided" />
+                        <label>No</label><input type="radio" class="form-control" name="descriptionNo" value="false" [(ngModel)]="descriptionProvided" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Actual interview format?</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                        <input type="text" class="form-control" name="interviewFormat" placeholder="Enter actual interview format" [(ngModel)]="interviewFormatStr" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm">Proposed interview format?</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                        <input type="text" class="form-control" name="proposedFormat" placeholder="Enter proposed interview format" [(ngModel)]="proposedFormatStr" />
+                    </div>
+                </div>
+
+                <button class="btn btn-primary" (click)="postAssociateInput()">Submit Feedback</button>
+
+            </form>
+        </div>
+        <!--main-center"-->
+    </div>
+    <!--main-->
+</div>
+<!--container-->

@@ -1,0 +1,66 @@
+<app-navbar></app-navbar>
+<div class="container-fluid newInterview">
+  <div class="row">
+    <div class="col-3">
+    </div>
+    <div class="col-6 text-center" id="">CREATE NEW INTERVIEW FOR AN ASSOCIATE</div>
+    <div class="col-3"></div>
+  </div>
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+
+      <select class="custom-select" (change)="firstDropDownChanged($event.target.value)">
+        <option selected>Select Cohort</option>
+        <option *ngFor='let v of _values1'>{{v}}</option>
+       
+      </select>
+      <br>
+      <br>
+      <select class="custom-select" [disabled]="dropdown2NotReady">
+        <option selected>Select An Associate</option>
+        <option *ngFor='let v of _values2'>{{v}}</option>
+        
+      </select>
+      <br>
+      <br>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">Date</span>
+        </div>
+        <input type="text" placeholder="Enter Date" bsDatepicker [minDate]="minDate"
+         [(ngModel)]="dateSelection"
+         class="form-control" >
+      </div>
+<!-- 
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span  style="margin-right: 10px"  class="input-group-text" id="basic-addon1">Time</span>
+        </div>
+        <timepicker style="margin: 1px"  [(ngModel)]="time" [showSpinners]="showSpinners"></timepicker>
+       <button (click)="changeColor()">the thing</button> 
+        <pre class="alert alert-info">Time is: {{time}}</pre> 
+      </div> -->
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">Location</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Enter Location" aria-describedby="basic-addon1">
+      </div>
+
+      <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Client</span>
+          </div>
+          <input type="text" class="form-control" placeholder="Enter Client Name" aria-describedby="basic-addon1">
+        </div>
+
+        <button type="button" (click)="try()" class="btn btn-dark">Confirm Interview</button>
+
+    </div>
+    <div class="col-3"></div>
+  </div>
+
+
+</div>

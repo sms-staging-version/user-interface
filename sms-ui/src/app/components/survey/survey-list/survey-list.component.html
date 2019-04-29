@@ -1,0 +1,136 @@
+<app-navbar> </app-navbar>
+<!-- <table class='table' *ngIf='listOfSurvey && listOfSurvey.length'>
+  <thead>
+    <tr>
+      <th>Survey Id</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Has Template</th>
+      <th>Date Created</th>
+      <th>Date Closed</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let temp of listOfSurvey; index as i'>
+      <td>{{temp.surveyId}}</td>
+      <td>{{temp.title}}</td>
+      <td>{{temp.description}}</td>
+      <td>
+        <p *ngIf="!temp.template; else elseBlock1">
+          <button (click)='getGraph(temp.surveyId)'>show graphs</button>
+        </p>
+        <ng-template #elseBlock1><button (click)='checkTemplate(temp.surveyId)'>Check Template</button></ng-template>
+      </td>
+      <td>{{temp.dateCreated | showTimestamp}}</td>
+      <td>
+        <p *ngIf="temp.closingDate; else elseBlock2">{{temp.listOfSurvey | showTimestamp}}</p>
+        <ng-template #elseBlock2><button (click)='closeSurvey(i)'>Close Now</button></ng-template>
+      </td>
+
+    </tr>
+  </tbody>
+</table> -->
+
+<!-- <div>
+  <ul *ngIf='curTemplate'>
+    <li *ngFor='let temp of curTemplate; index as i;'>
+      <p>{{"Q"+(i+1)+": "+temp.questionId.question}}</p><br>
+      <p *ngFor='let ans of curTempAnswers[i]'>{{ans?.answer+"  "}}</p>
+    </li>
+
+  </ul>
+</div> -->
+<!-- 
+  <div *ngFor='let temp of ArrayOfResponseAnswerList; index as i;'>
+      <app-answer-data2 [pieChartLabels]='temp' [pieChartData]= 'arrOfCounts[i]'></app-answer-data2>
+  </div> -->
+
+<!-- </ul>
+</div> -->
+<!--
+  <div *ngFor='let temp of ArrayOfResponseAnswerList; index as i;'>
+      <app-answer-data2 [pieChartLabels]='temp' [pieChartData]= 'arrOfCounts[i]'></app-answer-data2>
+  </div> -->
+
+
+
+<div id="main-content-container">
+    <div id="manage-users-container">
+        <input class="form-control" type="text" [(ngModel)]='listFilter' placeholder="Search">
+        <table id="manage-users-table" class="tableUsers table table-striped" id="box-shadow">
+            <thead class="rev-background-color">
+                <tr>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Date Created</th>
+                    <th>Analytics</th>
+                    <th>Respondents</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="rev-table-row" *ngFor='let temp of filteredListOfSurvey; index as i'>
+                    <td data-toggle="modal" data-target="#exampleModalLong">{{temp.title}}</td>
+                    <td data-toggle="modal" data-target="#exampleModalLong">{{temp.description}}</td>
+                    <td>{{temp.dateCreated | showTimestamp}}</td>
+                    <td><button type="button" class="assignSurveyBtn btn btn-secondary" (click)='getGraph(temp.surveyId,temp.title)'>Data</button></td>
+                    <td><button type="button" class="assignSurveyBtn btn btn-secondary">Status</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+  <div id="graphs" *ngIf='qList&&qList.length&&ArrayOfResponseAnswerList'>
+        <h3>{{"Analytics: " + surveyTitle}}</h3>
+        <div *ngFor='let temp of qList; index as i;'>
+            <app-survey-data [question]='temp.question' [type]='temp.typeId' [arrOfAns]='ArrayOfResponseAnswerList[i]' [arrOfCountedResponse]='arrOfCounts[i]'></app-survey-data>
+        </div>
+    </div>
+    <!-- end of graph-->
+
+
+</div>
+<!--end of main -->
+
+
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="assignSurveyModalHeader modal-header">
+                <h5 class="modal-title">Cohorts</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+            </div>
+            <div class="modal-body">
+                <table id="manage-users-table" class="tableUsers table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Select</th>
+                            <th colspan="5">Cohort</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="rev-table-row">
+                            <td>All: <input type="checkbox" id="1">
+                                <div class="dropdown userDropdown"><button type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn userDropdownBtn dropdown-toggle btn btn-secondary">By Member</button>
+                                    <div class="dropdown-menu" id="userDropdownWidth" aria-labelledby="dropdownMenu2">
+                                        <p><input class="userDropInput" type="checkbox">@Emails</p>
+                                        <p><input class="userDropInput" type="checkbox">@Emails</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td colspan="5">Jaaamers</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="buttonDiv"><button type="button" class="assignSurveyBtn btn btn-secondary">Submit</button></div>
+            </div>
+        </div>
+    </div>
+</div>

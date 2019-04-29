@@ -1,0 +1,90 @@
+<app-navbar> </app-navbar>
+<div class="container">
+    <div class="form-horizontal">
+
+        <!-- Form Name -->
+        <legend>Survey Build</legend>
+        <!-- Text input-->
+        <div class="survey_title">
+            <label class="col-md-4 control-label" for="textinput">Survey Title</label>
+            <div class="col-md-4">
+                <input id="textinput" name="textinput" type="text" class="form-control input-md" [(ngModel)]='title'>
+            </div>
+        </div>
+        <br>
+        <!-- Checkbox (inline) -->
+        <div class="template_check">
+            <label class="col-md-4 control-label" for="checkboxes">Is This A New Template?</label>
+            <label class="checkbox-inline" for="checkboxes-0">
+          <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1" [(ngModel)]='isTemplate'>
+          yes
+        </label>
+
+        </div>
+        <br>
+        <!-- Textarea -->
+        <div class="survey_description">
+            <label class="col-md-4 control-label" for="textarea">Survey Description</label>
+            <div class="col-md-4">
+                <textarea class="form-control" id="textarea" name="textarea" [(ngModel)]='description'></textarea>
+            </div>
+        </div>
+        <br>
+        <div class="survey_question">
+            <label class="col-md-4 control-label" for="textarea">Question</label>
+            <div class="col-md-4">
+                <textarea class="form-control" id="textarea" name="textarea" [(ngModel)]='curQuestionString'></textarea>
+            </div>
+        </div>
+        <br>
+        <!-- Select Basic -->
+        <div class="questioncontainer">
+            <label class="col-md-4 control-label" for="selectquestiontype">Select Question Type</label>
+            <div class="questiontype" id="dropdown">
+                <select id="selectquestiontype" name="selectquestiontype" class="form-control" [(ngModel)]='curQuestionType' (change)="selectOption($event.target.value)">
+          <option value="1">True/False</option>
+          <option value="2">Multiple Choice</option>
+          <option value="3">Checkboxes for Multiple Answers</option>
+          <option value="4">Rating</option>
+          <option value="5">Feedback</option>
+          <option value="6">Yes/No</option>
+          <option value="7">Strongly Agree - Strongly Disagree</option>
+        </select>
+            </div>
+            <br>
+            <div *ngIf="curQuestionType&&curQuestionType!=5" id="answerdesc">
+                <br> Possible Answer Value:
+                <div id="answerlist" *ngFor='let temp of curAnswerList'>{{temp.answer}}</div>
+                <br>
+                <br>
+                <div *ngIf="curQuestionType==2||curQuestionType==3">
+                    <input class="form-control input-md" type='text' id="answerText" [(ngModel)]='inputAnswerString' />
+                    <br>
+                    <button id="addAnswer" name="addbutton" class="btn btn-primary" (click)='addAnswer()'>Add to Answers</button>
+                    <button *ngIf="curAnswerList.length" id="removeAnswer" name="addbutton" class="btn btn-danger" (click)='undo()'>Undo</button>
+                </div>
+            </div>
+            <br>
+            <button id="addquestion" name="addbutton" class="btn btn-primary" (click)='addQuestion()'>Add Question</button>
+        </div>
+        <br>
+        <div id="questionlist">
+            <div *ngFor='let temp of questionList; index as i'>{{"Q"+(i+1)+": "+temp.question}}
+                <ul>
+                    <li *ngFor='let answers of arrofAnswerList[i]'>{{answers.answer}}</li>
+                </ul>
+
+            </div>
+        </div>
+        <br>
+        <!-- Button -->
+        <div class="submit-button">
+            <!--<label class="col-md-4 control-label" for="singlebutton">Submission</label>-->
+            <button id="singlebutton" name="singlebutton" class="btn btn-primary" (click)='submit()'>Submit</button>
+            <br><br>
+            <button id="singlebutton" name="singlebutton" class="btn btn-danger" (click)='drop()'>Drop Current Survey</button>
+        </div>
+
+    </div>
+</div>
+<!--<router-outlet></router-outlet>-->

@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+
+
+<!-- Large modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Temporary button to launch feedback page</button>
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="modal-body">
+            <h4>Interview Feedback</h4>
+            <hr>
+            <label for='dateRequested'><b>Date Requested: + {{feedback.feedbackRequested | date}} </b></label><br>
+            <label for='feedbackStatus'><b>Feedback Status: + {{feedback.status.feedback_status_desc}}</b></label><br>
+            <label for='feedbackReceived'><b>Date Received: + {{feedback.feedbackRequested | date}}</b></label><br>
+            <label for='feedback'><b>Actual Feedback Comments:  + {{feedback.feedback}}</b></label><br><br><br>
+            <label for='feedbackDelivered'><b>Feedback Delivered: + {{feedback.feedbackDelivered | date}}</b></label><br>
+          </div>
+    </div>
+  </div>
+</div>

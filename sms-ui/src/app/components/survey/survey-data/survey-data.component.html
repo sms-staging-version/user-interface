@@ -1,0 +1,76 @@
+<div class="container">
+    <div class="jumbotron">
+        <div class="col-6">
+
+
+            <div class="card form-group mb-3" *ngIf='isBarChart'>
+
+                <h4 class="card-header">{{question}}</h4>
+                <div class="card-body">
+                    <app-answer-data1 [inputAnswers]='arrOfAns' [inputCounts]='arrOfCountedResponse'></app-answer-data1>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <div class="card form-group mb-3" *ngIf='isPieChart'>
+                <h4 class="card-header">{{question}}</h4>
+                <div class="card-body">
+                    <app-answer-data2 [inputAnswers]='arrOfAns' [inputCounts]='arrOfCountedResponse'></app-answer-data2>
+                </div>
+            </div>
+
+            <div class="card form-group mb-3" *ngIf='isFeedback'>
+                <h4 class="card-header">{{question}}</h4>
+                <div class="card-body" *ngFor="let temp of arrOfAns">
+                    {{temp}}
+                </div>
+            </div>
+
+
+            <!-- <div class="card form-group mb-3">
+        <h4 class="card-header">The materials provided helpful</h4>
+        <div class="card-body">
+          <app-answer-data4></app-answer-data4>
+        </div>
+      </div>
+      <br>
+      <br>
+
+
+      <div class="card form-group mb-3">
+        <h4 class="card-header">Content/Project Planning was well organized</h4>
+        <div class="card-body">
+          <app-answer-data5></app-answer-data5>
+        </div>
+      </div>
+      <br>
+      <br>
+
+
+      <div class="card form-group mb-3">
+        <h4 class="card-header">Questions were encouraged and answered</h4>
+        <div class="card-body">
+          <app-answer-data6></app-answer-data6>
+        </div>
+      </div>
+      <br>
+      <br>
+
+
+      <div class="card form-group mb-3">
+        <h4 class="card-header">Training and Projects met my expectations</h4>
+        <div class="card-body">
+          <app-answer-data7></app-answer-data7>
+        </div>
+      </div>
+      <br>
+      <br>
+
+
+       -->
+
+        </div>
+
+    </div>
+</div>

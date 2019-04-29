@@ -1,0 +1,54 @@
+<app-navbar></app-navbar>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<div class="container">
+  <h2>Associates with a 24 Hour Notice</h2>                   
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Interview ID</th>
+        <th>Associate Email</th>
+        <th>Associate Location</th>
+        <th>24 Hour Notice</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let temp of dayNoticeList">
+      <tr>
+        <td>{{temp.id}}</td>
+        <td>{{temp.associateEmail}}</td>
+        <td>{{temp.place}}</td>
+        <td>{{temp.associateInput.dayNotice}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container">
+  <h2>Associates without a 24 Hour Notice</h2>                   
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Interview ID</th>
+        <th>Associate Email</th>
+        <th>Associate Location</th>
+        <th>24 Hour Notice</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let temp of noDayNoticeList">
+      <tr>
+        <td>{{temp.id}}</td>
+        <td>{{temp.associateEmail}}</td>
+        <td>{{temp.place}}</td>
+        <td>{{temp.associateInput.dayNotice}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<app-daynotice-graph></app-daynotice-graph>

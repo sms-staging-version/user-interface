@@ -1,0 +1,77 @@
+.container {
+    background-color: rgb(255, 194, 137);
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 4px solid #000000;
+    padding: 1rem;
+    width: 700px;
+    height: auto;
+    -webkit-box-shadow: 11px 7px 42px 5px rgba(0, 0, 0, 0.77);
+    -moz-box-shadow: 11px 7px 42px 5px rgba(0, 0, 0, 0.77);
+    box-shadow: 11px 7px 42px 5px rgba(0, 0, 0, 0.77);
+}
+
+#dropdown {
+    width: 600px;
+    position: relative;
+    left: 1.7%;
+    display: inline-block;
+}
+
+#selectquestions {
+    width: 600px;
+    position: relative;
+    left: 1.7%;
+    display: inline-block;
+}
+
+#questionlist {
+    position: relative;
+    width: 580px;
+    height: auto;
+    left: 60px;
+    border-style: solid;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-color: black;
+}
+
+#textarea {
+    width: 600px;
+}
+
+#singlebutton {
+    position: relative;
+    left: 1.7%;
+}
+
+#answerlist {
+    position: relative;
+    left: 1.7%;
+}
+
+#addquestion {
+    position: relative;
+    left: 1.7%;
+}
+
+#answerdesc {
+    position: relative;
+    left: 1.7%;
+}
+
+#addAnswer {
+    position: relative;
+}
+
+#removeAnswer {
+    position: relative;
+    left: 15%;
+}
+
+#answerText {
+    width: auto;
+}

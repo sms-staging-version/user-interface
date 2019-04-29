@@ -1,0 +1,56 @@
+<app-navbar></app-navbar>
+
+
+<body style="text-align:center;">
+  <div class="centeredBody">
+    <div class="profile-container">
+      <div class="userinfo">
+        <b>First Name:</b> &nbsp; <input value="{{currentUser.firstName}}" id="fName">
+        <br>
+        <br>
+        <b>Last Name:</b> &nbsp;&nbsp; <input value="{{currentUser.lastName}}" id="lName">
+        <br>
+        <br>
+        <b>Email:</b> &nbsp;&nbsp; <input value="{{this.currentUser.email}}" id="email">
+        <br>
+        <br>
+        <b>Phone Number:</b> &nbsp;&nbsp; <input value="{{currentUser.phoneNumber}}" id="phoneN">
+        <br>
+        <br>
+        <b>Address:</b> &nbsp;&nbsp; <input value="{{currentAddress[0].street}}" id="address">
+        <br>
+        <br>
+        <b>City:</b> &nbsp;&nbsp; <input value="{{currentAddress[0].city}}" id="city">
+        <br>
+        <br>
+        <b>State:</b> &nbsp;&nbsp; <input value="{{currentAddress[0].state}}" id="state">
+        <br>
+        <br>
+        <b>Country: </b> &nbsp;&nbsp; <input value="{{currentAddress[0].country}}" id="country">
+        <br>
+        <br>
+        <b>Zip Code:</b> &nbsp;&nbsp; <input value="{{currentAddress[0].zip}}" id="zip">
+        <br>
+        <br>
+        <b>Name Alias:</b> &nbsp;&nbsp; <input value="{{currentAddress[0].alias}}" id="alias">
+        <br>
+        <br>
+        <b>Company Status:</b> &nbsp;&nbsp; <input value="Associate {{currentUser[0].userStatus}}" readonly id="companyStat">
+        <br>
+        <br>
+        <button type="button" class="btn btn-info" (click)="someMethodToUpdateAddressOrUserInfo()">Update</button>
+        <!-- {{user.firstName}} {{user.lastName}} 
+          {{user.email}} 
+          {{user.phone}}
+          {{user.address}} 
+          {{user.city}} 
+          {{user.state}} 
+          {{user.country}} 
+          {{user.zipcode}}
+          {{user.trainingAlias}}
+          {{user.statusAlias}} -->
+      </div>
+    </div>
+
+  </div>
+</body>

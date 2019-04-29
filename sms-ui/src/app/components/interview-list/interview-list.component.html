@@ -1,0 +1,78 @@
+<app-navbar></app-navbar>
+<div class='panel panel-primary'>
+  <div class='panel-heading'>
+    {{pageTitle}}
+  </div>
+
+  <div class='panel-body'>
+    <div class='row'>
+      <div class='col-md-2'>Search: </div>
+      <div class='col-md-4'>
+        <input type='text' [(ngModel)]='listFilter' />
+      </div>
+      <div class='col-md-2'>Review Status: </div>
+      <div class='col-md-4'>
+          <select autofocus type='text' [(ngModel)]='reviewFilter'>
+              <option value="all">Any</option>
+              <option value="reviewed">Reviewed</option>
+              <option value="notreviewed">Not Reviewed</option>
+            </select>
+      </div>
+    </div>
+  </div>
+
+  <div class='table-responsive'>
+    <table class='table' *ngIf='interviewList && interviewList.length'>
+      <thead>
+        <tr>
+          <th>Reviewed</th>
+          <th>Associate Email
+            <button (click)='sortByAssociateEmailAsc()'>▲</button>
+            <button (click)='sortByAssociateEmailDesc()'>▼</button>
+          </th>
+          <th>Manager Email
+            <button (click)='sortByManagerEmailAsc()'>▲</button>
+            <button (click)='sortByManagerEmailDesc()'>▼</button>
+          </th>
+          <th>Location
+            <button (click)='sortByLocationAsc()'>▲</button>
+            <button (click)='sortByLocationDesc()'>▼</button>
+          </th>
+          <th>Client
+            <button (click)='sortByClientAsc()'>▲</button>
+            <button (click)='sortByClientDesc()'>▼</button>
+          </th>
+          <th>Date Notified
+              <button (click)='sortByNotifiedAsc()'>▲</button>
+              <button (click)='sortByNotifiedDesc()'>▼</button>
+          </th>
+          <th>Date Scheduled
+              <button (click)='sortByScheduledAsc()'>▲</button>
+              <button (click)='sortByScheduledDesc()'>▼</button>
+          </th>
+          <th>Date Reviewed
+              <button (click)='sortByReviewedAsc()'>▲</button>
+              <button (click)='sortByReviewedDesc()'>▼</button>
+          </th>
+          <th>Associate Feedback</th>
+          <th>Interview Feedback</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor='let temp of filteredInterviewList'>
+          <td *ngIf='temp.reviewed'>Yes</td>
+          <td *ngIf='!temp.reviewed'></td>
+          <td>{{temp.associateEmail}}</td>
+          <td>{{temp.managerEmail}}</td>
+          <td>{{temp.place}}</td>
+          <td>{{temp.client.clientName}}</td>
+          <td>{{temp.notified | date}}</td>
+          <td>{{temp.scheduled | date}}</td>
+          <td>{{temp.reviewed | date}}</td>
+          <td>WIP</td>
+          <td>WIP</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

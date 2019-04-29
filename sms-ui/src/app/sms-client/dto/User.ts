@@ -8,5 +8,5 @@ export interface User {
   phoneNumber: string;
   trainingAddress: Address;
   personalAddress: Address;
-
+  userStatus: string;
 }
