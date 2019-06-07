@@ -1,0 +1,158 @@
+<div id="app-nav">
+    <!-- not in global sass -->
+    <div id="navbar-header c-pointer shift-left" *ngIf ='fullAccess;else elseBlock'>
+        <!-- not in global sass -->
+        <a routerLink="/home"> <img id="rev-logo" src="../../../assets/rev-logo.png" alt="revature logo"></a>
+
+        <div class="inlineNav" style="display: inline;">
+
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+
+                <span>{{email}} </span>
+
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                <a href="" class="dropdown-item" routerLink="/profileInfo">Edit Profile</a>
+
+                <a href="" class="dropdown-item" (click)='logout()'>Logout</a>
+
+            </div>
+        </div>
+        <!--  <button class="inlineNav nav-link dropdown-toggle" routerLink="/assign-survey">Surveys</button> <button class="inlineNav nav-link dropdown-toggle" routerLink="/ManageRoute">Manage</button> <button class="inlineNav nav-link dropdown-toggle" routerLink="/InterViewRoute">Interviews</button>
+        <button class="inlineNav nav-link dropdown-toggle" routerLink="/reportsRoute">Reports</button> -->
+
+        <!-- <button class="inlineNav" routerLink="/profileInfo">ProfileInfo</button> -->
+
+        <div class="inlineNav" style="display: inline;">
+
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+
+                <span>Reports </span>
+
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" routerLink="/DayNoticeRoute">24 Hour Notice</a>
+                <a class="dropdown-item" routerLink="/JobDescRoute">Received Job Description</a>
+                <a class="dropdown-item" routerLink="/AutoDataRoute">Associate Interview Count</a>
+                <a class="dropdown-item" routerLink="/FeedbackRoute">Feedback Requested</a>
+
+
+            </div>
+        </div>
+
+        <div class="inlineNav" style="display: inline;">
+
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                <span>Interviews </span>
+
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                <a href="" class="dropdown-item" routerLink="/InterviewListRoute">View all interviews</a>
+                <a href="" class="dropdown-item" routerLink="/CreateInterviewRoute">Create Interview</a>
+                <a href="" class="dropdown-item" routerLink="/AssociateFeedbackRoute">Associate Feedback Form</a>
+
+
+
+            </div>
+        </div>
+
+        <div class="inlineNav" style="display: inline;">
+
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+
+                <span>Manage </span>
+
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                <a href="" class="dropdown-item" routerLink="/ManageRoute">View All</a>
+                <!-- <a href="" class="dropdown-item" routerLink="['/ManageRoute','subMan1Internal']">Associates</a>
+                <a href="" class="dropdown-item" routerLink="">Cohorts</a> -->
+
+
+
+            </div>
+        </div>
+
+        <div class="inlineNav" style="display: inline;">
+
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+
+                <span>Surveys </span>
+
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                <a href="" class="dropdown-item" routerLink="/surveyList">View All</a>
+                <a href="" class="dropdown-item" routerLink="/assign-survey">Assign</a>
+                <a href="" class="dropdown-item" routerLink="/create-survey">Create</a>
+                <a href="" class="dropdown-item" routerLink="/survey-template">Template</a>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <ng-template #elseBlock>
+        <div id="navbar-header c-pointer shift-left" >
+                <a routerLink="/home"> <img id="rev-logo" src="../../../assets/rev-logo.png" alt="revature logo"></a>
+
+                <div class="inlineNav" style="display: inline;">
+        
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        
+        
+                        <span>{{email}} </span>
+        
+                    </a>
+        
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        
+                        <a href="" class="dropdown-item" routerLink="/profileInfo">Edit Profile</a>
+        
+                        <a href="" class="dropdown-item" (click)='logout()'>Logout</a>
+        
+                    </div>
+                </div>
+                <!--  <button class="inlineNav nav-link dropdown-toggle" routerLink="/assign-survey">Surveys</button> <button class="inlineNav nav-link dropdown-toggle" routerLink="/ManageRoute">Manage</button> <button class="inlineNav nav-link dropdown-toggle" routerLink="/InterViewRoute">Interviews</button>
+                <button class="inlineNav nav-link dropdown-toggle" routerLink="/reportsRoute">Reports</button> -->
+        
+                <!-- <button class="inlineNav" routerLink="/profileInfo">ProfileInfo</button> -->
+        
+                <div class="inlineNav" style="display: inline;">
+        
+                    <a href="" class="dropdown-item" routerLink="/InterviewListRoute">
+        
+                        <span>Interviews </span>
+        
+                    </a>
+
+                </div>
+        
+                <div class="inlineNav" style="display: inline;">
+                    <a href="" class="dropdown-item" routerLink="/assign-survey">
+        
+        
+                        <span>Surveys </span>
+        
+                    </a>
+                </div>
+        </div>
+
+    </ng-template>
+    
+
+</div>

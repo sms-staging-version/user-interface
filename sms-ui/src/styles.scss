@@ -1,74 +1,219 @@
 /* You can add global styles to this file, and also import other style files */
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
 
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
 $revature-orange-light: #f3a55d;
 $revature-orange: #f26925;
-
 // Small tablets and large smartphones (landscape view)
 $screen-sm-min: 576px;
-
 // Small tablets (portrait view)
 $screen-md-min: 768px;
-
 // Tablets and small desktops
 $screen-lg-min: 992px;
-
 // Large tablets and desktops
 $screen-xl-min: 1200px;
-
-
 // Small devices
 @mixin sm {
-  @media (min-width: #{$screen-sm-min}) {
-      @content;
-  }
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
 }
 
 // Medium devices
 @mixin md {
-  @media (min-width: #{$screen-md-min}) {
-      @content;
-  }
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
 }
 
 // Large devices
 @mixin lg {
-  @media (min-width: #{$screen-lg-min}) {
-      @content;
-  }
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
 }
 
 // Extra large devices
 @mixin xl {
-  @media (min-width: #{$screen-xl-min}) {
-      @content;
-  }
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
 }
-
 
 .form-control {
-  &:focus {
-    border-color: $revature-orange-light;
-    box-shadow: 0 0 0.2rem 0.1rem $revature-orange-light;
-  }
+    &:focus {
+        border-color: $revature-orange-light;
+        box-shadow: 0 0 0.2rem 0.1rem $revature-orange-light;
+    }
 }
 
-
-.rev-btn:not(.dropdown), .rev-btn > button.dropdown-toggle {
-  background-color: $revature-orange-light ;
-  border-color: $revature-orange-light;
-  color: black !important;
-  &:hover {
-    border-bottom-color: #565D61;
-    color: $revature-orange-light;
-  }
-  &:active {
+.rev-btn:not(.dropdown),
+.rev-btn>button.dropdown-toggle {
     background-color: $revature-orange-light;
-    color: #565D61;
-    box-shadow: 0 0 0 0.2rem rgba($revature-orange-light, 0.5) !important;
-  }
-  &:active, &:focus {
-    box-shadow: 0 0 0 0.2rem rgba($revature-orange-light, 0.5) !important;
-  } 
+    border-color: $revature-orange-light;
+    color: black !important;
+    &:hover {
+        border-bottom-color: #565D61;
+        color: $revature-orange-light;
+    }
+    &:active {
+        background-color: $revature-orange-light;
+        color: #565D61;
+        box-shadow: 0 0 0 0.2rem rgba($revature-orange-light, 0.5) !important;
+    }
+    &:active,
+    &:focus {
+        box-shadow: 0 0 0 0.2rem rgba($revature-orange-light, 0.5) !important;
+    }
+}
 
+#app-nav {
+
+    -webkit-box-shadow: 1px 28px -12px -1px rgba(0, 0, 0, 0.87);
+    -moz-box-shadow: 1px 28px -12px -1px rgba(0, 0, 0, 0.87);
+    box-shadow: 1px 28px -12px -1px rgba(0, 0, 0, 0.87);
+    background: -webkit-linear-gradient(right, #f8d6b6, #acc5c9);
+    background: -webkit-linear-gradient(right, #e7d6c7, #8bdde7);
+    background: -moz-linear-gradient(right, #e2d0be, #eaf1f1);
+    background: -o-linear-gradient(right, #eec5a0, #e1e9eb);
+    background: linear-gradient(to left, #f3a55d, #e1e7e7);
+    box-align: right;
+    padding: 6px;
+    min-height: 80px;
+}
+
+.inlineNav {
+    display: inline;
+    margin: auto;
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: rgba(0, 0, 0, 0.00);
+    border-color: rgba(0, 0, 0, 0.00);
+}
+
+.inlineNav:hover {
+    color: gray;
+}
+
+#rev-logo {
+    margin-left: 15px;
+}
+
+.centeredBody {
+    margin: auto;
+}
+
+// .AssociatesXitButton{
+//   background-image: url('./littlebackground.png');
+// }
+.trainRoleIcon {
+    background: yellow;
+    border-style: outset;
+    border-width: 3px;
+    border-color: antiquewhite;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    padding-left: 10px;
+    text-align: left;
+    width: 50px;
+    display: inline-block;
+}
+
+.manstagRoleIcon {
+    background: rgba(131, 0, 0, 0.781);
+    border-style: outset;
+    border-width: 3px;
+    border-color: antiquewhite;
+    color: rgb(185, 122, 245);
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    padding-left: 10px;
+    text-align: left;
+    width: 60px;
+    display: inline-block;
+}
+
+.adminRoleIcon {
+    background: blue;
+    border-style: outset;
+    border-width: 3px;
+    border-color: antiquewhite;
+    color: antiquewhite;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    padding-left: 10px;
+    text-align: left;
+    width: 50px;
+    display: inline-block;
+}
+
+.adminRoleIcon:hover {
+    background: #62e2f3;
+    color: #565D61;
+    border-width: 1px;
+    width: 46px;
+}
+
+.manstagRoleIcon:hover {
+    background: rgba(241, 26, 26, 0.781);
+    border-width: 1px;
+    width: 56px;
+}
+
+.trainRoleIcon:hover {
+    background: rgba(255, 255, 0, 0.418);
+    border-width: 1px;
+    width: 46px;
+}
+
+.ForAddingRoles {
+    width: 45px;
+    height: 28px;
+    border-style: outset;
+    border-width: 1px;
+    border-color: #e1e7e7;
+    background: #f26925e3;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.ForAddingRoles:hover {
+    border-width: 3px;
+    border-radius: 7.5px;
+    background-color: #f3a65dbe;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.spaceLegendIndex {
+    margin-right: 10px;
+    margin-left: 3px;
+}
+
+#claricationDiv {
+    font-size: 9px;
+    display: inline-block;
+}
+
+#trainWork {
+    border: 0px;
+    outline: 0px;
+    background: transparent;
+    width: 200px;
+    position: relative;
+    margin-right: -10px;
+    display: inline;
+}
+
+#trainWork:hover {
+    color: darkorange;
+    font-size: 110%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#adjustTL {
+    position: relative;
+    left: -158px;
 }

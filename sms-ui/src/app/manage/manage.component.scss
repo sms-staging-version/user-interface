@@ -1,0 +1,15 @@
+.inlineManagerMenu{
+    display: inline;
+    background: rgba(0, 0, 0, 0.00);
+    border-color: rgba(0, 0, 0, 0.00);
+}
+.inlineManagerMenu:hover{
+    color: gray;
+    font-size: 103%;
+}
+
+.divider{
+    width:5px;
+    height:auto;
+    display:inline-block;
+}

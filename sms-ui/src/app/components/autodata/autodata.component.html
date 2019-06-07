@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+
+  <h2>Associate Interview Count </h2>
+
+  <div class='panel-body'>
+    <div class='row'>
+      <div class='col-md-2'><b>Search:</b></div>
+      <div class='col-md-4'>
+        <input type='text' [(ngModel)]='listFilter' />
+      </div>
+    </div>
+  </div>
+
+  <table id="manage-users-table" class="tableUsers table table-striped" id="box-shadow">
+
+    <thead class="rev-background-color">
+      <tr>
+        <th>Associate Name</th>
+        <th>Associate Email</th>
+        <th>Interview Count</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="rev-table-row" *ngFor='let temp of AssociateInterviewCountsFilter'>
+        <td>{{temp.associateName}}</td>
+        <td>{{temp.associateEmail}}</td>
+        <td>{{temp.interviewCount}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

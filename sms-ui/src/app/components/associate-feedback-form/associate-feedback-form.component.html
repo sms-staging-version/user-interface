@@ -1,0 +1,70 @@
+<app-navbar></app-navbar>
+<div class="container associatefeedback">
+
+        <h2> Associate Feedback </h2>
+    <div class="main">
+        <div class="main-center">
+
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Date</span>
+                </div>
+                <input type="text" placeholder="Enter Date" bsDatepicker [maxDate]="maxDate" [(ngModel)]="receivedNotifications" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label class="bolding" for="24hourNotce">24 Hour Notice?</label>
+                <br>
+                <label style="padding-right: 3px">Yes</label>
+                <input type="radio" name="dayNoticeYes" value="true" [(ngModel)]="dayNotice" /> <br>
+                <label style="padding-right: 3px">No</label>
+                <input type="radio" name="dayNoticeNo" value="false" [(ngModel)]="dayNotice" />
+
+            </div>
+
+            <div class="form-group">
+                <label class="bolding" for="username">Job Description Provided?</label> <br>
+                <label style="padding-right: 3px">Yes</label>
+                <input type="radio" name="descriptionYes" value="true" [(ngModel)]="descriptionProvided" /> <br>
+                <label style="padding-right: 3px">No</label>
+                <input type="radio" name="descriptionNo" value="false" [(ngModel)]="descriptionProvided" /> <br>
+            </div>
+
+            <div class="form-group">
+                <label class="bolding" for="password">Actual interview format?</label>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                    <!--  <input type="text" class="form-control" name="interviewFormat" placeholder="Enter actual interview format" [(ngModel)]="interviewFormatStr" /> -->
+
+                    <select class="form-control" name="interviewFormat" [(ngModel)]="interviewFormatStr">
+                        <option value="" disabled selected>Select one</option>
+                        <option value = "On Site">On Site</option>
+                        <option value = "In Person">In Person</option>
+                        <option value = "Video Call">Video Call</option>
+                        <option value = "Phone Call">Phone Call</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="bolding" for="confirm">Proposed interview format?</label>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                    <!-- <input type="text" class="form-control" name="proposedFormat" placeholder="Enter proposed interview format" [(ngModel)]="proposedFormatStr" /> -->
+                    <select class="form-control" name="proposedFormat" [(ngModel)]="proposedFormatStr">
+                        <option value="" disabled selected>Select one</option>
+                        <option value = "On Site">On Site</option>
+                        <option value = "In Person">In Person</option>
+                        <option value = "Video Call">Video Call</option>
+                        <option value = "Phone Call">Phone Call</option>
+                    </select>
+                </div>
+            </div>
+            <div style="text-align: center">
+                <button class="btn rev-btn" (click)="postAssociateInput()">Submit Feedback</button>
+            </div>
+
+        </div>
+    </div>
+</div>

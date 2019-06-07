@@ -1,0 +1,1568 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sms-ui documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">sms-ui documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>AssociateFeedbackFormComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/associate-feedback-form/associate-feedback-form.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-associate-feedback-form</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./associate-feedback-form.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./associate-feedback-form.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#_dayNotice">_dayNotice</a>
+                            </li>
+                            <li>
+                                <a href="#_descriptionProvided">_descriptionProvided</a>
+                            </li>
+                            <li>
+                                <a href="#_interviewFormatStr">_interviewFormatStr</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_maxDate">_maxDate</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_minDate">_minDate</a>
+                            </li>
+                            <li>
+                                <a href="#_proposedFormatStr">_proposedFormatStr</a>
+                            </li>
+                            <li>
+                                <a href="#associateFeed">associateFeed</a>
+                            </li>
+                            <li>
+                                <a href="#associateInputList">associateInputList</a>
+                            </li>
+                            <li>
+                                <a href="#interviewFormat">interviewFormat</a>
+                            </li>
+                            <li>
+                                <a href="#proposedFormat">proposedFormat</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#receivedNotifications">receivedNotifications</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#assignInterviewFormat">assignInterviewFormat</a>
+                            </li>
+                            <li>
+                                <a href="#assignProposedFormat">assignProposedFormat</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#postAssociateInput">postAssociateInput</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#maxDate">maxDate</a>
+                                </li>
+                                <li>
+                                    <a href="#descriptionProvided">descriptionProvided</a>
+                                </li>
+                                <li>
+                                    <a href="#dayNotice">dayNotice</a>
+                                </li>
+                                <li>
+                                    <a href="#interviewFormatStr">interviewFormatStr</a>
+                                </li>
+                                <li>
+                                    <a href="#proposedFormatStr">proposedFormatStr</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(associateFeedbackService: <a href="../injectables/AssociateFeedbackService.html">AssociateFeedbackService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/components/associate-feedback-form/associate-feedback-form.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>associateFeedbackService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AssociateFeedbackService.html" target="_self" >AssociateFeedbackService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="assignInterviewFormat"></a>
+                    <span class="name">
+                        <b>
+                            assignInterviewFormat
+                        </b>
+                        <a href="#assignInterviewFormat"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>assignInterviewFormat()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="97"
+                            class="link-to-prism">src/app/components/associate-feedback-form/associate-feedback-form.component.ts:97</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="assignProposedFormat"></a>
+                    <span class="name">
+                        <b>
+                            assignProposedFormat
+                        </b>
+                        <a href="#assignProposedFormat"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>assignProposedFormat()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="109"
+                            class="link-to-prism">src/app/components/associate-feedback-form/associate-feedback-form.component.ts:109</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="79"
+                            class="link-to-prism">src/app/components/associate-feedback-form/associate-feedback-form.component.ts:79</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="postAssociateInput"></a>
+                    <span class="name">
+                        <b>
+                            postAssociateInput
+                        </b>
+                        <a href="#postAssociateInput"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>postAssociateInput()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="83"
+                            class="link-to-prism">src/app/components/associate-feedback-form/associate-feedback-form.component.ts:83</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_dayNotice"></a>
+                        <span class="name">
+                            <b>
+                            _dayNotice</b>
+                            <a href="#_dayNotice"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/components/associate-feedback-form/associate-feedback-form.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_descriptionProvided"></a>
+                        <span class="name">
+                            <b>
+                            _descriptionProvided</b>
+                            <a href="#_descriptionProvided"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/components/associate-feedback-form/associate-feedback-form.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_interviewFormatStr"></a>
+                        <span class="name">
+                            <b>
+                            _interviewFormatStr</b>
+                            <a href="#_interviewFormatStr"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/components/associate-feedback-form/associate-feedback-form.component.ts:19</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_maxDate"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _maxDate</b>
+                            <a href="#_maxDate"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date" target="_blank" >Date</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/components/associate-feedback-form/associate-feedback-form.component.ts:14</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_minDate"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _minDate</b>
+                            <a href="#_minDate"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date" target="_blank" >Date</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/components/associate-feedback-form/associate-feedback-form.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_proposedFormatStr"></a>
+                        <span class="name">
+                            <b>
+                            _proposedFormatStr</b>
+                            <a href="#_proposedFormatStr"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/components/associate-feedback-form/associate-feedback-form.component.ts:20</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="associateFeed"></a>
+                        <span class="name">
+                            <b>
+                            associateFeed</b>
+                            <a href="#associateFeed"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/AssociateFeedback.html" target="_self" >AssociateFeedback</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/components/associate-feedback-form/associate-feedback-form.component.ts:24</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="associateInputList"></a>
+                        <span class="name">
+                            <b>
+                            associateInputList</b>
+                            <a href="#associateInputList"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>any[]</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/components/associate-feedback-form/associate-feedback-form.component.ts:22</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="interviewFormat"></a>
+                        <span class="name">
+                            <b>
+                            interviewFormat</b>
+                            <a href="#interviewFormat"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/InterviewFormat.html" target="_self" >InterviewFormat</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/components/associate-feedback-form/associate-feedback-form.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="proposedFormat"></a>
+                        <span class="name">
+                            <b>
+                            proposedFormat</b>
+                            <a href="#proposedFormat"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/InterviewFormat.html" target="_self" >InterviewFormat</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/components/associate-feedback-form/associate-feedback-form.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="receivedNotifications"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            receivedNotifications</b>
+                            <a href="#receivedNotifications"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date" target="_blank" >Date</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/components/associate-feedback-form/associate-feedback-form.component.ts:17</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="maxDate"></a>
+                        <span class="name"><b>maxDate</b><a href="#maxDate"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>maxDate()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/components/associate-feedback-form/associate-feedback-form.component.ts:32</a></div>
+                                </td>
+                            </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>set</b><code>maxDate(temp)</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/components/associate-feedback-form/associate-feedback-form.component.ts:36</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>Optional</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                            <td>temp</td>
+                                                    
+                                                    
+                                                        <td>
+                                                                No
+                                                        </td>
+                                                        
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="descriptionProvided"></a>
+                        <span class="name"><b>descriptionProvided</b><a href="#descriptionProvided"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>descriptionProvided()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/components/associate-feedback-form/associate-feedback-form.component.ts:40</a></div>
+                                </td>
+                            </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>set</b><code>descriptionProvided(temp: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/components/associate-feedback-form/associate-feedback-form.component.ts:44</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                        <td>Type</td>
+                                                    <td>Optional</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                            <td>temp</td>
+                                                    
+                                                            <td>
+                                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                                            </td>
+                                                    
+                                                        <td>
+                                                                No
+                                                        </td>
+                                                        
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dayNotice"></a>
+                        <span class="name"><b>dayNotice</b><a href="#dayNotice"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>dayNotice()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/components/associate-feedback-form/associate-feedback-form.component.ts:56</a></div>
+                                </td>
+                            </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>set</b><code>dayNotice(temp: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/app/components/associate-feedback-form/associate-feedback-form.component.ts:60</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                        <td>Type</td>
+                                                    <td>Optional</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                            <td>temp</td>
+                                                    
+                                                            <td>
+                                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                                            </td>
+                                                    
+                                                        <td>
+                                                                No
+                                                        </td>
+                                                        
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="interviewFormatStr"></a>
+                        <span class="name"><b>interviewFormatStr</b><a href="#interviewFormatStr"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>interviewFormatStr()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/app/components/associate-feedback-form/associate-feedback-form.component.ts:64</a></div>
+                                </td>
+                            </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>set</b><code>interviewFormatStr(temp: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="68" class="link-to-prism">src/app/components/associate-feedback-form/associate-feedback-form.component.ts:68</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                        <td>Type</td>
+                                                    <td>Optional</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                            <td>temp</td>
+                                                    
+                                                            <td>
+                                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                            </td>
+                                                    
+                                                        <td>
+                                                                No
+                                                        </td>
+                                                        
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="proposedFormatStr"></a>
+                        <span class="name"><b>proposedFormatStr</b><a href="#proposedFormatStr"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>proposedFormatStr()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="71" class="link-to-prism">src/app/components/associate-feedback-form/associate-feedback-form.component.ts:71</a></div>
+                                </td>
+                            </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>set</b><code>proposedFormatStr(temp: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="75" class="link-to-prism">src/app/components/associate-feedback-form/associate-feedback-form.component.ts:75</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                        <td>Type</td>
+                                                    <td>Optional</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                            <td>temp</td>
+                                                    
+                                                            <td>
+                                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                            </td>
+                                                    
+                                                        <td>
+                                                                No
+                                                        </td>
+                                                        
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { AssociateFeedbackService, AssociateFeedback } from &#x27;./associate-feedback.service&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { InterviewFormat } from &#x27;src/app/sms-client/dto/InterviewFormat&#x27;;
+import { AssignSurveyComponent } from &#x27;../survey/assign-survey/assign-survey.component&#x27;;
+
+@Component({
+  selector: &#x27;app-associate-feedback-form&#x27;,
+  templateUrl: &#x27;./associate-feedback-form.component.html&#x27;,
+  styleUrls: [&#x27;./associate-feedback-form.component.scss&#x27;]
+})
+export class AssociateFeedbackFormComponent implements OnInit {
+
+  private _maxDate: Date;
+  private _minDate: Date;
+  _descriptionProvided &#x3D; false;
+  private receivedNotifications: Date;
+  _dayNotice &#x3D; false;
+  _interviewFormatStr &#x3D; &#x27;&#x27;;
+  _proposedFormatStr &#x3D; &#x27;&#x27;;
+
+  associateInputList: any[];
+
+  associateFeed: AssociateFeedback;
+  interviewFormat: InterviewFormat;
+  proposedFormat: InterviewFormat;
+  constructor(private associateFeedbackService: AssociateFeedbackService, private router: Router) {
+    this._maxDate &#x3D; new Date();
+    this._maxDate.setDate(this._maxDate.getDate());
+  }
+
+  get maxDate(): Date {
+    return this._maxDate;
+  }
+
+  set maxDate(temp: Date) {
+    this._maxDate &#x3D; temp;
+  }
+
+  get descriptionProvided(): boolean {
+    return this._descriptionProvided;
+  }
+
+  set descriptionProvided(temp: boolean) {
+    this._descriptionProvided &#x3D; temp;
+  }
+
+  // get recievedNotifications(): Date {
+  //   return this._recievedNotifications;
+  // }
+
+  // set recievedNotifications(temp: Date) {
+  //   this._recievedNotifications &#x3D; temp;
+  // }
+
+  get dayNotice(): boolean {
+    return this._dayNotice;
+  }
+
+  set dayNotice(temp: boolean) {
+    this._dayNotice &#x3D; temp;
+  }
+
+  get interviewFormatStr() {
+    return this._interviewFormatStr;
+  }
+
+  set interviewFormatStr(temp: string) {
+    this._interviewFormatStr &#x3D; temp;
+  }
+  get proposedFormatStr() {
+    return this._proposedFormatStr;
+  }
+
+  set proposedFormatStr(temp: string) {
+    this._proposedFormatStr &#x3D; temp;
+  }
+
+  ngOnInit() {
+
+  }
+
+  postAssociateInput() {
+
+    this.assignInterviewFormat();
+    this.assignProposedFormat();
+    let associateInput &#x3D; new AssociateFeedback(this._descriptionProvided, this.receivedNotifications, this._dayNotice, this.interviewFormat, this.proposedFormat);
+    this.associateFeedbackService.postAssociateInput(associateInput).subscribe(data &#x3D;&gt; {
+      data.receivedNotifications &#x3D; this.receivedNotifications,
+        data.descriptionProvided &#x3D; this._descriptionProvided,
+        data.interviewFormat &#x3D; this.interviewFormat,
+        data.proposedFormat &#x3D; this.proposedFormat,
+        data.dayNotice &#x3D; this._dayNotice
+
+    });
+  }
+  assignInterviewFormat() {
+    if (this._interviewFormatStr &#x3D;&#x3D; &#x27;On Site&#x27;) {
+      this.interviewFormat &#x3D; { &#x27;id&#x27;: 1, &#x27;formatDesc&#x27;: this._interviewFormatStr };
+    } else if (this._interviewFormatStr &#x3D;&#x3D; &#x27;In Person&#x27;) {
+      this.interviewFormat &#x3D; { &#x27;id&#x27;: 2, &#x27;formatDesc&#x27;: this._interviewFormatStr };
+    } else if (this._interviewFormatStr &#x3D;&#x3D; &#x27;Video Call&#x27;) {
+      this.interviewFormat &#x3D; { &#x27;id&#x27;: 3, &#x27;formatDesc&#x27;: this._interviewFormatStr };
+    } else if (this._interviewFormatStr &#x3D;&#x3D; &#x27;Phone Call&#x27;) {
+      this.interviewFormat &#x3D; { &#x27;id&#x27;: 4, &#x27;formatDesc&#x27;: this._interviewFormatStr };
+    }
+  }
+
+  assignProposedFormat() {
+    if (this._proposedFormatStr &#x3D;&#x3D; &#x27;On Site&#x27;) {
+      this.proposedFormat &#x3D; { &#x27;id&#x27;: 1, &#x27;formatDesc&#x27;: this._proposedFormatStr };
+    } else if (this._proposedFormatStr &#x3D;&#x3D; &#x27;In Person&#x27;) {
+      this.proposedFormat &#x3D; { &#x27;id&#x27;: 2, &#x27;formatDesc&#x27;: this._proposedFormatStr };
+    } else if (this._proposedFormatStr &#x3D;&#x3D; &#x27;Video Call&#x27;) {
+      this.proposedFormat &#x3D; { &#x27;id&#x27;: 3, &#x27;formatDesc&#x27;: this._proposedFormatStr };
+    } else if (this._proposedFormatStr &#x3D;&#x3D; &#x27;Phone Call&#x27;) {
+      this.proposedFormat &#x3D; { &#x27;id&#x27;: 4, &#x27;formatDesc&#x27;: this._proposedFormatStr };
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;app-navbar&gt;&lt;/app-navbar&gt;
+&lt;div class&#x3D;&quot;container associatefeedback&quot;&gt;
+
+        &lt;h2&gt; Associate Feedback &lt;/h2&gt;
+    &lt;div class&#x3D;&quot;main&quot;&gt;
+        &lt;div class&#x3D;&quot;main-center&quot;&gt;
+
+
+            &lt;div class&#x3D;&quot;input-group mb-3&quot;&gt;
+                &lt;div class&#x3D;&quot;input-group-prepend&quot;&gt;
+                    &lt;span class&#x3D;&quot;input-group-text&quot; id&#x3D;&quot;basic-addon1&quot;&gt;Date&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;input type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Enter Date&quot; bsDatepicker [maxDate]&#x3D;&quot;maxDate&quot; [(ngModel)]&#x3D;&quot;receivedNotifications&quot; class&#x3D;&quot;form-control&quot;&gt;
+            &lt;/div&gt;
+
+            &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                &lt;label class&#x3D;&quot;bolding&quot; for&#x3D;&quot;24hourNotce&quot;&gt;24 Hour Notice?&lt;/label&gt;
+                &lt;br&gt;
+                &lt;label style&#x3D;&quot;padding-right: 3px&quot;&gt;Yes&lt;/label&gt;
+                &lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;dayNoticeYes&quot; value&#x3D;&quot;true&quot; [(ngModel)]&#x3D;&quot;dayNotice&quot; /&gt; &lt;br&gt;
+                &lt;label style&#x3D;&quot;padding-right: 3px&quot;&gt;No&lt;/label&gt;
+                &lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;dayNoticeNo&quot; value&#x3D;&quot;false&quot; [(ngModel)]&#x3D;&quot;dayNotice&quot; /&gt;
+
+            &lt;/div&gt;
+
+            &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                &lt;label class&#x3D;&quot;bolding&quot; for&#x3D;&quot;username&quot;&gt;Job Description Provided?&lt;/label&gt; &lt;br&gt;
+                &lt;label style&#x3D;&quot;padding-right: 3px&quot;&gt;Yes&lt;/label&gt;
+                &lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;descriptionYes&quot; value&#x3D;&quot;true&quot; [(ngModel)]&#x3D;&quot;descriptionProvided&quot; /&gt; &lt;br&gt;
+                &lt;label style&#x3D;&quot;padding-right: 3px&quot;&gt;No&lt;/label&gt;
+                &lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;descriptionNo&quot; value&#x3D;&quot;false&quot; [(ngModel)]&#x3D;&quot;descriptionProvided&quot; /&gt; &lt;br&gt;
+            &lt;/div&gt;
+
+            &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                &lt;label class&#x3D;&quot;bolding&quot; for&#x3D;&quot;password&quot;&gt;Actual interview format?&lt;/label&gt;
+                &lt;div class&#x3D;&quot;input-group&quot;&gt;
+                    &lt;span class&#x3D;&quot;input-group-addon&quot;&gt;&lt;i class&#x3D;&quot;fa fa-lock fa-lg&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                    &lt;!--  &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; name&#x3D;&quot;interviewFormat&quot; placeholder&#x3D;&quot;Enter actual interview format&quot; [(ngModel)]&#x3D;&quot;interviewFormatStr&quot; /&gt; --&gt;
+
+                    &lt;select class&#x3D;&quot;form-control&quot; name&#x3D;&quot;interviewFormat&quot; [(ngModel)]&#x3D;&quot;interviewFormatStr&quot;&gt;
+                        &lt;option value&#x3D;&quot;&quot; disabled selected&gt;Select one&lt;/option&gt;
+                        &lt;option value &#x3D; &quot;On Site&quot;&gt;On Site&lt;/option&gt;
+                        &lt;option value &#x3D; &quot;In Person&quot;&gt;In Person&lt;/option&gt;
+                        &lt;option value &#x3D; &quot;Video Call&quot;&gt;Video Call&lt;/option&gt;
+                        &lt;option value &#x3D; &quot;Phone Call&quot;&gt;Phone Call&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                &lt;label class&#x3D;&quot;bolding&quot; for&#x3D;&quot;confirm&quot;&gt;Proposed interview format?&lt;/label&gt;
+                &lt;div class&#x3D;&quot;input-group&quot;&gt;
+                    &lt;span class&#x3D;&quot;input-group-addon&quot;&gt;&lt;i class&#x3D;&quot;fa fa-lock fa-lg&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                    &lt;!-- &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; name&#x3D;&quot;proposedFormat&quot; placeholder&#x3D;&quot;Enter proposed interview format&quot; [(ngModel)]&#x3D;&quot;proposedFormatStr&quot; /&gt; --&gt;
+                    &lt;select class&#x3D;&quot;form-control&quot; name&#x3D;&quot;proposedFormat&quot; [(ngModel)]&#x3D;&quot;proposedFormatStr&quot;&gt;
+                        &lt;option value&#x3D;&quot;&quot; disabled selected&gt;Select one&lt;/option&gt;
+                        &lt;option value &#x3D; &quot;On Site&quot;&gt;On Site&lt;/option&gt;
+                        &lt;option value &#x3D; &quot;In Person&quot;&gt;In Person&lt;/option&gt;
+                        &lt;option value &#x3D; &quot;Video Call&quot;&gt;Video Call&lt;/option&gt;
+                        &lt;option value &#x3D; &quot;Phone Call&quot;&gt;Phone Call&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div style&#x3D;&quot;text-align: center&quot;&gt;
+                &lt;button class&#x3D;&quot;btn rev-btn&quot; (click)&#x3D;&quot;postAssociateInput()&quot;&gt;Submit Feedback&lt;/button&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./associate-feedback-form.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">$revature-orange-light: #f3a55d;
+$revature-orange: #f26925;
+$drew-orange: #f3a55d;
+
+.container {
+    width: 75%;
+ /*    margin-top: 200px;
+    margin-left: 380px; */
+}
+h2 {
+    background-color: #f3a55d;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.bolding{
+font-weight: bold;
+}
+.associatefeedback{
+    
+    background-color:white;
+    border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+
+border: 1px solid #d3d3d3;
+    padding: 1rem; 
+    width: 700px;
+}
+
+#buttonSubmit {
+    background-color: #f3a55d;
+    border-color: #f3a55d;
+}
+
+
+/* Original hexcolor: #e3165b */
+
+.e-date-wrapper span.e-input-group-icon.e-date-icon.e-icons.e-active {
+    color: $revature-orange-light;
+}
+
+.e-radio:checked+label::before {
+    background-color: #fff;
+    border-color: $revature-orange-light;
+}
+
+.e-radio:checked+label::after {
+    background-color: $revature-orange-light;
+    color: $revature-orange-light;
+}
+
+.e-input-group:not(.e-float-icon-left):not(.e-float-input)::before,
+.e-input-group:not(.e-float-icon-left):not(.e-float-input)::after,
+.e-input-group.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::before,
+.e-input-group.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::after,
+.e-input-group.e-control-wrapper:not(.e-float-icon-left):not(.e-float-input)::before,
+.e-input-group.e-control-wrapper:not(.e-float-icon-left):not(.e-float-input)::after,
+.e-input-group.e-control-wrapper.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::before,
+.e-input-group.e-control-wrapper.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::after {
+    background: $revature-orange-light;
+}
+
+// .e-btn.e-flat.e-primary,
+// .e-css.e-btn.e-flat.e-primary {
+//     color: blue;
+// }
+.e-btn.e-flat.e-primary,
+.e-css.e-btn.e-flat.e-primary {
+    background-color: green;
+    border-color: transparent;
+    color: green;
+}
+
+.e-btn.e-flat.e-primary:hover,
+.e-css.e-btn.e-flat.e-primary:hover {
+    background-color: purple;
+    border-color: transparent;
+    color: purple;
+}
+
+.e-btn.e-flat.e-primary:focus,
+.e-css.e-btn.e-flat.e-primary:focus {
+    background-color: black;
+    border-color: transparent;
+    color: black;
+}
+
+.e-btn.e-flat.e-primary:active,
+.e-btn.e-flat.e-primary.e-active,
+.e-css.e-btn.e-flat.e-primary:active,
+.e-css.e-btn.e-flat.e-primary.e-active {
+    background-color: yellow;
+    border-color: transparent;
+    color: yellow;
+}
+
+.e-btn.e-flat.e-primary:disabled,
+.e-css.e-btn.e-flat.e-primary:disabled {
+    background-color: rgba(0, 0, 0, 0.12);
+    border-color: transparent;
+    box-shadow: none;
+    color: rgba(0, 0, 0, 0.26);
+}
+
+.e-btn.e-flat.e-primary .e-ripple-element,
+.e-css.e-btn.e-flat.e-primary .e-ripple-element {
+    background-color: rgba(227, 22, 91, 0.12);
+}
+
+.e-calendar .e-content td.e-today.e-selected span.e-day {
+    background-color: $revature-orange;
+    border: 1px solid $revature-orange;
+  //  box-shadow: inset 0 0 0 2px #fff;
+    color: #fff;
+}
+
+.datepicker table tr td.active,
+.datepicker table tr td.active:hover {
+    background: green;
+    text-shadow: none;
+}
+
+.datepicker table tr td.active:active,
+.datepicker table tr td.active:hover:active,
+.datepicker table tr td.active.disabled:active,
+.datepicker table tr td.active.disabled:hover:active,
+.datepicker table tr td.active.active,
+.datepicker table tr td.active:hover.active,
+.datepicker table tr td.active.disabled.active,
+.datepicker table tr td.active.disabled:hover.active {
+    background-image: linear-gradient(to bottom, green, green);
+}
+
+.datepicker table tr td.active:active,
+.datepicker table tr td.active.highlighted:active,
+.datepicker table tr td.active.active,
+.datepicker table tr td.active.highlighted.active {
+    background-color: green;
+}
+
+.e-input-group.e-disabled .e-input-group-icon,
+.e-input-group.e-control-wrapper.e-disabled .e-input-group-icon {
+    background: transparent;
+    border-color: green;
+}
+
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><app-navbar></app-navbar><div class="container associatefeedback">        <h2> Associate Feedback </h2>    <div class="main">        <div class="main-center">            <div class="input-group mb-3">                <div class="input-group-prepend">                    <span class="input-group-text" id="basic-addon1">Date</span>                </div>                <input type="text" placeholder="Enter Date" bsDatepicker [maxDate]="maxDate" [(ngModel)]="receivedNotifications" class="form-control">            </div>            <div class="form-group">                <label class="bolding" for="24hourNotce">24 Hour Notice?</label>                <br>                <label style="padding-right: 3px">Yes</label>                <input type="radio" name="dayNoticeYes" value="true" [(ngModel)]="dayNotice" /> <br>                <label style="padding-right: 3px">No</label>                <input type="radio" name="dayNoticeNo" value="false" [(ngModel)]="dayNotice" />            </div>            <div class="form-group">                <label class="bolding" for="username">Job Description Provided?</label> <br>                <label style="padding-right: 3px">Yes</label>                <input type="radio" name="descriptionYes" value="true" [(ngModel)]="descriptionProvided" /> <br>                <label style="padding-right: 3px">No</label>                <input type="radio" name="descriptionNo" value="false" [(ngModel)]="descriptionProvided" /> <br>            </div>            <div class="form-group">                <label class="bolding" for="password">Actual interview format?</label>                <div class="input-group">                    <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>                    <!--  <input type="text" class="form-control" name="interviewFormat" placeholder="Enter actual interview format" [(ngModel)]="interviewFormatStr" /> -->                    <select class="form-control" name="interviewFormat" [(ngModel)]="interviewFormatStr">                        <option value="" disabled selected>Select one</option>                        <option value = "On Site">On Site</option>                        <option value = "In Person">In Person</option>                        <option value = "Video Call">Video Call</option>                        <option value = "Phone Call">Phone Call</option>                    </select>                </div>            </div>            <div class="form-group">                <label class="bolding" for="confirm">Proposed interview format?</label>                <div class="input-group">                    <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>                    <!-- <input type="text" class="form-control" name="proposedFormat" placeholder="Enter proposed interview format" [(ngModel)]="proposedFormatStr" /> -->                    <select class="form-control" name="proposedFormat" [(ngModel)]="proposedFormatStr">                        <option value="" disabled selected>Select one</option>                        <option value = "On Site">On Site</option>                        <option value = "In Person">In Person</option>                        <option value = "Video Call">Video Call</option>                        <option value = "Phone Call">Phone Call</option>                    </select>                </div>            </div>            <div style="text-align: center">                <button class="btn rev-btn" (click)="postAssociateInput()">Submit Feedback</button>            </div>        </div>    </div></div></div>'
+    var COMPONENTS = [{'name': 'AnswerData1Component', 'selector': 'app-answer-data1'},{'name': 'AnswerData2Component', 'selector': 'app-answer-data2'},{'name': 'AnswerData3Component', 'selector': 'app-answer-data3'},{'name': 'AnswerData4Component', 'selector': 'app-answer-data4'},{'name': 'AnswerData5Component', 'selector': 'app-answer-data5'},{'name': 'AnswerData6Component', 'selector': 'app-answer-data6'},{'name': 'AnswerData7Component', 'selector': 'app-answer-data7'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AssignSurveyComponent', 'selector': 'app-assign-survey'},{'name': 'AssociateFeedbackFormComponent', 'selector': 'app-associate-feedback-form'},{'name': 'AuthLoadingComponent', 'selector': 'app-auth-loading'},{'name': 'AutodataComponent', 'selector': 'app-autodata'},{'name': 'CohortModalComponent', 'selector': 'app-cohort-modal'},{'name': 'DaynoticeGraphComponent', 'selector': 'app-daynotice-graph'},{'name': 'DaynoticeReportComponent', 'selector': 'app-daynotice-report'},{'name': 'FakeServiceComponent', 'selector': 'app-fake-service'},{'name': 'FeedbackReportComponent', 'selector': 'app-feedback-report'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'InterviewComponent', 'selector': 'app-interview'},{'name': 'InterviewComponent', 'selector': 'app-interview'},{'name': 'InterviewListComponent', 'selector': 'app-interview-list'},{'name': 'InterviewListForCurUserComponent', 'selector': 'app-interview-list-for-cur-user'},{'name': 'JobdescReportComponent', 'selector': 'app-jobdesc-report'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'ManageComponent', 'selector': 'app-manage'},{'name': 'MngrSubAssociatesComponent', 'selector': 'app-mngr-sub-associates'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'NewInterviewComponent', 'selector': 'app-new-interview'},{'name': 'ProfileInfoComponent', 'selector': 'app-profile-info'},{'name': 'RegistrationComponent', 'selector': 'app-registration'},{'name': 'ReportsComponent', 'selector': 'app-reports'},{'name': 'StagingMgrFeedbackComponent', 'selector': 'app-staging-mgr-feedback'},{'name': 'SubMan2CohortComponent', 'selector': 'app-sub-man2-cohort'},{'name': 'SurveyComponent', 'selector': 'app-survey'},{'name': 'SurveyCreatorComponent', 'selector': 'app-survey-creator'},{'name': 'SurveyDataComponent', 'selector': 'app-survey-data'},{'name': 'SurveyGridComponent', 'selector': 'app-survey-grid'},{'name': 'SurveyListComponent', 'selector': 'app-survey-list'},{'name': 'SurveyRespondentsComponent', 'selector': 'app-survey-respondents'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'AssociateFeedbackFormComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'AssociateFeedbackFormComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

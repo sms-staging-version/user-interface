@@ -1,0 +1,2256 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sms-ui documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">sms-ui documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>SurveyListComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/survey/survey-list/survey-list.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-survey-list</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./survey-list.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./survey-list.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ArrayOfResponseAnswerList">ArrayOfResponseAnswerList</a>
+                            </li>
+                            <li>
+                                <a href="#arrOfCounts">arrOfCounts</a>
+                            </li>
+                            <li>
+                                <a href="#cohortCheckList">cohortCheckList</a>
+                            </li>
+                            <li>
+                                <a href="#cohorts">cohorts</a>
+                            </li>
+                            <li>
+                                <a href="#curTempAnswers">curTempAnswers</a>
+                            </li>
+                            <li>
+                                <a href="#curTemplate">curTemplate</a>
+                            </li>
+                            <li>
+                                <a href="#filteredListOfSurvey">filteredListOfSurvey</a>
+                            </li>
+                            <li>
+                                <a href="#listFilterVar">listFilterVar</a>
+                            </li>
+                            <li>
+                                <a href="#listOfSurvey">listOfSurvey</a>
+                            </li>
+                            <li>
+                                <a href="#qList">qList</a>
+                            </li>
+                            <li>
+                                <a href="#respPressed">respPressed</a>
+                            </li>
+                            <li>
+                                <a href="#shownEmailList">shownEmailList</a>
+                            </li>
+                            <li>
+                                <a href="#statusCheckList">statusCheckList</a>
+                            </li>
+                            <li>
+                                <a href="#surveyId">surveyId</a>
+                            </li>
+                            <li>
+                                <a href="#surveyTitle">surveyTitle</a>
+                            </li>
+                            <li>
+                                <a href="#userCheckList">userCheckList</a>
+                            </li>
+                            <li>
+                                <a href="#users">users</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#assignSurvey">assignSurvey</a>
+                            </li>
+                            <li>
+                                <a href="#checkTemplate">checkTemplate</a>
+                            </li>
+                            <li>
+                                <a href="#closeSurvey">closeSurvey</a>
+                            </li>
+                            <li>
+                                <a href="#getCohort">getCohort</a>
+                            </li>
+                            <li>
+                                <a href="#getGraph">getGraph</a>
+                            </li>
+                            <li>
+                                <a href="#getRespondents">getRespondents</a>
+                            </li>
+                            <li>
+                                <a href="#getUser">getUser</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#performFilter">performFilter</a>
+                            </li>
+                            <li>
+                                <a href="#pushSurveyHistory">pushSurveyHistory</a>
+                            </li>
+                            <li>
+                                <a href="#reload">reload</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#listFilter">listFilter</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(surveyService: <a href="../injectables/SurveyService.html">SurveyService</a>, answerService: <a href="../injectables/SurveyAnswerService.html">SurveyAnswerService</a>, sqService: <a href="../injectables/SurveyQuestionService.html">SurveyQuestionService</a>, responseService: <a href="../injectables/SurveyResponseService.html">SurveyResponseService</a>, cohortService: <a href="../injectables/CohortService.html">CohortService</a>, usersClientService: <a href="../injectables/UsersClientService.html">UsersClientService</a>, surveyHistoryService: <a href="../injectables/SurveyHistoryService.html">SurveyHistoryService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/components/survey/survey-list/survey-list.component.ts:44</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>surveyService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SurveyService.html" target="_self" >SurveyService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>answerService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SurveyAnswerService.html" target="_self" >SurveyAnswerService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>sqService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SurveyQuestionService.html" target="_self" >SurveyQuestionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>responseService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SurveyResponseService.html" target="_self" >SurveyResponseService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>cohortService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CohortService.html" target="_self" >CohortService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>usersClientService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UsersClientService.html" target="_self" >UsersClientService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>surveyHistoryService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SurveyHistoryService.html" target="_self" >SurveyHistoryService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="assignSurvey"></a>
+                    <span class="name">
+                        <b>
+                            assignSurvey
+                        </b>
+                        <a href="#assignSurvey"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>assignSurvey()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="112"
+                            class="link-to-prism">src/app/components/survey/survey-list/survey-list.component.ts:112</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkTemplate"></a>
+                    <span class="name">
+                        <b>
+                            checkTemplate
+                        </b>
+                        <a href="#checkTemplate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkTemplate(surveyId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="76"
+                            class="link-to-prism">src/app/components/survey/survey-list/survey-list.component.ts:76</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>surveyId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="closeSurvey"></a>
+                    <span class="name">
+                        <b>
+                            closeSurvey
+                        </b>
+                        <a href="#closeSurvey"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>closeSurvey(index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="66"
+                            class="link-to-prism">src/app/components/survey/survey-list/survey-list.component.ts:66</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCohort"></a>
+                    <span class="name">
+                        <b>
+                            getCohort
+                        </b>
+                        <a href="#getCohort"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getCohort()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="95"
+                            class="link-to-prism">src/app/components/survey/survey-list/survey-list.component.ts:95</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getGraph"></a>
+                    <span class="name">
+                        <b>
+                            getGraph
+                        </b>
+                        <a href="#getGraph"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getGraph(surveyId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, title: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="173"
+                            class="link-to-prism">src/app/components/survey/survey-list/survey-list.component.ts:173</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>surveyId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>title</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getRespondents"></a>
+                    <span class="name">
+                        <b>
+                            getRespondents
+                        </b>
+                        <a href="#getRespondents"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getRespondents(surveyId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="220"
+                            class="link-to-prism">src/app/components/survey/survey-list/survey-list.component.ts:220</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>surveyId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUser"></a>
+                    <span class="name">
+                        <b>
+                            getUser
+                        </b>
+                        <a href="#getUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getUser(surveyId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="103"
+                            class="link-to-prism">src/app/components/survey/survey-list/survey-list.component.ts:103</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>surveyId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="52"
+                            class="link-to-prism">src/app/components/survey/survey-list/survey-list.component.ts:52</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="performFilter"></a>
+                    <span class="name">
+                        <b>
+                            performFilter
+                        </b>
+                        <a href="#performFilter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>performFilter(filterBy: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="165"
+                            class="link-to-prism">src/app/components/survey/survey-list/survey-list.component.ts:165</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>filterBy</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Survey.html" target="_self" >Survey[]</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pushSurveyHistory"></a>
+                    <span class="name">
+                        <b>
+                            pushSurveyHistory
+                        </b>
+                        <a href="#pushSurveyHistory"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>pushSurveyHistory(email, surveyId)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="148"
+                            class="link-to-prism">src/app/components/survey/survey-list/survey-list.component.ts:148</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>email</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>surveyId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="reload"></a>
+                    <span class="name">
+                        <b>
+                            reload
+                        </b>
+                        <a href="#reload"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>reload()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="230"
+                            class="link-to-prism">src/app/components/survey/survey-list/survey-list.component.ts:230</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ArrayOfResponseAnswerList"></a>
+                        <span class="name">
+                            <b>
+                            ArrayOfResponseAnswerList</b>
+                            <a href="#ArrayOfResponseAnswerList"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Array&lt;string[]&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/components/survey/survey-list/survey-list.component.ts:41</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="arrOfCounts"></a>
+                        <span class="name">
+                            <b>
+                            arrOfCounts</b>
+                            <a href="#arrOfCounts"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Array&lt;number[]&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/components/survey/survey-list/survey-list.component.ts:42</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="cohortCheckList"></a>
+                        <span class="name">
+                            <b>
+                            cohortCheckList</b>
+                            <a href="#cohortCheckList"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>boolean[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/components/survey/survey-list/survey-list.component.ts:36</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="cohorts"></a>
+                        <span class="name">
+                            <b>
+                            cohorts</b>
+                            <a href="#cohorts"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Cohort.html" target="_self" >Cohort[]</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/components/survey/survey-list/survey-list.component.ts:33</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="curTempAnswers"></a>
+                        <span class="name">
+                            <b>
+                            curTempAnswers</b>
+                            <a href="#curTempAnswers"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Answer.html" target="_self" >Array&lt;Answer[]&gt;</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/components/survey/survey-list/survey-list.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="curTemplate"></a>
+                        <span class="name">
+                            <b>
+                            curTemplate</b>
+                            <a href="#curTemplate"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>SurveyQuestion[]</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/components/survey/survey-list/survey-list.component.ts:30</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="filteredListOfSurvey"></a>
+                        <span class="name">
+                            <b>
+                            filteredListOfSurvey</b>
+                            <a href="#filteredListOfSurvey"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Survey.html" target="_self" >Survey[]</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/components/survey/survey-list/survey-list.component.ts:44</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="listFilterVar"></a>
+                        <span class="name">
+                            <b>
+                            listFilterVar</b>
+                            <a href="#listFilterVar"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/components/survey/survey-list/survey-list.component.ts:43</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="listOfSurvey"></a>
+                        <span class="name">
+                            <b>
+                            listOfSurvey</b>
+                            <a href="#listOfSurvey"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Survey.html" target="_self" >Survey[]</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/components/survey/survey-list/survey-list.component.ts:29</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="qList"></a>
+                        <span class="name">
+                            <b>
+                            qList</b>
+                            <a href="#qList"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Question.html" target="_self" >Question[]</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/components/survey/survey-list/survey-list.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="respPressed"></a>
+                        <span class="name">
+                            <b>
+                            respPressed</b>
+                            <a href="#respPressed"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/components/survey/survey-list/survey-list.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="shownEmailList"></a>
+                        <span class="name">
+                            <b>
+                            shownEmailList</b>
+                            <a href="#shownEmailList"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>string[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/components/survey/survey-list/survey-list.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="statusCheckList"></a>
+                        <span class="name">
+                            <b>
+                            statusCheckList</b>
+                            <a href="#statusCheckList"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>boolean[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/components/survey/survey-list/survey-list.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="surveyId"></a>
+                        <span class="name">
+                            <b>
+                            surveyId</b>
+                            <a href="#surveyId"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/components/survey/survey-list/survey-list.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="surveyTitle"></a>
+                        <span class="name">
+                            <b>
+                            surveyTitle</b>
+                            <a href="#surveyTitle"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/components/survey/survey-list/survey-list.component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="userCheckList"></a>
+                        <span class="name">
+                            <b>
+                            userCheckList</b>
+                            <a href="#userCheckList"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>boolean[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/components/survey/survey-list/survey-list.component.ts:37</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="users"></a>
+                        <span class="name">
+                            <b>
+                            users</b>
+                            <a href="#users"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/User.html" target="_self" >User[]</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/components/survey/survey-list/survey-list.component.ts:34</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="listFilter"></a>
+                        <span class="name"><b>listFilter</b><a href="#listFilter"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>listFilter()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="156" class="link-to-prism">src/app/components/survey/survey-list/survey-list.component.ts:156</a></div>
+                                </td>
+                            </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>set</b><code>listFilter(temp: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="159" class="link-to-prism">src/app/components/survey/survey-list/survey-list.component.ts:159</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                        <td>Type</td>
+                                                    <td>Optional</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                            <td>temp</td>
+                                                    
+                                                            <td>
+                                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                            </td>
+                                                    
+                                                        <td>
+                                                                No
+                                                        </td>
+                                                        
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, Output, EventEmitter } from &#x27;@angular/core&#x27;;
+import { SurveyService } from &#x27;src/app/sms-client/clients/survey.service&#x27;;
+import { Survey } from &#x27;src/app/sms-client/dto/Survey&#x27;;
+import { SurveyQuestionService } from &#x27;src/app/sms-client/clients/surveyquestion.service&#x27;;
+import { SurveyQuestion, Question } from &#x27;src/app/sms-client/dto/surveyQuestion&#x27;;
+import { Answer } from &#x27;src/app/sms-client/dto/Answer&#x27;;
+import { SurveyAnswerService } from &#x27;src/app/sms-client/clients/survey-answer.service&#x27;;
+import { Responses } from &#x27;src/app/sms-client/dto/Response&#x27;;
+import { SurveyResponseService } from &#x27;src/app/sms-client/clients/survey-response.service&#x27;;
+import { QuestionOfSurveyService } from &#x27;src/app/sms-client/clients/survey-question.service&#x27;;
+import { Cohort } from &#x27;src/app/sms-client/dto/Cohort&#x27;;
+import { CohortService } from &#x27;src/app/sms-client/clients/theCohort.service&#x27;;
+import { User } from &#x27;src/app/sms-client/dto/User&#x27;;
+import { UsersClientService } from &#x27;src/app/sms-client/clients/users-client.service&#x27;;
+import { SurveyHistoryService } from &#x27;src/app/sms-client/clients/survey-history.service&#x27;;
+import { SurveyHistory } from &#x27;src/app/sms-client/dto/SurveyHistory&#x27;;
+
+@Component({
+  selector: &#x27;app-survey-list&#x27;,
+  templateUrl: &#x27;./survey-list.component.html&#x27;,
+  styleUrls: [&#x27;./survey-list.component.scss&#x27;]
+})
+export class SurveyListComponent implements OnInit {
+
+  surveyId: number;
+  respPressed: boolean;
+
+  surveyTitle: string;
+  listOfSurvey: Survey[];
+  curTemplate: SurveyQuestion[];
+  curTempAnswers: Array&lt;Answer[]&gt;;
+
+  cohorts: Cohort[];
+  users: User[];
+  statusCheckList: boolean[] &#x3D; [];
+  cohortCheckList: boolean[] &#x3D; [];
+  userCheckList: boolean[] &#x3D; [];
+  shownEmailList: string[] &#x3D; [];
+
+  qList: Question[];
+  ArrayOfResponseAnswerList: Array&lt;string[]&gt;;
+  arrOfCounts: Array&lt;number[]&gt;;
+  listFilterVar: string;
+  filteredListOfSurvey: Survey[];
+  constructor(private surveyService: SurveyService,
+              private answerService: SurveyAnswerService,
+              private sqService: SurveyQuestionService,
+              private responseService: SurveyResponseService,
+              private cohortService: CohortService,
+              private usersClientService: UsersClientService,
+              private surveyHistoryService: SurveyHistoryService) {}
+  ngOnInit() {
+    this.listOfSurvey &#x3D; [];
+    this.surveyService.findAll().subscribe(
+      data &#x3D;&gt; {
+        for (const temp of data) {
+          if (!temp.template) {
+            this.listOfSurvey.push(temp);
+          }
+        }
+        this.filteredListOfSurvey &#x3D; this.listOfSurvey;
+      }
+    );
+  }
+
+  closeSurvey(index: number) {
+    this.listOfSurvey[index].closingDate &#x3D; new Date();
+    this.surveyService.save(this.listOfSurvey[index]).subscribe(
+      data &#x3D;&gt; {
+        this.listOfSurvey[index] &#x3D; data;
+        console.log(this.listOfSurvey[index]);
+      }
+    );
+  }
+
+  checkTemplate(surveyId: number) {
+    this.ArrayOfResponseAnswerList &#x3D; [];
+    this.curTemplate &#x3D; [];
+    this.sqService.getTemplate(surveyId).subscribe(
+      data &#x3D;&gt; {
+        this.curTemplate &#x3D; data;
+        this.curTempAnswers &#x3D; new Array(data.length);
+        // tslint:disable-next-line: forin
+        for (const i in data) {
+          this.answerService.findByQuestionId(data[i].questionId.questionId).subscribe(
+            curQuestionAnswerList &#x3D;&gt; {
+              this.curTempAnswers[i] &#x3D; curQuestionAnswerList;
+            }
+          );
+        }
+      }
+    );
+  }
+
+  getCohort() {
+    this.cohortService.findAllCohorts().subscribe(
+      data &#x3D;&gt; {
+        this.cohorts &#x3D; data;
+      }
+    );
+  }
+
+  getUser(surveyId: number) {
+    this.usersClientService.findAll().subscribe(
+      data &#x3D;&gt; {
+        this.users &#x3D; data;
+      }
+    );
+    this.surveyId &#x3D; surveyId;
+  }
+
+  assignSurvey() {
+    const userEmailList: string[] &#x3D; [];
+    this.shownEmailList &#x3D; [];
+    
+    // tslint:disable-next-line: forin
+    for (const j in this.users) {
+      const cur &#x3D; this.users[j].userStatus.statusId;
+      if ((this.userCheckList[j]) || (cur &lt;&#x3D; 3 &amp;&amp; cur &gt;&#x3D; 1 &amp;&amp; this.statusCheckList[0]) ||
+      (cur &lt;&#x3D; 10 &amp;&amp; cur &gt;&#x3D; 4 &amp;&amp; this.statusCheckList[1]) ||
+      (cur &lt;&#x3D; 17 &amp;&amp; cur &gt;&#x3D; 11 &amp;&amp; this.statusCheckList[2]) ||
+      (cur &lt;&#x3D; 17 &amp;&amp; cur &gt;&#x3D; 4 &amp;&amp; this.statusCheckList[3])) {
+        if (!userEmailList.includes(this.users[j].email)) {
+          userEmailList.push(this.users[j].email);
+        }
+      }
+    }
+
+    for (const email of userEmailList) {
+      this.pushSurveyHistory(email, this.surveyId);
+    }
+
+    for (const i in this.cohortCheckList) {
+      if (this.cohortCheckList[i]) {
+        this.usersClientService.findAllByCohortId(this.cohorts[i].cohortId).subscribe(data &#x3D;&gt; {
+          for (const user of data) {
+            if (!userEmailList.includes(user.email)) {
+              userEmailList.push(user.email);
+              this.pushSurveyHistory(user.email, this.surveyId);
+            }
+          }
+        });
+      }
+    }
+   
+  }
+
+  pushSurveyHistory(email, surveyId) {
+    const surHistory &#x3D; new SurveyHistory(null, surveyId, email, new Date(), null);
+    this.surveyHistoryService.save(surHistory).subscribe(
+      data &#x3D;&gt; {
+               this.shownEmailList.push(data.userEmail);
+      }
+    );
+  }
+  get listFilter(): string {
+    return this.listFilterVar;
+  }
+  set listFilter(temp: string) {
+    this.listFilterVar &#x3D; temp;
+    this.filteredListOfSurvey &#x3D; (this.listFilterVar) ?
+      this.performFilter(this.listFilterVar) : this.listOfSurvey;
+  }
+
+  performFilter(filterBy: string): Survey[] {
+    filterBy &#x3D; filterBy.toLocaleLowerCase();
+    return this.listOfSurvey.filter((temp: Survey) &#x3D;&gt;
+      (temp.title.toLocaleLowerCase().indexOf(filterBy) !&#x3D;&#x3D; -1
+        || temp.description.toLocaleLowerCase().indexOf(filterBy) !&#x3D;&#x3D; -1
+      )
+    );
+  }
+  getGraph(surveyId: number, title: string) {
+    this.surveyTitle &#x3D; title;
+    this.answerService.findAll().subscribe(
+      ansList &#x3D;&gt; {
+    this.responseService.findBySurveyId(surveyId).subscribe(
+      data &#x3D;&gt; {
+        this.sqService.getTemplate(surveyId).subscribe(
+          sqList &#x3D;&gt; {
+            this.ArrayOfResponseAnswerList &#x3D; new Array (sqList.length);
+            this.arrOfCounts &#x3D; new Array (sqList.length);
+            this.qList &#x3D; new Array (sqList.length);
+            let tempArrOfAnsList &#x3D; new Array (sqList.length);
+            for (const i in sqList) {
+              let tempI &#x3D; sqList[i].questionOrder - 1;
+              this.qList[tempI] &#x3D; sqList[i].questionId;
+              for (const ans of ansList) {
+              // tslint:disable-next-line: forin
+              // tslint:disable-next-line: max-line-length
+                if (ans.questionId &#x3D;&#x3D;&#x3D; sqList[i].questionId.questionId &amp;&amp; (!this.ArrayOfResponseAnswerList[i] || !this.ArrayOfResponseAnswerList[i].includes(ans.answer))) {
+                  if (!this.ArrayOfResponseAnswerList[tempI]) {
+                    this.ArrayOfResponseAnswerList[tempI] &#x3D; [];
+                    tempArrOfAnsList[tempI] &#x3D; [];
+                  }
+                  this.ArrayOfResponseAnswerList[tempI].push(ans.answer);
+                  tempArrOfAnsList[tempI].push(ans.id);
+                  }
+              }
+            }
+            for (const res of data) {
+              for (const index in this.ArrayOfResponseAnswerList) {
+                if (tempArrOfAnsList[index].includes(res.answerId.id)) {
+                  if (!this.arrOfCounts[index]) { this.arrOfCounts[index] &#x3D; new Array (tempArrOfAnsList[index].length); }
+                  const tempIndex &#x3D; tempArrOfAnsList[index].indexOf(res.answerId.id);
+                  this.arrOfCounts[index][tempIndex] &#x3D; this.arrOfCounts[index][tempIndex] ? this.arrOfCounts[index][tempIndex] + 1 : 1;
+                }
+              }
+            }
+            console.log(this.ArrayOfResponseAnswerList);
+            console.log(this.arrOfCounts);
+          }
+        );
+      }
+    );
+  }
+  );
+  }
+
+  getRespondents(surveyId: number) {
+    // if (this.respPressed !&#x3D;&#x3D; true) {
+    //   console.log(&#x27;The current surveyId is: &#x27; + surveyId);
+      this.surveyId &#x3D; surveyId;
+      this.respPressed &#x3D; true;
+    // } else {
+    //   this.respPressed &#x3D; false;
+    // }
+  }
+
+  reload() {
+    window.location.reload();
+    this.shownEmailList &#x3D; [];
+  }
+}
+
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;app-navbar&gt; &lt;/app-navbar&gt;
+&lt;div id&#x3D;&quot;main-content-container&quot;&gt;
+
+   
+  &lt;div id&#x3D;&quot;manage-users-container&quot;&gt;
+      &lt;div class&#x3D;&#x27;panel-body&#x27;&gt;
+          &lt;div class&#x3D;&#x27;row&#x27;&gt;
+            &lt;div class&#x3D;&#x27;col-md-3&#x27;&gt;&lt;b&gt;Search:&lt;/b&gt;&lt;/div&gt;
+            &lt;div class&#x3D;&#x27;col-md-2&#x27; id&#x3D;&#x27;search-container&#x27;&gt;
+             &lt;input id&#x3D;&quot;searchbar&quot; class&#x3D;&quot;form-control&quot; type&#x3D;&quot;text&quot; [(ngModel)]&#x3D;&#x27;listFilter&#x27; placeholder&#x3D;&quot;Search&quot;&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;  
+        &lt;table id&#x3D;&quot;manage-users-table&quot; class&#x3D;&quot;tableUsers table table-striped&quot; id&#x3D;&quot;box-shadow&quot;&gt;
+
+            &lt;thead class&#x3D;&quot;rev-background-color&quot;&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Title&lt;/th&gt;
+                    &lt;th&gt;Description&lt;/th&gt;
+                    &lt;th&gt;Date Created&lt;/th&gt;
+                    &lt;th&gt;Analytics&lt;/th&gt;
+                    &lt;th&gt;Respondents&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;tr class&#x3D;&quot;rev-table-row&quot; *ngFor&#x3D;&#x27;let temp of filteredListOfSurvey; index as i&#x27; (click) &#x3D; &#x27;getUser(temp.surveyId)&#x27;&gt;
+                    &lt;td data-toggle&#x3D;&quot;modal&quot; data-target&#x3D;&quot;#exampleModalLong&quot;&gt;{{temp.title}}&lt;/td&gt;
+                    &lt;td data-toggle&#x3D;&quot;modal&quot; data-target&#x3D;&quot;#exampleModalLong&quot;&gt;{{temp.description}}&lt;/td&gt;
+                    &lt;td&gt;{{temp.dateCreated | showTimestamp}}&lt;/td&gt;
+                    &lt;td&gt;&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;assignSurveyBtn btn btn-secondary&quot; (click)&#x3D;&#x27;getGraph(temp.surveyId,temp.title)&#x27; data-toggle&#x3D;&quot;modal&quot; data-target&#x3D;&quot;#chartModal&quot;&gt;Data&lt;/button&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;assignSurveyBtn btn btn-secondary&quot; (click)&#x3D;&#x27;getRespondents(temp.surveyId)&#x27; data-toggle&#x3D;&quot;modal&quot; data-target&#x3D;&quot;#AllResponds&quot;&gt;Status&lt;/button&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+    &lt;div class&#x3D;&quot;container&quot;&gt;
+      &lt;!-- Trigger the modal with a button --&gt;
+      &lt;!-- Modal --&gt;
+      &lt;div class&#x3D;&quot;modal fade&quot; id&#x3D;&quot;chartModal&quot; role&#x3D;&quot;dialog&quot; *ngIf&#x3D;&#x27;qList&amp;&amp;qList.length&amp;&amp;ArrayOfResponseAnswerList&#x27;&gt;
+        &lt;div class&#x3D;&quot;modal-dialog&quot;&gt;
+          &lt;!-- Modal content--&gt;
+          &lt;div class&#x3D;&quot;modal-content&quot;&gt;
+            &lt;div class&#x3D;&quot;modal-header&quot;&gt;
+               &lt;h3&gt;{{&quot;Analytics: &quot; + surveyTitle}}&lt;/h3&gt;
+              &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;modal-body&quot; *ngFor&#x3D;&#x27;let temp of qList; index as i;&#x27;&gt;
+              &lt;app-survey-data [question]&#x3D;&#x27;temp.question&#x27; [type]&#x3D;&#x27;temp.typeId&#x27; [arrOfAns]&#x3D;&#x27;ArrayOfResponseAnswerList[i]&#x27; [arrOfCountedResponse]&#x3D;&#x27;arrOfCounts[i]&#x27;&gt;&lt;/app-survey-data&gt;
+            &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+    &lt;!-- end of graph--&gt;
+
+&lt;div class&#x3D;&quot;modal fade&quot; id&#x3D;&quot;AllResponds&quot; tabindex&#x3D;&quot;-1&quot; role&#x3D;&quot;dialog&quot; aria-labelledby&#x3D;&quot;exampleModalLabel&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
+  &lt;div class&#x3D;&quot;modal-dialog&quot; role&#x3D;&quot;document&quot;&gt;
+    &lt;div class&#x3D;&quot;modal-content&quot;&gt;
+      &lt;div class&#x3D;&quot;modal-header&quot;&gt;
+        &lt;h5 class&#x3D;&quot;modal-title&quot; id&#x3D;&quot;exampleModalLabel&quot;&gt;Respondents&lt;/h5&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;modal&quot; aria-label&#x3D;&quot;Close&quot;&gt;
+          &lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;modal-body&quot; id&#x3D;&quot;respondents&quot; *ngIf&#x3D;&#x27;respPressed&#x27;&gt;
+          &lt;app-survey-respondents [surveyId]&#x3D;&#x27;surveyId&#x27;&gt;&lt;/app-survey-respondents&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;modal-footer&quot;&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-secondary&quot; data-dismiss&#x3D;&quot;modal&quot;&gt;Close&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+    
+&lt;div class&#x3D;&quot;modal fade&quot; id&#x3D;&quot;exampleModalLong&quot; tabindex&#x3D;&quot;-1&quot; role&#x3D;&quot;dialog&quot; aria-labelledby&#x3D;&quot;exampleModalLongTitle&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
+  &lt;div class&#x3D;&quot;modal-dialog&quot; role&#x3D;&quot;document&quot;&gt;
+      &lt;div class&#x3D;&quot;modal-content&quot;&gt;
+          &lt;div class&#x3D;&quot;assignSurveyModalHeader modal-header&quot;&gt;
+              &lt;h5 class&#x3D;&quot;modal-title&quot;&gt;Assign&lt;/h5&gt;
+              &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;modal&quot; aria-label&#x3D;&quot;Close&quot;&gt;
+        &lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+      &lt;/button&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;modal-body&quot;&gt;
+
+
+&lt;table id&#x3D;&quot;manage-users-table&quot; class&#x3D;&quot;tableUsers table table-striped&quot;&gt;
+&lt;thead&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Cohort&lt;/th&gt;
+    &lt;th&gt;Status&lt;/th&gt;
+    &lt;th&gt;User&lt;/th&gt;
+  &lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr class&#x3D;&quot;rev-table-row&quot;&gt;
+    &lt;td&gt;
+      &lt;div class&#x3D;&quot;dropdown userDropdown&quot;&gt;&lt;button type&#x3D;&quot;button&quot; id&#x3D;&quot;dropdownMenu2&quot; data-toggle&#x3D;&quot;dropdown&quot; aria-haspopup&#x3D;&quot;true&quot; aria-expanded&#x3D;&quot;false&quot; class&#x3D;&quot;btn userDropdownBtn dropdown-toggle btn btn-secondary&quot; (click) &#x3D; &#x27;getCohort()&#x27;&gt;By Cohort&lt;/button&gt;
+        &lt;div class&#x3D;&quot;dropdown-menu&quot; id&#x3D;&quot;userDropdownWidth&quot; aria-labelledby&#x3D;&quot;dropdownMenu2&quot;&gt;
+            &lt;p *ngFor &#x3D; &quot;let temp of cohorts; index as i&quot;&gt;&lt;input [id]&#x3D;&quot;temp.cohortName&quot; class&#x3D;&quot;userDropInput&quot; type&#x3D;&quot;checkbox&quot; [(ngModel)] &#x3D;&#x27;cohortCheckList[i]&#x27;&gt;{{temp.cohortName}}&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/td&gt;
+    &lt;td&gt;   
+        &lt;div class&#x3D;&quot;dropdown userDropdown&quot;&gt;&lt;button type&#x3D;&quot;button&quot; id&#x3D;&quot;dropdownMenu2&quot; data-toggle&#x3D;&quot;dropdown&quot; aria-haspopup&#x3D;&quot;true&quot; aria-expanded&#x3D;&quot;false&quot; class&#x3D;&quot;btn userDropdownBtn dropdown-toggle btn btn-secondary&quot;&gt;By Status&lt;/button&gt;
+          &lt;div class&#x3D;&quot;dropdown-menu&quot; id&#x3D;&quot;userDropdownWidth&quot; aria-labelledby&#x3D;&quot;dropdownMenu2&quot;&gt;
+              &lt;p&gt;&lt;input id&#x3D;&quot;Training&quot; class&#x3D;&quot;userDropInput&quot; type&#x3D;&quot;checkbox&quot; [(ngModel)] &#x3D;&#x27;statusCheckList[0]&#x27;&gt;Training&lt;/p&gt; &lt;!--1-3--&gt;
+              &lt;p&gt;&lt;input id&#x3D;&quot;NonVirtualStaging&quot; class&#x3D;&quot;userDropInput&quot; type&#x3D;&quot;checkbox&quot; [(ngModel)] &#x3D;&#x27;statusCheckList[1]&#x27;&gt;NonVirtual Staging&lt;/p&gt; &lt;!--4-10--&gt;
+              &lt;p&gt;&lt;input id&#x3D;&quot;VirtualStaging&quot; class&#x3D;&quot;userDropInput&quot; type&#x3D;&quot;checkbox&quot; [(ngModel)] &#x3D;&#x27;statusCheckList[2]&#x27;&gt;Virtual Staging&lt;/p&gt; &lt;!--11-17--&gt;
+              &lt;p&gt;&lt;input id&#x3D;&quot;AllStaging&quot; class&#x3D;&quot;userDropInput&quot; type&#x3D;&quot;checkbox&quot; [(ngModel)] &#x3D;&#x27;statusCheckList[3]&#x27;&gt;All Staging&lt;/p&gt; &lt;!--4-17--&gt;
+          &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+        &lt;div class&#x3D;&quot;dropdown userDropdown&quot;&gt;&lt;button type&#x3D;&quot;button&quot; id&#x3D;&quot;dropdownMenu3&quot; data-toggle&#x3D;&quot;dropdown&quot; aria-haspopup&#x3D;&quot;true&quot; aria-expanded&#x3D;&quot;false&quot; class&#x3D;&quot;btn userDropdownBtn dropdown-toggle btn btn-secondary&quot;&gt;By User&lt;/button&gt;
+          &lt;div class&#x3D;&quot;dropdown-menu&quot; id&#x3D;&quot;userDropdownWidth&quot; aria-labelledby&#x3D;&quot;dropdownMenu3&quot;&gt;
+            &lt;p *ngFor &#x3D; &quot;let temp of users; index as i&quot;&gt;&lt;input [id]&#x3D;&quot;temp.email&quot; class&#x3D;&quot;userDropInput&quot; type&#x3D;&quot;checkbox&quot; [(ngModel)] &#x3D;&#x27;userCheckList[i]&#x27;&gt;{{temp.email}}&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+    &lt;div *ngIf &#x3D; &#x27;shownEmailList&amp;&amp;shownEmailList.length&#x27;&gt;
+      &lt;h5&gt;Successfully send to:&lt;/h5&gt;&lt;br&gt; &lt;div *ngFor &#x3D; &quot;let temp of shownEmailList&quot;&gt;{{temp}}&lt;/div&gt;
+      &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;assignSurveyBtn btn btn-secondary&quot; (click)&#x3D; reload()&gt;Exit&lt;/button&gt;
+    &lt;/div&gt;
+    
+      &lt;div class&#x3D;&quot;buttonDiv&quot; *ngIf &#x3D; &#x27;!shownEmailList.length&#x27;&gt;&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;assignSurveyBtn btn btn-secondary&quot; (click)&#x3D; assignSurvey()&gt;Submit&lt;/button&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./survey-list.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">table {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 50px !important;
+    color: #000000;
+    height: 200px;
+}
+
+tbody {
+    padding: 15px;
+}
+
+th,
+td {
+    text-align: center;
+}
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2
+}
+
+th {
+    background-color: #f3a55d;
+    color: black;
+}
+
+tr:hover {
+    box-shadow: inset 0px 0px 15px 5px #f3a55d;
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+table th {
+    padding: 15px;
+}
+
+#main-content-container {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-content {
+    min-height: 300px;
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: .3rem;
+    outline: 0;
+}
+
+.modal-dialog {
+    max-width: 70%;
+    margin: 2em auto;
+}
+
+.modal.show .modal-dialog {
+    transform: none;
+}
+
+.table td,
+.table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.assignSurveyBtn {
+    color: black;
+    border-radius: 10px;
+    background-color: #f3a55d;
+    font-weight: bold;
+    height: 40px;
+    width: 100%;
+    border: none;
+}
+
+.buttonDiv {
+    float: right;
+}
+
+
+
+/* #box-shadow {
+    box-shadow:  5px 10px 18px #888888;  no shadows - David
+  } */
+
+.form-control {
+    width: 15%;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    /* text-align: center; */
+    left: 6px;
+    position: relative;
+}
+
+.panel-body,
+th,
+h4 {
+    background-color: #f3a55d;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.form-control[_ngcontent-c1] {
+    width: 82%;
+    margin-bottom: 10px;
+    right: 34px;
+    position: relative;
+    top: 12px;
+}
+
+b,
+strong {
+    font-weight: bolder;
+    position: relative;
+    top: 23px;
+    left: 25px;
+}
+
+#searchbar {
+    width: 50%;
+    margin-bottom: 10px;
+    right: 70px;
+    position: relative;
+    top: 12px;
+}
+
+.col-md-2 {
+    flex: 41 0 16.666667%;
+    max-width: 33.666667%;
+    right: 70px;
+    position: relative;
+}
+
+b,
+strong {
+    font-weight: bolder;
+    position: relative;
+    top: 23px;
+    left: -15px;
+}
+
+.col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+    position: relative;
+    left: -15px;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><app-navbar> </app-navbar><div id="main-content-container">     <div id="manage-users-container">      <div class=\'panel-body\'>          <div class=\'row\'>            <div class=\'col-md-3\'><b>Search:</b></div>            <div class=\'col-md-2\' id=\'search-container\'>             <input id="searchbar" class="form-control" type="text" [(ngModel)]=\'listFilter\' placeholder="Search">            </div>          </div>        </div>          <table id="manage-users-table" class="tableUsers table table-striped" id="box-shadow">            <thead class="rev-background-color">                <tr>                    <th>Title</th>                    <th>Description</th>                    <th>Date Created</th>                    <th>Analytics</th>                    <th>Respondents</th>                </tr>            </thead>            <tbody>                <tr class="rev-table-row" *ngFor=\'let temp of filteredListOfSurvey; index as i\' (click) = \'getUser(temp.surveyId)\'>                    <td data-toggle="modal" data-target="#exampleModalLong">{{temp.title}}</td>                    <td data-toggle="modal" data-target="#exampleModalLong">{{temp.description}}</td>                    <td>{{temp.dateCreated | showTimestamp}}</td>                    <td><button type="button" class="assignSurveyBtn btn btn-secondary" (click)=\'getGraph(temp.surveyId,temp.title)\' data-toggle="modal" data-target="#chartModal">Data</button></td>                    <td><button type="button" class="assignSurveyBtn btn btn-secondary" (click)=\'getRespondents(temp.surveyId)\' data-toggle="modal" data-target="#AllResponds">Status</button></td>                </tr>            </tbody>        </table>    </div></div>    <div class="container">      <!-- Trigger the modal with a button -->      <!-- Modal -->      <div class="modal fade" id="chartModal" role="dialog" *ngIf=\'qList&&qList.length&&ArrayOfResponseAnswerList\'>        <div class="modal-dialog">          <!-- Modal content-->          <div class="modal-content">            <div class="modal-header">               <h3>{{"Analytics: " + surveyTitle}}</h3>              <button type="button" class="close" data-dismiss="modal">&times;</button>            </div>            <div class="modal-body" *ngFor=\'let temp of qList; index as i;\'>              <app-survey-data [question]=\'temp.question\' [type]=\'temp.typeId\' [arrOfAns]=\'ArrayOfResponseAnswerList[i]\' [arrOfCountedResponse]=\'arrOfCounts[i]\'></app-survey-data>            </div>            </div>          </div>        </div>      </div>    <!-- end of graph--><div class="modal fade" id="AllResponds" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">  <div class="modal-dialog" role="document">    <div class="modal-content">      <div class="modal-header">        <h5 class="modal-title" id="exampleModalLabel">Respondents</h5>        <button type="button" class="close" data-dismiss="modal" aria-label="Close">          <span aria-hidden="true">&times;</span>        </button>      </div>      <div class="modal-body" id="respondents" *ngIf=\'respPressed\'>          <app-survey-respondents [surveyId]=\'surveyId\'></app-survey-respondents>      </div>      <div class="modal-footer">        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>      </div>    </div>  </div></div>    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">  <div class="modal-dialog" role="document">      <div class="modal-content">          <div class="assignSurveyModalHeader modal-header">              <h5 class="modal-title">Assign</h5>              <button type="button" class="close" data-dismiss="modal" aria-label="Close">        <span aria-hidden="true">&times;</span>      </button>          </div>          <div class="modal-body"><table id="manage-users-table" class="tableUsers table table-striped"><thead>  <tr>    <th>Cohort</th>    <th>Status</th>    <th>User</th>  </tr></thead><tbody>  <tr class="rev-table-row">    <td>      <div class="dropdown userDropdown"><button type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn userDropdownBtn dropdown-toggle btn btn-secondary" (click) = \'getCohort()\'>By Cohort</button>        <div class="dropdown-menu" id="userDropdownWidth" aria-labelledby="dropdownMenu2">            <p *ngFor = "let temp of cohorts; index as i"><input [id]="temp.cohortName" class="userDropInput" type="checkbox" [(ngModel)] =\'cohortCheckList[i]\'>{{temp.cohortName}}</p>        </div>    </div>    </td>    <td>           <div class="dropdown userDropdown"><button type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn userDropdownBtn dropdown-toggle btn btn-secondary">By Status</button>          <div class="dropdown-menu" id="userDropdownWidth" aria-labelledby="dropdownMenu2">              <p><input id="Training" class="userDropInput" type="checkbox" [(ngModel)] =\'statusCheckList[0]\'>Training</p> <!--1-3-->              <p><input id="NonVirtualStaging" class="userDropInput" type="checkbox" [(ngModel)] =\'statusCheckList[1]\'>NonVirtual Staging</p> <!--4-10-->              <p><input id="VirtualStaging" class="userDropInput" type="checkbox" [(ngModel)] =\'statusCheckList[2]\'>Virtual Staging</p> <!--11-17-->              <p><input id="AllStaging" class="userDropInput" type="checkbox" [(ngModel)] =\'statusCheckList[3]\'>All Staging</p> <!--4-17-->          </div>      </div>    </td>    <td>        <div class="dropdown userDropdown"><button type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn userDropdownBtn dropdown-toggle btn btn-secondary">By User</button>          <div class="dropdown-menu" id="userDropdownWidth" aria-labelledby="dropdownMenu3">            <p *ngFor = "let temp of users; index as i"><input [id]="temp.email" class="userDropInput" type="checkbox" [(ngModel)] =\'userCheckList[i]\'>{{temp.email}}</p>          </div>      </div>    </td>  </tr></tbody></table>    <div *ngIf = \'shownEmailList&&shownEmailList.length\'>      <h5>Successfully send to:</h5><br> <div *ngFor = "let temp of shownEmailList">{{temp}}</div>      <button type="button" class="assignSurveyBtn btn btn-secondary" (click)= reload()>Exit</button>    </div>          <div class="buttonDiv" *ngIf = \'!shownEmailList.length\'><button type="button" class="assignSurveyBtn btn btn-secondary" (click)= assignSurvey()>Submit</button></div>        </div>    </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AnswerData1Component', 'selector': 'app-answer-data1'},{'name': 'AnswerData2Component', 'selector': 'app-answer-data2'},{'name': 'AnswerData3Component', 'selector': 'app-answer-data3'},{'name': 'AnswerData4Component', 'selector': 'app-answer-data4'},{'name': 'AnswerData5Component', 'selector': 'app-answer-data5'},{'name': 'AnswerData6Component', 'selector': 'app-answer-data6'},{'name': 'AnswerData7Component', 'selector': 'app-answer-data7'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AssignSurveyComponent', 'selector': 'app-assign-survey'},{'name': 'AssociateFeedbackFormComponent', 'selector': 'app-associate-feedback-form'},{'name': 'AuthLoadingComponent', 'selector': 'app-auth-loading'},{'name': 'AutodataComponent', 'selector': 'app-autodata'},{'name': 'CohortModalComponent', 'selector': 'app-cohort-modal'},{'name': 'DaynoticeGraphComponent', 'selector': 'app-daynotice-graph'},{'name': 'DaynoticeReportComponent', 'selector': 'app-daynotice-report'},{'name': 'FakeServiceComponent', 'selector': 'app-fake-service'},{'name': 'FeedbackReportComponent', 'selector': 'app-feedback-report'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'InterviewComponent', 'selector': 'app-interview'},{'name': 'InterviewComponent', 'selector': 'app-interview'},{'name': 'InterviewListComponent', 'selector': 'app-interview-list'},{'name': 'InterviewListForCurUserComponent', 'selector': 'app-interview-list-for-cur-user'},{'name': 'JobdescReportComponent', 'selector': 'app-jobdesc-report'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'ManageComponent', 'selector': 'app-manage'},{'name': 'MngrSubAssociatesComponent', 'selector': 'app-mngr-sub-associates'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'NewInterviewComponent', 'selector': 'app-new-interview'},{'name': 'ProfileInfoComponent', 'selector': 'app-profile-info'},{'name': 'RegistrationComponent', 'selector': 'app-registration'},{'name': 'ReportsComponent', 'selector': 'app-reports'},{'name': 'StagingMgrFeedbackComponent', 'selector': 'app-staging-mgr-feedback'},{'name': 'SubMan2CohortComponent', 'selector': 'app-sub-man2-cohort'},{'name': 'SurveyComponent', 'selector': 'app-survey'},{'name': 'SurveyCreatorComponent', 'selector': 'app-survey-creator'},{'name': 'SurveyDataComponent', 'selector': 'app-survey-data'},{'name': 'SurveyGridComponent', 'selector': 'app-survey-grid'},{'name': 'SurveyListComponent', 'selector': 'app-survey-list'},{'name': 'SurveyRespondentsComponent', 'selector': 'app-survey-respondents'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'SurveyListComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'SurveyListComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
