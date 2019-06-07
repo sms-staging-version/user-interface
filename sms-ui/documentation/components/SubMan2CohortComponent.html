@@ -1,0 +1,1707 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sms-ui documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">sms-ui documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>SubMan2CohortComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/sub-man2-cohort/sub-man2-cohort.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-sub-man2-cohort</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./sub-man2-cohort.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./sub-man2-cohort.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#_listFilter">_listFilter</a>
+                            </li>
+                            <li>
+                                <a href="#addressList">addressList</a>
+                            </li>
+                            <li>
+                                <a href="#allCohorts">allCohorts</a>
+                            </li>
+                            <li>
+                                <a href="#closeResult">closeResult</a>
+                            </li>
+                            <li>
+                                <a href="#exportedCohort">exportedCohort</a>
+                            </li>
+                            <li>
+                                <a href="#filteredCohort">filteredCohort</a>
+                            </li>
+                            <li>
+                                <a href="#modalShow">modalShow</a>
+                            </li>
+                            <li>
+                                <a href="#ngswitchCase">ngswitchCase</a>
+                            </li>
+                            <li>
+                                <a href="#trainer">trainer</a>
+                            </li>
+                            <li>
+                                <a href="#wholeName">wholeName</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addCohort">addCohort</a>
+                            </li>
+                            <li>
+                                <a href="#close">close</a>
+                            </li>
+                            <li>
+                                <a href="#getAddresses">getAddresses</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getDismissReason">getDismissReason</a>
+                            </li>
+                            <li>
+                                <a href="#getTrainerById">getTrainerById</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#open">open</a>
+                            </li>
+                            <li>
+                                <a href="#openModal">openModal</a>
+                            </li>
+                            <li>
+                                <a href="#performFilter">performFilter</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#listFilter">listFilter</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(_fakeService: <a href="../components/FakeServiceComponent.html">FakeServiceComponent</a>, http: <a href="https://angular.io/api/common/http/HttpClient" target="_blank">HttpClient</a>, modalService: NgbModal)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/sub-man2-cohort/sub-man2-cohort.component.ts:47</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>_fakeService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../components/FakeServiceComponent.html" target="_self" >FakeServiceComponent</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>http</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/http/HttpClient" target="_blank" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>modalService</td>
+                                                  
+                                                        <td>
+                                                                    <code>NgbModal</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addCohort"></a>
+                    <span class="name">
+                        <b>
+                            addCohort
+                        </b>
+                        <a href="#addCohort"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addCohort(cohort: <a href="https://angular.io/api/forms/NgForm" target="_blank">NgForm</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="97"
+                            class="link-to-prism">src/app/sub-man2-cohort/sub-man2-cohort.component.ts:97</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>cohort</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/forms/NgForm" target="_blank" >NgForm</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="close"></a>
+                    <span class="name">
+                        <b>
+                            close
+                        </b>
+                        <a href="#close"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>close()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="84"
+                            class="link-to-prism">src/app/sub-man2-cohort/sub-man2-cohort.component.ts:84</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAddresses"></a>
+                    <span class="name">
+                        <b>
+                            getAddresses
+                        </b>
+                        <a href="#getAddresses"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getAddresses()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="87"
+                            class="link-to-prism">src/app/sub-man2-cohort/sub-man2-cohort.component.ts:87</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDismissReason"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            getDismissReason
+                        </b>
+                        <a href="#getDismissReason"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getDismissReason(reason: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="74"
+                            class="link-to-prism">src/app/sub-man2-cohort/sub-man2-cohort.component.ts:74</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>reason</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getTrainerById"></a>
+                    <span class="name">
+                        <b>
+                            getTrainerById
+                        </b>
+                        <a href="#getTrainerById"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getTrainerById(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="92"
+                            class="link-to-prism">src/app/sub-man2-cohort/sub-man2-cohort.component.ts:92</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="57"
+                            class="link-to-prism">src/app/sub-man2-cohort/sub-man2-cohort.component.ts:57</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="open"></a>
+                    <span class="name">
+                        <b>
+                            open
+                        </b>
+                        <a href="#open"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>open(content)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="64"
+                            class="link-to-prism">src/app/sub-man2-cohort/sub-man2-cohort.component.ts:64</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>content</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openModal"></a>
+                    <span class="name">
+                        <b>
+                            openModal
+                        </b>
+                        <a href="#openModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openModal(name: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, content)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="28"
+                            class="link-to-prism">src/app/sub-man2-cohort/sub-man2-cohort.component.ts:28</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>name</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>content</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="performFilter"></a>
+                    <span class="name">
+                        <b>
+                            performFilter
+                        </b>
+                        <a href="#performFilter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>performFilter(filterBy: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="52"
+                            class="link-to-prism">src/app/sub-man2-cohort/sub-man2-cohort.component.ts:52</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>filterBy</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Cohort.html" target="_self" >Cohort[]</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_listFilter"></a>
+                        <span class="name">
+                            <b>
+                            _listFilter</b>
+                            <a href="#_listFilter"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/sub-man2-cohort/sub-man2-cohort.component.ts:17</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="addressList"></a>
+                        <span class="name">
+                            <b>
+                            addressList</b>
+                            <a href="#addressList"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/sub-man2-cohort/sub-man2-cohort.component.ts:20</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="allCohorts"></a>
+                        <span class="name">
+                            <b>
+                            allCohorts</b>
+                            <a href="#allCohorts"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Cohort.html" target="_self" >Cohort[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/sub-man2-cohort/sub-man2-cohort.component.ts:46</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="closeResult"></a>
+                        <span class="name">
+                            <b>
+                            closeResult</b>
+                            <a href="#closeResult"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/sub-man2-cohort/sub-man2-cohort.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="exportedCohort"></a>
+                        <span class="name">
+                            <b>
+                            exportedCohort</b>
+                            <a href="#exportedCohort"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Cohort.html" target="_self" >Cohort</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/sub-man2-cohort/sub-man2-cohort.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="filteredCohort"></a>
+                        <span class="name">
+                            <b>
+                            filteredCohort</b>
+                            <a href="#filteredCohort"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/sub-man2-cohort/sub-man2-cohort.component.ts:47</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="modalShow"></a>
+                        <span class="name">
+                            <b>
+                            modalShow</b>
+                            <a href="#modalShow"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/sub-man2-cohort/sub-man2-cohort.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ngswitchCase"></a>
+                        <span class="name">
+                            <b>
+                            ngswitchCase</b>
+                            <a href="#ngswitchCase"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/sub-man2-cohort/sub-man2-cohort.component.ts:19</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="trainer"></a>
+                        <span class="name">
+                            <b>
+                            trainer</b>
+                            <a href="#trainer"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/sub-man2-cohort/sub-man2-cohort.component.ts:21</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="wholeName"></a>
+                        <span class="name">
+                            <b>
+                            wholeName</b>
+                            <a href="#wholeName"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/sub-man2-cohort/sub-man2-cohort.component.ts:45</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="listFilter"></a>
+                        <span class="name"><b>listFilter</b><a href="#listFilter"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>listFilter()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/sub-man2-cohort/sub-man2-cohort.component.ts:22</a></div>
+                                </td>
+                            </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>set</b><code>listFilter(temp: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/sub-man2-cohort/sub-man2-cohort.component.ts:41</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                        <td>Type</td>
+                                                    <td>Optional</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                            <td>temp</td>
+                                                    
+                                                            <td>
+                                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                            </td>
+                                                    
+                                                        <td>
+                                                                No
+                                                        </td>
+                                                        
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { FakeServiceComponent } from &#x27;../fake-service/fake-service.component&#x27;;
+import { Cohort } from &#x27;../sms-client/dto/Cohort&#x27;;
+import { HttpClient } from &#x27;@angular/common/http&#x27;;
+import { NgbModal, ModalDismissReasons } from &#x27;@ng-bootstrap/ng-bootstrap&#x27;;
+import { NgForm } from &#x27;@angular/forms&#x27;;
+import { Observable } from &#x27;rxjs&#x27;;
+import { SmsInterceptor } from &#x27;../sms-client/interceptors/sms.interceptor&#x27;;
+
+
+@Component({
+  selector: &#x27;app-sub-man2-cohort&#x27;,
+  templateUrl: &#x27;./sub-man2-cohort.component.html&#x27;,
+  styleUrls: [&#x27;./sub-man2-cohort.component.scss&#x27;]
+})
+export class SubMan2CohortComponent implements OnInit {
+  _listFilter &#x3D; &#x27;&#x27;;
+  closeResult: string;
+  ngswitchCase &#x3D; &#x27;&#x27;;
+  addressList;
+  trainer;
+  get listFilter(): string {
+    return this._listFilter;
+  }
+  modalShow &#x3D; false
+  exportedCohort: Cohort;
+
+  openModal(name: string, content) {
+    for (let temp of this.filteredCohort) {
+      if (temp[&#x27;cohortName&#x27;] &#x3D;&#x3D; name) {
+        this.exportedCohort &#x3D; temp;
+        this.modalShow &#x3D; true;
+        this.open(content);
+        this.ngswitchCase &#x3D; &#x27;editAssociates&#x27;
+      }
+    }
+  }
+
+
+
+  set listFilter(temp: string) {
+    this._listFilter &#x3D; temp;
+    this.filteredCohort &#x3D; this._listFilter ? this.performFilter(this._listFilter) : this.allCohorts;
+  }
+  wholeName &#x3D; &#x27;&#x27;;
+  allCohorts: Cohort[] &#x3D; [];
+  filteredCohort;
+
+  constructor(private _fakeService: FakeServiceComponent, private http: HttpClient, private modalService: NgbModal) {
+    this.allCohorts &#x3D; this.filteredCohort;
+  }
+  performFilter(filterBy: string): Cohort[] {
+    filterBy &#x3D; filterBy.toLocaleLowerCase();
+    return this.allCohorts.filter((metaEmployee: Cohort) &#x3D;&gt;
+      metaEmployee[&#x27;cohortName&#x27;].toLocaleLowerCase().indexOf(filterBy) !&#x3D;&#x3D; -1);
+  }
+  ngOnInit() {
+    this.http.get(&#x27;cohorts&#x27;).toPromise().then(data &#x3D;&gt; {
+      this.filteredCohort &#x3D; data;
+      this.allCohorts &#x3D; this.filteredCohort;
+    })
+    this.getAddresses();
+  }
+  open(content) {
+    this.ngswitchCase &#x3D; &#x27;addCohort&#x27;
+    this.modalService.open(content, { ariaLabelledBy: &#x27;modal-basic-title&#x27; }).result.then((result) &#x3D;&gt; {
+      this.closeResult &#x3D; &#x60;Closed with: ${result}&#x60;;
+    }, (reason) &#x3D;&gt; {
+      this.closeResult &#x3D; &#x60;Dismissed ${this.getDismissReason(reason)}&#x60;;
+      this.ngOnInit();
+    });
+  }
+
+  private getDismissReason(reason: any): string {
+    if (reason &#x3D;&#x3D;&#x3D; ModalDismissReasons.ESC) {
+      return &#x27;by pressing ESC&#x27;;
+    } else if (reason &#x3D;&#x3D;&#x3D; ModalDismissReasons.BACKDROP_CLICK) {
+      return &#x27;by clicking on a backdrop&#x27;;
+    } else {
+      return &#x60;with: ${reason}&#x60;;
+    }
+  }
+
+  close() {
+    this.modalService.dismissAll();
+  }
+  getAddresses() {
+    this.http.get(&#x27;user-service/addresses/is-training-location/true&#x27;).toPromise().then(data &#x3D;&gt; {
+      this.addressList &#x3D; data;
+    })
+  }
+  getTrainerById(id: number) {
+    this.http.get(&#x60;users/${id}&#x60;).toPromise().then(data &#x3D;&gt; {
+      return data;
+    })
+  }
+  addCohort(cohort: NgForm) {
+    console.log(&#x27;in the submit&#x27;)
+    console.log(cohort.value[&#x27;trainer&#x27;])
+    for (let temp of this.addressList) {
+      if (temp.addressId &#x3D;&#x3D; cohort.value[&#x27;location&#x27;]) {
+        var location &#x3D; temp;
+      }
+    }
+    let body &#x3D; {
+      &#x27;cohortId&#x27;: 0,
+      &#x27;cohortName&#x27;: cohort.value[&#x27;dp&#x27;],
+      &#x27;cohortDescription&#x27;: cohort.value[&#x27;description&#x27;],
+      &#x27;cohortToken&#x27;: &#x27;&#x27;,
+      &#x27;address&#x27;: location,
+      &#x27;startDate&#x27;: cohort.value[&#x27;startDate&#x27;],
+      &#x27;endDate&#x27;: cohort.value[&#x27;endDate&#x27;],
+      &#x27;users&#x27;: null,
+      &#x27;trainer&#x27;: {}
+    }
+    this.http.post(&#x60;cohorts/cohort/trainer/${cohort.value[&#x27;trainer&#x27;]}&#x60;, body).toPromise().then(data &#x3D;&gt; {
+    })
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;body&gt;
+    &lt;div id&#x3D;&quot;InternalAssociates&quot;&gt;
+
+        &lt;div id&#x3D;&quot;associatesHeader&quot;&gt;
+            &lt;!-- [(ngModel)]&#x3D;&#x27;listFilter&#x27; --&gt;
+            &lt;div style&#x3D;&quot;display: inline; margin-left: -320px; &quot;&gt;
+                &lt;input type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Filter By&quot; [(ngModel)]&#x3D;&#x27;listFilter&#x27; id&#x3D;&quot;filterCohortBy&quot; /&gt;
+            &lt;/div&gt;
+
+            &lt;span style&#x3D;&quot;display: inline;&quot;&gt; Cohorts&lt;/span&gt;
+
+            &lt;!-- &lt;/div&gt; --&gt;
+            &lt;!-- &lt;div id&#x3D;&quot;addbutton&quot;&gt; --&gt;
+            &lt;ng-template #content let-modal&gt;
+                &lt;div [ngSwitch]&#x3D;&quot;ngswitchCase&quot;&gt;
+                    &lt;div class&#x3D;&quot;modal-header&quot;&gt;
+                        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;close&quot; aria-label&#x3D;&quot;Close&quot; (click)&#x3D;&quot;modal.dismiss(&#x27;Cross click&#x27;)&quot;&gt;
+                            &lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;modal-body&quot; *ngSwitchCase&#x3D;&quot;&#x27;addCohort&#x27;&quot;&gt;
+                        &lt;h4 class&#x3D;&quot;modal-title&quot; id&#x3D;&quot;modal-basic-title&quot;&gt;Create Cohort&lt;/h4&gt;
+                        &lt;form #addCohortForm&#x3D;&#x27;ngForm&#x27; (ngSubmit)&#x3D;&#x27;addCohort(addCohortForm)&#x27;&gt;
+                            &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                                &lt;label for&#x3D;&quot;Name&quot;&gt;Name&lt;/label&gt;
+                                &lt;div class&#x3D;&quot;input-group&quot;&gt;
+                                    &lt;input id&#x3D;&quot;Name&quot; ngModel class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;Cohort Name&quot; name&#x3D;&quot;dp&quot;&gt;
+                                    &lt;select ngModel name&#x3D;&#x27;location&#x27;&gt;
+                                            &lt;option value&#x3D;&quot;&quot; disabled selected&gt;Location&lt;/option&gt;
+                                            &lt;option *ngFor&#x3D;&#x27;let temp of addressList&#x27; [value]&#x3D;&quot;temp.addressId&quot;&gt;{{temp.city}}, {{temp.state}}&lt;/option&gt;
+                                        &lt;/select&gt;
+                                &lt;/div&gt;
+                                &lt;br&gt;
+                                &lt;textarea rows&#x3D;&quot;4&quot; cols&#x3D;&quot;50&quot; name&#x3D;&quot;description&quot; ngModel placeholder&#x3D;&#x27;Description&#x27; form&#x3D;&quot;cohortform&quot;&gt;&lt;/textarea&gt;
+                                &lt;br&gt;
+                                &lt;h4&gt;Start Date&lt;/h4&gt;
+                                &lt;input name&#x3D;&#x27;startDate&#x27; ngModel type&#x3D;&quot;date&quot; min&#x3D;&quot;2018-01-01&quot; max&#x3D;&quot;2020-12-31&quot;&gt;
+                                &lt;br&gt;
+                                &lt;h4&gt;End Date&lt;/h4&gt;
+                                &lt;input name&#x3D;&#x27;endDate&#x27; ngModel type&#x3D;&quot;date&quot; min&#x3D;&quot;2018-01-01&quot; max&#x3D;&quot;2020-12-31&quot;&gt;
+                                &lt;br&gt;
+                                &lt;br&gt;
+                                &lt;select name&#x3D;&#x27;trainer&#x27; ngModel&gt;
+                                    &lt;option value&#x3D;&quot;&quot; disabled selected&gt;Trainer&lt;/option&gt;
+                                    &lt;option value&#x3D;&quot;1&quot;&gt;Trevin Chester&lt;/option&gt;
+                                    &lt;option value&#x3D;&quot;1&quot;&gt;Blake Kruppa&lt;/option&gt;
+                                    &lt;option value&#x3D;&quot;1&quot;&gt;IDK&lt;/option&gt;
+                                &lt;/select&gt;
+                                &lt;br&gt;
+                                &lt;br&gt;&lt;button class&#x3D;&quot;abc2&quot; type&#x3D;&#x27;submit&#x27;&gt;Submit&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/form&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;modal-body2&quot; *ngSwitchCase&#x3D;&quot;&#x27;editAssociates&#x27;&quot;&gt;
+                        &lt;div *ngIf&#x3D;&#x27;modalShow&#x27;&gt;
+
+                            &lt;app-cohort-modal [cohort]&#x3D;&#x27;exportedCohort&#x27;&gt;&lt;/app-cohort-modal&gt;
+
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div *ngSwitchDefault&gt;peter rabbit&lt;/div&gt;
+                    &lt;div class&#x3D;&quot;modal-footer&quot;&gt;
+
+                        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline-dark&quot; (click)&#x3D;&quot;close()&quot;&gt;Save&lt;/button&gt;
+
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/ng-template&gt;
+
+            &lt;button class&#x3D;&quot;pure-button&quot; (click)&#x3D;&#x27;open(content)&#x27;&gt;
+               New Cohort
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&#x27;table-container&#x27;&gt;
+        &lt;table id&#x3D;&quot;associateTable&quot;&gt;
+            &lt;tr&gt;
+                &lt;th class&#x3D;&quot;spreadColumnChrt&quot;&gt;Name&lt;/th&gt;
+                &lt;th class&#x3D;&quot;spreadColumnChrt&quot;&gt;Location&lt;/th&gt;
+
+                &lt;th class&#x3D;&quot;spreadColumnChrt&quot;&gt;Start Date&lt;/th&gt;
+                &lt;th class&#x3D;&quot;spreadColumnChrt&quot;&gt;End Date&lt;/th&gt;
+                &lt;th class&#x3D;&quot;spreadColumnChrt&quot;&gt;Trainer&lt;/th&gt;
+                &lt;th class&#x3D;&quot;spreadColumnChrt&quot;&gt;Email&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr *ngFor&#x3D;&#x27;let temp of filteredCohort&#x27;&gt;
+                &lt;button id&#x3D;&quot;ateam&quot; (click)&#x3D;&quot;openModal(temp[&#x27;cohortName&#x27;], content)&quot;&gt;
+                    &lt;td&gt;{{temp[&#x27;cohortName&#x27;]}}&lt;/td&gt;
+                &lt;/button&gt;
+                &lt;td&gt;{{temp.address.city}},{{temp.address.state}}&lt;/td&gt;
+
+                &lt;td&gt; {{temp.startDate}} &lt;/td&gt;
+                &lt;td&gt; {{temp.endDate}} &lt;/td&gt;
+                &lt;td&gt; {{temp.trainer.firstName}} {{temp.trainer.lastName}} &lt;/td&gt;
+                &lt;td&gt; {{temp.trainer.email}}&lt;/td&gt;
+            &lt;/tr&gt;
+
+        &lt;/table&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/body&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./sub-man2-cohort.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">$revature-orange-light: #f3a55d;
+$revature-orange: #f26925;
+$drew-orange: #f3a55d;
+$rounded-amount: 0.5em;
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin rounded-top {
+    border-top-left-radius: $rounded-amount;
+    border-top-right-radius: $rounded-amount;
+}
+table {
+    width: 100%;
+     margin-bottom: 1rem;
+     padding: 50px !important;
+     color: #000000;
+     height: 200px;
+  }
+  tbody {
+   padding: 15px;
+  }
+  th, td {
+   text-align: center;
+  
+  }
+//   tr:nth-child(odd){background-color: #f2f2f2}
+  th {
+   background-color: #f3a55d;
+   color: black;
+  }
+//   tr:hover {
+//     box-shadow: inset 0px 0px 15px 5px #f3a55d;
+//       cursor: pointer;
+//     }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+   }
+   table th
+   {
+   padding:15px;
+   }
+
+//   tr:hover {
+//     box-shadow: inset 0px 0px 15px 5px #f3a55d;
+//       cursor: pointer;
+//     }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+   }
+   table th
+   {
+   padding:15px;
+   }
+
+#associatesHeader {
+    background: $revature-orange-light;
+    margin: auto;
+    border-style: outset;
+    border-width: 2px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-color: $revature-orange-light;
+}
+
+#InternalAssociates {
+    margin: auto;
+    max-width: 750px;
+}
+
+body {
+    text-align: center;
+}
+
+// #associateTable {
+//     margin-top: 1px;
+//     @include rounded-top();
+//     thead {
+//         @include rounded-top();
+//         tr {
+//             @include rounded-top();
+//             th {
+//                 border: none;
+//             }
+//         }
+//     }
+// }
+
+#ateam {
+    color: black;
+    border-radius: 30px;
+    background-color: white;
+    font-weight: bold;
+    height: 40px;
+    width: 100%;
+    border: none;
+}
+
+.spreadColumn {
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.spreadColumnChrt {
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+#filterCohortBy {
+    margin: 2px;
+    background: whitesmoke;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
+.pure-button {
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    //justify-content:space-between;
+    background-color: $revature-orange-light;
+    &amp;:hover {
+        color: gray;
+    }
+}
+
+.modal-body {
+    width: 100%;
+    text-align: left;
+    // height: 10px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-family: Helvetica;
+    border-radius: 10px 10px 0px 0px;
+  }
+.modal-body2{
+    width: 100%;
+    text-align: left;
+    //height: 5px;
+    background-color: white;
+    color: black;
+    padding: 5px;
+
+    text-align: center;
+    font-size: 14px;
+    font-family: Helvetica;
+    border-radius: 20px 20px 10px 10px;
+}
+.abc2 {
+    border-radius: 4px;
+    background-color: #f3a55d;
+    color: black;
+    border: 2px solid white;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><body>    <div id="InternalAssociates">        <div id="associatesHeader">            <!-- [(ngModel)]=\'listFilter\' -->            <div style="display: inline; margin-left: -320px; ">                <input type="text" placeholder="Filter By" [(ngModel)]=\'listFilter\' id="filterCohortBy" />            </div>            <span style="display: inline;"> Cohorts</span>            <!-- </div> -->            <!-- <div id="addbutton"> -->            <ng-template #content let-modal>                <div [ngSwitch]="ngswitchCase">                    <div class="modal-header">                        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss(\'Cross click\')">                            <span aria-hidden="true">&times;</span>                        </button>                    </div>                    <div class="modal-body" *ngSwitchCase="\'addCohort\'">                        <h4 class="modal-title" id="modal-basic-title">Create Cohort</h4>                        <form #addCohortForm=\'ngForm\' (ngSubmit)=\'addCohort(addCohortForm)\'>                            <div class="form-group">                                <label for="Name">Name</label>                                <div class="input-group">                                    <input id="Name" ngModel class="form-control" placeholder="Cohort Name" name="dp">                                    <select ngModel name=\'location\'>                                            <option value="" disabled selected>Location</option>                                            <option *ngFor=\'let temp of addressList\' [value]="temp.addressId">{{temp.city}}, {{temp.state}}</option>                                        </select>                                </div>                                <br>                                <textarea rows="4" cols="50" name="description" ngModel placeholder=\'Description\' form="cohortform"></textarea>                                <br>                                <h4>Start Date</h4>                                <input name=\'startDate\' ngModel type="date" min="2018-01-01" max="2020-12-31">                                <br>                                <h4>End Date</h4>                                <input name=\'endDate\' ngModel type="date" min="2018-01-01" max="2020-12-31">                                <br>                                <br>                                <select name=\'trainer\' ngModel>                                    <option value="" disabled selected>Trainer</option>                                    <option value="1">Trevin Chester</option>                                    <option value="1">Blake Kruppa</option>                                    <option value="1">IDK</option>                                </select>                                <br>                                <br><button class="abc2" type=\'submit\'>Submit</button>                            </div>                        </form>                    </div>                    <div class="modal-body2" *ngSwitchCase="\'editAssociates\'">                        <div *ngIf=\'modalShow\'>                            <app-cohort-modal [cohort]=\'exportedCohort\'></app-cohort-modal>                        </div>                    </div>                    <div *ngSwitchDefault>peter rabbit</div>                    <div class="modal-footer">                        <button type="button" class="btn btn-outline-dark" (click)="close()">Save</button>                    </div>                </div>            </ng-template>            <button class="pure-button" (click)=\'open(content)\'>               New Cohort            </button>        </div>        <div class=\'table-container\'>        <table id="associateTable">            <tr>                <th class="spreadColumnChrt">Name</th>                <th class="spreadColumnChrt">Location</th>                <th class="spreadColumnChrt">Start Date</th>                <th class="spreadColumnChrt">End Date</th>                <th class="spreadColumnChrt">Trainer</th>                <th class="spreadColumnChrt">Email</th>            </tr>            <tr *ngFor=\'let temp of filteredCohort\'>                <button id="ateam" (click)="openModal(temp[\'cohortName\'], content)">                    <td>{{temp[\'cohortName\']}}</td>                </button>                <td>{{temp.address.city}},{{temp.address.state}}</td>                <td> {{temp.startDate}} </td>                <td> {{temp.endDate}} </td>                <td> {{temp.trainer.firstName}} {{temp.trainer.lastName}} </td>                <td> {{temp.trainer.email}}</td>            </tr>        </table>        </div>    </div></body></div>'
+    var COMPONENTS = [{'name': 'AnswerData1Component', 'selector': 'app-answer-data1'},{'name': 'AnswerData2Component', 'selector': 'app-answer-data2'},{'name': 'AnswerData3Component', 'selector': 'app-answer-data3'},{'name': 'AnswerData4Component', 'selector': 'app-answer-data4'},{'name': 'AnswerData5Component', 'selector': 'app-answer-data5'},{'name': 'AnswerData6Component', 'selector': 'app-answer-data6'},{'name': 'AnswerData7Component', 'selector': 'app-answer-data7'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AssignSurveyComponent', 'selector': 'app-assign-survey'},{'name': 'AssociateFeedbackFormComponent', 'selector': 'app-associate-feedback-form'},{'name': 'AuthLoadingComponent', 'selector': 'app-auth-loading'},{'name': 'AutodataComponent', 'selector': 'app-autodata'},{'name': 'CohortModalComponent', 'selector': 'app-cohort-modal'},{'name': 'DaynoticeGraphComponent', 'selector': 'app-daynotice-graph'},{'name': 'DaynoticeReportComponent', 'selector': 'app-daynotice-report'},{'name': 'FakeServiceComponent', 'selector': 'app-fake-service'},{'name': 'FeedbackReportComponent', 'selector': 'app-feedback-report'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'InterviewComponent', 'selector': 'app-interview'},{'name': 'InterviewComponent', 'selector': 'app-interview'},{'name': 'InterviewListComponent', 'selector': 'app-interview-list'},{'name': 'InterviewListForCurUserComponent', 'selector': 'app-interview-list-for-cur-user'},{'name': 'JobdescReportComponent', 'selector': 'app-jobdesc-report'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'ManageComponent', 'selector': 'app-manage'},{'name': 'MngrSubAssociatesComponent', 'selector': 'app-mngr-sub-associates'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'NewInterviewComponent', 'selector': 'app-new-interview'},{'name': 'ProfileInfoComponent', 'selector': 'app-profile-info'},{'name': 'RegistrationComponent', 'selector': 'app-registration'},{'name': 'ReportsComponent', 'selector': 'app-reports'},{'name': 'StagingMgrFeedbackComponent', 'selector': 'app-staging-mgr-feedback'},{'name': 'SubMan2CohortComponent', 'selector': 'app-sub-man2-cohort'},{'name': 'SurveyComponent', 'selector': 'app-survey'},{'name': 'SurveyCreatorComponent', 'selector': 'app-survey-creator'},{'name': 'SurveyDataComponent', 'selector': 'app-survey-data'},{'name': 'SurveyGridComponent', 'selector': 'app-survey-grid'},{'name': 'SurveyListComponent', 'selector': 'app-survey-list'},{'name': 'SurveyRespondentsComponent', 'selector': 'app-survey-respondents'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'SubMan2CohortComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'SubMan2CohortComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

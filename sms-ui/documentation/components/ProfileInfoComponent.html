@@ -1,0 +1,919 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sms-ui documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">sms-ui documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>ProfileInfoComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/profile-info/profile-info.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-profile-info</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./profile-info.component.sass</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./profile-info.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addressList">addressList</a>
+                            </li>
+                            <li>
+                                <a href="#currentAddress">currentAddress</a>
+                            </li>
+                            <li>
+                                <a href="#currentUser">currentUser</a>
+                            </li>
+                            <li>
+                                <a href="#UpdateUser">UpdateUser</a>
+                            </li>
+                            <li>
+                                <a href="#UserPersonalAddress">UserPersonalAddress</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#changeTrainingAddress">changeTrainingAddress</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#returnUserInfo">returnUserInfo</a>
+                            </li>
+                            <li>
+                                <a href="#someMethodToGrabAddressForUserViaUserPKGrabbedFromCognitoCurrentUserSession">someMethodToGrabAddressForUserViaUserPKGrabbedFromCognitoCurrentUserSession</a>
+                            </li>
+                            <li>
+                                <a href="#someMethodToUpdateAddressOrUserInfo">someMethodToUpdateAddressOrUserInfo</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(http: <a href="https://angular.io/api/common/http/HttpClient" target="_blank">HttpClient</a>, nav: <a href="../components/NavbarComponent.html">NavbarComponent</a>, cognitoService: <a href="../injectables/CognitoService.html">CognitoService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/components/profile-info/profile-info.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>http</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/http/HttpClient" target="_blank" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>nav</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../components/NavbarComponent.html" target="_self" >NavbarComponent</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>cognitoService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CognitoService.html" target="_self" >CognitoService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeTrainingAddress"></a>
+                    <span class="name">
+                        <b>
+                            changeTrainingAddress
+                        </b>
+                        <a href="#changeTrainingAddress"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeTrainingAddress()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="56"
+                            class="link-to-prism">src/app/components/profile-info/profile-info.component.ts:56</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="46"
+                            class="link-to-prism">src/app/components/profile-info/profile-info.component.ts:46</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="returnUserInfo"></a>
+                    <span class="name">
+                        <b>
+                            returnUserInfo
+                        </b>
+                        <a href="#returnUserInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>returnUserInfo()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="78"
+                            class="link-to-prism">src/app/components/profile-info/profile-info.component.ts:78</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/User.html" target="_self" >User</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="someMethodToGrabAddressForUserViaUserPKGrabbedFromCognitoCurrentUserSession"></a>
+                    <span class="name">
+                        <b>
+                            someMethodToGrabAddressForUserViaUserPKGrabbedFromCognitoCurrentUserSession
+                        </b>
+                        <a href="#someMethodToGrabAddressForUserViaUserPKGrabbedFromCognitoCurrentUserSession"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>someMethodToGrabAddressForUserViaUserPKGrabbedFromCognitoCurrentUserSession()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="81"
+                            class="link-to-prism">src/app/components/profile-info/profile-info.component.ts:81</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="someMethodToUpdateAddressOrUserInfo"></a>
+                    <span class="name">
+                        <b>
+                            someMethodToUpdateAddressOrUserInfo
+                        </b>
+                        <a href="#someMethodToUpdateAddressOrUserInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>someMethodToUpdateAddressOrUserInfo()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="85"
+                            class="link-to-prism">src/app/components/profile-info/profile-info.component.ts:85</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="addressList"></a>
+                        <span class="name">
+                            <b>
+                            addressList</b>
+                            <a href="#addressList"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/components/profile-info/profile-info.component.ts:23</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentAddress"></a>
+                        <span class="name">
+                            <b>
+                            currentAddress</b>
+                            <a href="#currentAddress"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Address.html" target="_self" >Address</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/components/profile-info/profile-info.component.ts:20</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentUser"></a>
+                        <span class="name">
+                            <b>
+                            currentUser</b>
+                            <a href="#currentUser"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/User.html" target="_self" >User</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/components/profile-info/profile-info.component.ts:24</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="UpdateUser"></a>
+                        <span class="name">
+                            <b>
+                            UpdateUser</b>
+                            <a href="#UpdateUser"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/User.html" target="_self" >UserObj</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/components/profile-info/profile-info.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="UserPersonalAddress"></a>
+                        <span class="name">
+                            <b>
+                            UserPersonalAddress</b>
+                            <a href="#UserPersonalAddress"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Address.html" target="_self" >AddressObject</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/components/profile-info/profile-info.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { Address } from &#x27;src/app/sms-client/dto/Address&#x27;;
+import { User } from &#x27;src/app/sms-client/dto/User&#x27;;
+import { async } from &#x27;@angular/core/testing&#x27;;
+import { CognitoService } from &#x27;src/app/services/cognito.service&#x27;;
+import { HomeComponent } from &#x27;../home/home.component&#x27;;
+import { NavbarComponent } from &#x27;../navbar/navbar.component&#x27;;
+import { HttpClient } from &#x27;@angular/common/http&#x27;;
+import { AddressObject } from &#x27;src/app/sms-client/dto/AddressObj&#x27;;
+import { UserObj } from &#x27;src/app/sms-client/dto/UserObj&#x27;;
+import { status } from &#x27;src/app/sms-client/dto/Status&#x27;;
+
+
+@Component({
+  selector: &#x27;app-profile-info&#x27;,
+  templateUrl: &#x27;./profile-info.component.html&#x27;,
+  styleUrls: [&#x27;./profile-info.component.sass&#x27;]
+})
+export class ProfileInfoComponent implements OnInit {
+  currentAddress: Address;
+
+  // user will somehow be retrieved through cognito session
+  addressList;
+  currentUser: User;
+  UpdateUser: UserObj; 
+  UserPersonalAddress: AddressObject;
+
+ // currentUser: User; 
+
+  constructor(private http: HttpClient, private nav: NavbarComponent, private cognitoService: CognitoService) {
+    
+    //this.currentUser &#x3D; nav.user;\
+
+    this.currentUser &#x3D; JSON.parse(localStorage.getItem(&#x27;user&#x27;));
+  //  console.log(&quot; constructor - undefined??? &quot; + nav.user.lastName);
+    console.log(&quot;salad and burgers: &quot; + this.currentUser.personalAddress);
+    if(this.currentUser.personalAddress &#x3D;&#x3D; null){
+      this.UserPersonalAddress &#x3D; new AddressObject(0, &#x27;No Alias&#x27;, &#x27;No Street&#x27;, &#x27;No Zip&#x27;, &#x27;No City&#x27;, &#x27;No State&#x27;, &#x27;No Country&#x27;, false);
+      
+      this.currentUser.personalAddress &#x3D;this.UserPersonalAddress;
+      
+      console.log(this.UserPersonalAddress.street );
+    }
+  }
+
+  ngOnInit() {
+    this.http.get(&#x27;user-service/addresses/is-training-location/true&#x27;).toPromise().then(data &#x3D;&gt; {
+      // alert(data);
+      this.addressList &#x3D; data;
+      // alert(this.addressList[0].alias);
+    })
+    console.log(&quot; ngOnInit - undefined??? &quot; + this.nav.user.firstName);
+    this.currentUser &#x3D; this.nav.user;
+    console.log(&#x27;farts and cheese&#x27; + this.currentUser.firstName);
+  }
+  changeTrainingAddress() {
+    const removeButtonFromHere &#x3D; document.getElementById(&#x27;trainWork&#x27;) as HTMLDivElement;
+    removeButtonFromHere.removeChild(removeButtonFromHere.firstChild);
+    //remove the button for sure then.. 
+    const select &#x3D; document.createElement(&#x27;select&#x27;) as HTMLSelectElement;
+    removeButtonFromHere.style.marginRight &#x3D; &#x27;-130px&#x27;;
+    removeButtonFromHere.style.position &#x3D; &quot;relative&quot;;
+    removeButtonFromHere.style.left &#x3D; &#x27;-160px&#x27;;
+    //css damaged here... needs fixing... 
+    removeButtonFromHere.appendChild(select); 
+    let trainIndex &#x3D; 0;
+    while (this.addressList[trainIndex].alias !&#x3D; null &amp;&amp; this.addressList[trainIndex].alias !&#x3D; undefined) {
+      console.log(&quot;address&quot; + this.addressList[trainIndex].alias );
+      let newTrainingOpt &#x3D; document.createElement(&#x27;option&#x27;) as HTMLOptionElement;
+      newTrainingOpt.innerHTML &#x3D; this.addressList[trainIndex].alias;
+      select.appendChild(newTrainingOpt);
+      // let index &#x3D; newSpot.selectedIndex;
+      // let opt &#x3D; newSpot.options[index];
+      trainIndex++;
+    }
+    
+  }
+returnUserInfo(): User {
+  return this.currentUser;
+}
+  someMethodToGrabAddressForUserViaUserPKGrabbedFromCognitoCurrentUserSession() {
+    // retrieve user info
+    // currentAddress[0] &#x3D; service to retrieve address based on current user signed in
+  }
+  someMethodToUpdateAddressOrUserInfo() {
+    let userChange &#x3D; false;
+    let addChange &#x3D; false;
+    // -----------------
+    const fnInput &#x3D; document.getElementById(&#x27;fName&#x27;) as HTMLInputElement;
+    const lnInput &#x3D; document.getElementById(&#x27;lName&#x27;) as HTMLInputElement;
+    const email &#x3D; document.getElementById(&#x27;email&#x27;) as HTMLInputElement;
+    const phoneN &#x3D; document.getElementById(&#x27;phoneN&#x27;) as HTMLInputElement;
+    if (fnInput.value !&#x3D;&#x3D; this.currentUser.firstName
+      || lnInput.value !&#x3D;&#x3D; this.currentUser.lastName
+      || email.value !&#x3D;&#x3D; this.currentUser.email
+      || phoneN.value !&#x3D;&#x3D; this.currentUser.phoneNumber) {
+      userChange &#x3D; true;
+      console.log(&#x27;change is being made to user&#x27;);
+
+
+    }
+    const addrs &#x3D; document.getElementById(&#x27;address&#x27;) as HTMLInputElement;
+    const cty &#x3D; document.getElementById(&#x27;city&#x27;) as HTMLInputElement;
+    const stt &#x3D; document.getElementById(&#x27;state&#x27;) as HTMLInputElement;
+    const cntry &#x3D; document.getElementById(&#x27;country&#x27;) as HTMLInputElement;
+    const zp &#x3D; document.getElementById(&#x27;zip&#x27;) as HTMLInputElement;
+    const als &#x3D; document.getElementById(&#x27;alias&#x27;) as HTMLInputElement;
+    if (addrs.value !&#x3D;&#x3D; this.currentUser.personalAddress.street
+      || cty.value !&#x3D;&#x3D; this.currentUser.personalAddress.city
+      || stt.value !&#x3D;&#x3D; this.currentUser.personalAddress.state
+      || cntry.value !&#x3D;&#x3D; this.currentUser.personalAddress.country
+      || zp.value !&#x3D;&#x3D; this.currentUser.personalAddress.zip
+      || als.value !&#x3D;&#x3D; this.currentUser.personalAddress.alias) {
+      console.log(&#x27;change is being made to the address&#x27;);
+      addChange &#x3D; true; 
+    }
+    let newPersonalAddress: AddressObject;
+      if(addChange &#x3D;&#x3D; true){
+          newPersonalAddress &#x3D; new AddressObject(0, als.value, stt.value, zp.value, cty.value, 
+            stt.value, cntry.value, false); 
+      }
+      this.currentUser.userStatus;
+    //let keepStts: status &#x3D; new status( ); 
+    this.UpdateUser &#x3D; new UserObj(this.currentUser.userId, fnInput.value, lnInput.value, 
+      email.value, phoneN.value, this.currentUser.trainingAddress, newPersonalAddress, this.currentUser.userStatus); 
+      console.log(&quot;our new user object is: &quot; +  this.UpdateUser);
+      this.http.post(&#x27;user-service/users&#x27;,  this.UpdateUser).toPromise().then(data &#x3D;&gt; {
+        console.log(&quot;server side error - ^ - v - &quot;);
+      })
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;app-navbar&gt;&lt;/app-navbar&gt;
+
+
+&lt;body style&#x3D;&quot;text-align:center; &quot;&gt;
+  &lt;div class&#x3D;&quot;centeredBody&quot; &gt;
+    &lt;div class&#x3D;&quot;profile-container&quot; style&#x3D;&quot;background: #f3a55d;&quot;&gt;
+      &lt;div class&#x3D;&quot;userinfo&quot;&gt;
+        &lt;b id&#x3D;&quot;adjustTL&quot;&gt;Training Location:&lt;/b&gt; &amp;nbsp;&amp;nbsp; &lt;div id&#x3D;&quot;trainWork&quot;&gt; &lt;button
+            (click)&#x3D;&quot;changeTrainingAddress()&quot;
+            style&#x3D;&quot;position: relative; left: -160px; border: outset; border-radius: 10px; background:#f26925; font: white&quot;&gt;{{currentUser.trainingAddress.alias}}&lt;/button&gt;&lt;/div&gt;
+        &lt;br&gt;
+        &lt;br&gt;
+        &lt;b&gt;First Name:&lt;/b&gt; &amp;nbsp; &lt;input value&#x3D;&quot;{{currentUser.firstName}}&quot; id&#x3D;&quot;fName&quot;&gt;
+        &lt;br&gt;
+        &lt;br&gt;
+        &lt;b&gt;Last Name:&lt;/b&gt; &amp;nbsp;&amp;nbsp; &lt;input value&#x3D;&quot;{{currentUser?.lastName}}&quot; id&#x3D;&quot;lName&quot;&gt;
+        &lt;br&gt;
+        &lt;br&gt;
+        &lt;b&gt;Email:&lt;/b&gt; &amp;nbsp;&amp;nbsp; &lt;input value&#x3D;&quot;{{currentUser.email}}&quot; id&#x3D;&quot;email&quot;&gt;
+        &lt;br&gt;
+        &lt;br&gt;
+        &lt;b&gt;Phone Number:&lt;/b&gt; &amp;nbsp;&amp;nbsp; &lt;input value&#x3D;&quot;{{currentUser?.phoneNumber}}&quot; id&#x3D;&quot;phoneN&quot;&gt;
+        &lt;br&gt;
+        &lt;br&gt;
+        &lt;b&gt;Address:&lt;/b&gt; &amp;nbsp;&amp;nbsp; &lt;input value&#x3D;&quot;{{currentUser.personalAddress.street}}&quot; id&#x3D;&quot;address&quot;&gt;
+        &lt;br&gt;
+        &lt;br&gt;
+        &lt;b&gt;City:&lt;/b&gt; &amp;nbsp;&amp;nbsp; &lt;input value&#x3D;&quot;{{currentUser.personalAddress.city}}&quot; id&#x3D;&quot;city&quot;&gt;
+        &lt;br&gt;
+        &lt;br&gt;
+        &lt;b&gt;State:&lt;/b&gt; &amp;nbsp;&amp;nbsp; &lt;input value&#x3D;&quot;{{currentUser.personalAddress.state}}&quot; id&#x3D;&quot;state&quot;&gt;
+        &lt;br&gt;
+        &lt;br&gt;
+        &lt;b&gt;Country: &lt;/b&gt; &amp;nbsp;&amp;nbsp; &lt;input value&#x3D;&quot;{{currentUser.personalAddress.country}}&quot; id&#x3D;&quot;country&quot;&gt;
+        &lt;br&gt;
+        &lt;br&gt;
+        &lt;b&gt;Zip Code:&lt;/b&gt; &amp;nbsp;&amp;nbsp; &lt;input value&#x3D;&quot;{{currentUser.personalAddress.zip}}&quot; id&#x3D;&quot;zip&quot;&gt;
+        &lt;br&gt;
+        &lt;br&gt;
+        &lt;b&gt;Name Alias:&lt;/b&gt; &amp;nbsp;&amp;nbsp; &lt;input value&#x3D;&quot;{{currentUser.personalAddress.alias}}&quot; id&#x3D;&quot;alias&quot;&gt;
+        &lt;br&gt;
+        &lt;br&gt;
+        &lt;b&gt;Company Status:&lt;/b&gt; &amp;nbsp;&amp;nbsp; &lt;input value&#x3D;&quot;{{currentUser.userStatus}}&quot; readonly id&#x3D;&quot;companyStat&quot;&gt;
+        &lt;br&gt;
+        &lt;br&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-info&quot; (click)&#x3D;&quot;someMethodToUpdateAddressOrUserInfo()&quot;&gt;Update&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./profile-info.component.sass</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">
+
+input 
+    border: 0
+    outline: 0
+    background: transparent
+    border-bottom: 1px solid black
+
+.userinfo 
+    position: relative
+    right: 50px
+
+button 
+    position: relative
+    right: 130px
+    background: #f26925
+
+.profile-container 
+    position: relative
+    left: 30%
+    text-align: right
+    border: 1px black
+    width: 500px
+    padding: 25px
+    border-radius: 15%
+    background: #f3a55d
+    font-family: &#x27;Lucida Sans&#x27;, &#x27;Lucida Sans Regular&#x27;, &#x27;Lucida Grande&#x27;, &#x27;Lucida Sans Unicode&#x27;, Geneva, Verdana, sans-serif
+    
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><app-navbar></app-navbar><body style="text-align:center; ">  <div class="centeredBody" >    <div class="profile-container" style="background: #f3a55d;">      <div class="userinfo">        <b id="adjustTL">Training Location:</b> &nbsp;&nbsp; <div id="trainWork"> <button            (click)="changeTrainingAddress()"            style="position: relative; left: -160px; border: outset; border-radius: 10px; background:#f26925; font: white">{{currentUser.trainingAddress.alias}}</button></div>        <br>        <br>        <b>First Name:</b> &nbsp; <input value="{{currentUser.firstName}}" id="fName">        <br>        <br>        <b>Last Name:</b> &nbsp;&nbsp; <input value="{{currentUser?.lastName}}" id="lName">        <br>        <br>        <b>Email:</b> &nbsp;&nbsp; <input value="{{currentUser.email}}" id="email">        <br>        <br>        <b>Phone Number:</b> &nbsp;&nbsp; <input value="{{currentUser?.phoneNumber}}" id="phoneN">        <br>        <br>        <b>Address:</b> &nbsp;&nbsp; <input value="{{currentUser.personalAddress.street}}" id="address">        <br>        <br>        <b>City:</b> &nbsp;&nbsp; <input value="{{currentUser.personalAddress.city}}" id="city">        <br>        <br>        <b>State:</b> &nbsp;&nbsp; <input value="{{currentUser.personalAddress.state}}" id="state">        <br>        <br>        <b>Country: </b> &nbsp;&nbsp; <input value="{{currentUser.personalAddress.country}}" id="country">        <br>        <br>        <b>Zip Code:</b> &nbsp;&nbsp; <input value="{{currentUser.personalAddress.zip}}" id="zip">        <br>        <br>        <b>Name Alias:</b> &nbsp;&nbsp; <input value="{{currentUser.personalAddress.alias}}" id="alias">        <br>        <br>        <b>Company Status:</b> &nbsp;&nbsp; <input value="{{currentUser.userStatus}}" readonly id="companyStat">        <br>        <br>        <button type="button" class="btn btn-info" (click)="someMethodToUpdateAddressOrUserInfo()">Update</button>      </div>    </div>  </div></body></div>'
+    var COMPONENTS = [{'name': 'AnswerData1Component', 'selector': 'app-answer-data1'},{'name': 'AnswerData2Component', 'selector': 'app-answer-data2'},{'name': 'AnswerData3Component', 'selector': 'app-answer-data3'},{'name': 'AnswerData4Component', 'selector': 'app-answer-data4'},{'name': 'AnswerData5Component', 'selector': 'app-answer-data5'},{'name': 'AnswerData6Component', 'selector': 'app-answer-data6'},{'name': 'AnswerData7Component', 'selector': 'app-answer-data7'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AssignSurveyComponent', 'selector': 'app-assign-survey'},{'name': 'AssociateFeedbackFormComponent', 'selector': 'app-associate-feedback-form'},{'name': 'AuthLoadingComponent', 'selector': 'app-auth-loading'},{'name': 'AutodataComponent', 'selector': 'app-autodata'},{'name': 'CohortModalComponent', 'selector': 'app-cohort-modal'},{'name': 'DaynoticeGraphComponent', 'selector': 'app-daynotice-graph'},{'name': 'DaynoticeReportComponent', 'selector': 'app-daynotice-report'},{'name': 'FakeServiceComponent', 'selector': 'app-fake-service'},{'name': 'FeedbackReportComponent', 'selector': 'app-feedback-report'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'InterviewComponent', 'selector': 'app-interview'},{'name': 'InterviewComponent', 'selector': 'app-interview'},{'name': 'InterviewListComponent', 'selector': 'app-interview-list'},{'name': 'InterviewListForCurUserComponent', 'selector': 'app-interview-list-for-cur-user'},{'name': 'JobdescReportComponent', 'selector': 'app-jobdesc-report'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'ManageComponent', 'selector': 'app-manage'},{'name': 'MngrSubAssociatesComponent', 'selector': 'app-mngr-sub-associates'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'NewInterviewComponent', 'selector': 'app-new-interview'},{'name': 'ProfileInfoComponent', 'selector': 'app-profile-info'},{'name': 'RegistrationComponent', 'selector': 'app-registration'},{'name': 'ReportsComponent', 'selector': 'app-reports'},{'name': 'StagingMgrFeedbackComponent', 'selector': 'app-staging-mgr-feedback'},{'name': 'SubMan2CohortComponent', 'selector': 'app-sub-man2-cohort'},{'name': 'SurveyComponent', 'selector': 'app-survey'},{'name': 'SurveyCreatorComponent', 'selector': 'app-survey-creator'},{'name': 'SurveyDataComponent', 'selector': 'app-survey-data'},{'name': 'SurveyGridComponent', 'selector': 'app-survey-grid'},{'name': 'SurveyListComponent', 'selector': 'app-survey-list'},{'name': 'SurveyRespondentsComponent', 'selector': 'app-survey-respondents'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'ProfileInfoComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ProfileInfoComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

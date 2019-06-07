@@ -13,6 +13,7 @@ export class LoginComponent implements OnInit {
   newPasswordRequired = false;
   newPassword = '';
   confirmationPassword = '';
+  text = '';
 
 
   constructor(private cognitoService: CognitoService, private router: Router) { }
@@ -43,4 +44,7 @@ export class LoginComponent implements OnInit {
     }
   }
 
+  sendEmail() {
+    this.text = 'Email sent!';
+  }
 }

@@ -1,0 +1,24 @@
+<app-navbar></app-navbar>
+
+
+<!-- This button represents a temporary entry point to this program. There are links on the "all interviews" page that will do this later-->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Temporary button to launch feedback page</button>
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="modal-body">
+            <h4>Interview Feedback</h4>
+            <hr>
+            <label for='dateRequested'><b>Date Requested:</b> {{feedback.feedbackRequested | date}} </label><br>
+            <label for='feedbackReceived'><b>Date Received: </b>{{feedback.feedbackRequested | date}}</label><br>
+            <label for='feedbackDelivered'><b>Date Delivered:</b> {{feedback.feedbackDelivered | date}}</label><br>
+            <label for='feedbackStatus'><b>Feedback Status: </b>{{feedback.status.feedback_status_desc}}</label><br>
+            <label for='feedback'><b>Actual Feedback Comments: <br> </b> {{feedback.feedback}}</label><br><br><br>
+            
+          </div>
+    </div>
+  </div>
+</div>
+
+<!-- D.Biteye -->

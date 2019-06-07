@@ -1,0 +1,51 @@
+$revature-orange-light: #f3a55d;
+$revature-orange: #f26925;
+$drew-orange: #f3a55d;
+$rounded-amount: 0.5em;
+
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+@mixin rounded-top {
+    border-top-left-radius: $rounded-amount;
+    border-top-right-radius: $rounded-amount;
+  }
+
+
+
+#associateTable1{
+    margin-top: 5px;
+  @include rounded-top();
+  thead {
+    @include rounded-top();
+    tr {
+      @include rounded-top();
+      th {
+        border: none;
+      }
+    }
+}
+}
+
+.spreadColumnChrt{
+    padding: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.abc{
+    border-radius: 4px;
+    background-color: #f3a55d;
+    color: black;
+    border: 2px solid white;
+    font-size: 12px;
+}
+
+.abc1{
+    border-radius: 4px;
+    background-color: #f3a55d;
+    color: black;
+    border: 2px solid white;
+}

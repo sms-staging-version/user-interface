@@ -1,0 +1,49 @@
+$revature-orange-light: #f3a55d;
+$revature-orange: #f26925;
+$drew-orange: #f3a55d;
+
+.btn-default {
+    background-color: grey; 
+}
+
+.newInterview {
+    background-color: white;
+
+    margin: auto;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: .5px solid #d3d3d3;
+    padding: 1rem; //need to find proper measurements for border
+    width: 700px;
+
+}
+.container {
+    text-align: center;
+}
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    width: 50%;
+    border-color: orange;
+  }
+
+  #title {
+      text-align: center;
+  }
+
+  .panel-body, th, h2 {
+    background-color: #f3a55d;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+
+   // border-radius: 10px 10px 10px 10px;
+
+ }

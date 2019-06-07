@@ -1,0 +1,38 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+
+  <h2>Job Description Report </h2>
+
+  <div class='panel-body'>
+    <div class='row'>
+      <div class='col-md-2'><b>Search:</b></div>
+      <div class='col-md-3'>
+        <input type='text' [(ngModel)]='listFilter' />
+      </div>
+    </div>
+  </div>
+
+
+  <table id="manage-users-table" class="tableUsers table table-striped" id="box-shadow">
+
+    <thead class="rev-background-color">
+      <tr>
+        <th>Interview ID</th>
+        <th>Associate Email</th>
+        <th>Associate Location</th>
+        <th>Job Description</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="rev-table-row" *ngFor='let temp of descProvidedListFilter'>
+        <td>{{temp.id}}</td>
+        <td>{{temp.associateEmail}}</td>
+        <td>{{temp.place}}</td>
+        <td *ngIf="temp.associateInput != null">{{temp.associateInput.descriptionProvided}}</td>
+        <td *ngIf="temp.associateInput == null">N/A</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

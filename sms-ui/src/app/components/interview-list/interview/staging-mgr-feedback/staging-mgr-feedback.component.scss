@@ -1,0 +1,27 @@
+.modal {
+  position: absolute;
+  top: 10%;
+  right: 100px;
+  bottom: 0;
+  left: 0;
+  z-index: 10040;
+  overflow: auto;
+  overflow-y: auto;
+  background: -webkit-linear-gradient(right, #f8d6b6, #acc5c9);
+  background: -webkit-linear-gradient(right, #e7d6c7, #8bdde7);
+  background: -moz-linear-gradient(right, #e2d0be, #eaf1f1);
+  background: -o-linear-gradient(right, #eec5a0, #e1e9eb);
+  background: linear-gradient(to left, #f3a55d, #e1e7e7);
+}
+
+.modal-backdrop {
+  background: -webkit-linear-gradient(right, #f8d6b6, #acc5c9);
+  background: -webkit-linear-gradient(right, #e7d6c7, #8bdde7);
+  background: -moz-linear-gradient(right, #e2d0be, #eaf1f1);
+  background: -o-linear-gradient(right, #eec5a0, #e1e9eb);
+  background: linear-gradient(to left, #f3a55d, #e1e7e7);
+}
+
+.btn-primary {
+  background-color: #ff9a00 !important;
+  }

@@ -1,0 +1,56 @@
+<div>
+    <div id='numbnumb'>
+    <form #associateEmail='ngForm' (ngSubmit)='emailSubmit(associateEmail)'>
+        <input type='email' name='cohortEmail' ngModel placeholder='Add Associate By Email' />
+        <button class="abc1" type='submit'>Submit</button>
+    </form>
+    <br>
+    <form *ngIf="!cotrainer">
+        <input type='text' id='cotrainerEmail' placeholder="Add Cotrainer By Email" ngModel />
+        <button class="abc1" (click)="submitCotrainer()">Add Cotrainer</button>
+    </form>
+    </div>
+    <table id="associateTable1">
+        <tr>
+            <th class="spreadColumnChrt">ID</th>
+            <th class="spreadColumnChrt">Firstname</th>
+            <th class="spreadColumnChrt">Lastname</th>
+            <th class="spreadColumnChrt">Email</th>
+            <!-- <th class="spreadColumnChrt">Phone Number</th>
+            <th class="spreadColumnChrt">Address</th> -->
+        </tr>
+        <tr>
+            <td>Trainer</td>
+            <td>{{cohort.trainer.firstName}}</td>
+            <td>{{cohort.trainer.lastName}}</td>
+            <td>{{cohort.trainer.email}}</td>
+            <!-- <td>{{cohort.trainer.phoneNumber}}</td>
+            <td>{{cohort.trainer.trainingAddress.city}}, {{cohort.trainer.trainingAddress.state}}</td> -->
+        </tr>
+        <tr *ngIf='cotrainer'>
+            <td>Cotrainer</td>
+            <td>{{cohort.coTrainer.firstName}}</td>
+            <td>{{cohort.coTrainer.lastName}}</td>
+            <td>{{cohort.coTrainer.email}}</td>
+            <!-- <td>{{cohort.coTrainer.phoneNumber}}</td>
+            <td>{{cohort.coTrainer.trainingAddress.city}}, {{cohort.coTrainer.trainingAddress.state}}</td> -->
+            <button class="abc" (click)=removeCotrainer()>Remove Cotrainer</button>
+        </tr>
+
+        <tr *ngFor='let temp of userList'>
+            <td>{{temp.userId}}</td>
+            <td>{{temp.firstName}}</td>
+            <td>{{temp.lastName}}</td>
+            <td>{{temp.email}}</td>
+            <!-- <td>{{temp.phoneNumber}}</td>
+            <td>{{temp.personalAddress}}</td> -->
+            <button class="abc" (click)="removeUserFromCohort(temp.email)">Remove User</button>
+        </tr>
+
+    </table>
+    
+    <br>
+    <h6>Edit End Date</h6>
+    <input id='endingDate' ngModel type="date" min="2018-01-01" max="2020-12-31"><button class="abc1" (click)='setCohortDate()'>Submit Date</button>
+
+</div>

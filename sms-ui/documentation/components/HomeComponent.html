@@ -1,0 +1,779 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sms-ui documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">sms-ui documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>HomeComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/home/home.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-home</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./home.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./home.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#currentUserSubscription">currentUserSubscription</a>
+                            </li>
+                            <li>
+                                <a href="#fullAccess">fullAccess</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#user">user</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngOnDestroy">ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#returnUserInfo">returnUserInfo</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(nav: <a href="../components/NavbarComponent.html">NavbarComponent</a>, userClient: <a href="../injectables/UsersClientService.html">UsersClientService</a>, cognito: <a href="../injectables/CognitoService.html">CognitoService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/components/home/home.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>nav</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../components/NavbarComponent.html" target="_self" >NavbarComponent</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userClient</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UsersClientService.html" target="_self" >UsersClientService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>cognito</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CognitoService.html" target="_self" >CognitoService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <b>
+                            ngOnDestroy
+                        </b>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="43"
+                            class="link-to-prism">src/app/components/home/home.component.ts:43</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="21"
+                            class="link-to-prism">src/app/components/home/home.component.ts:21</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="returnUserInfo"></a>
+                    <span class="name">
+                        <b>
+                            returnUserInfo
+                        </b>
+                        <a href="#returnUserInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>returnUserInfo()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="39"
+                            class="link-to-prism">src/app/components/home/home.component.ts:39</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/User.html" target="_self" >User</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentUserSubscription"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            currentUserSubscription</b>
+                            <a href="#currentUserSubscription"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Subscription</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/components/home/home.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="fullAccess"></a>
+                        <span class="name">
+                            <b>
+                            fullAccess</b>
+                            <a href="#fullAccess"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/components/home/home.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="user"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            user</b>
+                            <a href="#user"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/User.html" target="_self" >User</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/components/home/home.component.ts:17</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, OnDestroy, Inject } from &#x27;@angular/core&#x27;;
+import { UsersClientService } from &#x27;src/app/sms-client/clients/users-client.service&#x27;;
+import { CognitoService } from &#x27;src/app/services/cognito.service&#x27;;
+import { Subscription } from &#x27;rxjs&#x27;;
+import { User } from &#x27;src/app/sms-client/dto/User&#x27;;
+import { NavbarComponent } from &#x27;../navbar/navbar.component&#x27;;
+
+@Component({
+  selector: &#x27;app-home&#x27;,
+  templateUrl: &#x27;./home.component.html&#x27;,
+  styleUrls: [&#x27;./home.component.scss&#x27;]
+})
+export class HomeComponent implements OnInit, OnDestroy {
+
+  private currentUserSubscription: Subscription;
+
+  public user: User;
+  fullAccess: boolean &#x3D; false;
+  constructor(private nav: NavbarComponent, private userClient: UsersClientService, private cognito: CognitoService) { }
+
+  ngOnInit() {
+    this.currentUserSubscription &#x3D; this.cognito.currentUser$.subscribe(user &#x3D;&gt; {
+      this.userClient.findByEmail(user.email).subscribe(
+        succResp &#x3D;&gt; {
+          console.log(&quot;kjgjhg  &quot;+succResp);
+          this.user &#x3D; succResp;
+          localStorage.setItem(&#x27;userEmail&#x27;, this.user.email);
+          localStorage.setItem(&#x27;user&#x27;, JSON.stringify(this.user));
+          let roles &#x3D; localStorage.getItem(&#x27;role&#x27;);
+          if(roles.includes(&#x27;admins&#x27;)||roles.includes(&#x27;staging-manager&#x27;)||roles.includes(&#x27;trainer&#x27;)){
+          this.fullAccess &#x3D; true;
+    }
+        },
+        err &#x3D;&gt; {
+        }
+      );
+    });
+  }
+returnUserInfo(): User{
+  console.log(&quot;something called finally &quot;); 
+  return this.user;
+}
+  ngOnDestroy() {
+    // ensures that we don&#x27;t try calling unsubscribe on undefined
+    if (this.currentUserSubscription) {
+      this.currentUserSubscription.unsubscribe();
+    }
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;app-navbar&gt; &lt;/app-navbar&gt;
+
+&lt;body style&#x3D;&quot;text-align:center;&quot;&gt;
+    &lt;div class&#x3D;&quot;centeredBody&quot;&gt;
+
+        &lt;p&gt;
+            Welcome: {{user?.firstName }} {{user?.lastName}}
+        &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;container&quot;&gt;
+        &lt;div class&#x3D;&quot;row surveys&quot;&gt;
+            &lt;div class&#x3D;&quot;centered&quot;&gt;&lt;h1&gt;Staging Management System&lt;/h1&gt;&lt;/div&gt;
+            &lt;div class&#x3D;&quot;below-centered&quot;&gt;Revature associates who have completed training 
+                and are awaiting a job assignment.&lt;/div&gt;
+            &lt;!-- &lt;div class&#x3D;&quot;btn&quot;&gt;&lt;a routerLink&#x3D;&quot;surveyList&quot;&gt;SURVEYS&lt;/a&gt;&lt;/div&gt; --&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;row manage&quot; *ngIf&#x3D;&#x27;fullAccess&#x27;&gt;
+            &lt;div class&#x3D;&quot;btn&quot;&gt;&lt;a routerLink&#x3D;&quot;reportRoute&quot;&gt;MANAGE&lt;/a&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;row interviews&quot; *ngIf&#x3D;&#x27;fullAccess;else elseBlock&#x27;&gt;
+            &lt;div class&#x3D;&quot;btn&quot;&gt;&lt;a routerLink&#x3D;&quot;reportRoute&quot;&gt;INTERVIEWS&lt;/a&gt;&lt;/div&gt;
+        &lt;/div&gt;
+
+
+
+        &lt;ng-template #elseBlock&gt;
+            &lt;div class&#x3D;&quot;row interviews&quot;&gt;
+                &lt;div class&#x3D;&quot;btn&quot;&gt;&lt;a routerLink&#x3D;&quot; interviewlistForCurUser&quot;&gt;INTERVIEWS&lt;/a&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/ng-template&gt;
+       
+
+        &lt;div class&#x3D;&quot;row reports&quot; *ngIf&#x3D;&#x27;fullAccess&#x27;&gt;
+            &lt;div class&#x3D;&quot;btn&quot;&gt;&lt;a routerLink&#x3D;&quot;reportRoute&quot;&gt;REPORTS&lt;/a&gt;&lt;/div&gt;
+
+        &lt;/div&gt; 
+
+
+
+        &lt;br&gt;
+        &lt;br&gt;
+        &lt;br&gt;
+
+    &lt;/div&gt;
+&lt;/body&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./home.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">$revature-orange-light: #f3a55d;
+$revature-orange: #f26925;
+$drew-orange: #f3a55d;
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.reports {
+    width: 1980px;
+    height: 400px;
+    background: url(&quot;../../../assets/reportsimg.jpg&quot;);
+    background-size: 1980px;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+.interviews {
+    width: 1980px;
+    height: 400px;
+    background: url(&quot;../../../assets/interviewsimg.jpg&quot;);
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.manage {
+    width: 1980px;
+    height: 400px;
+    background: url(&quot;../../../assets/manageimg.jpg&quot;);
+    background-size: 100%;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.surveys {
+  /*   width: 1980px;
+    height: 500px;
+    background: url(&quot;../../../assets/surveyimg.jpg&quot;);
+    background-size: 1980px;
+    background-position: bottom;
+    background-attachment: fixed; */
+    
+    height: 500px;
+    width: 1980px;
+    background:
+    linear-gradient(
+        rgba(191, 191, 191, .70),
+        rgba(191, 191, 191, .70),
+    ),
+    url(&quot;../../../assets/surveyimg.jpg&quot;);
+    background-size: 1980px;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+.centered{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.below-centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.container {
+    margin-right: 40%;
+}
+
+.btn {
+    margin-left: 37%;
+    margin-top: 8%;
+    font-size: 20px;
+    text-decoration: none;
+    &amp;:hover {
+        color: $revature-orange-light;
+    }
+}
+
+a {
+    border: 3px solid;
+    border-color: white;
+    padding: 5px;
+    &amp;:hover {
+        color: $revature-orange-light;
+    }
+}
+
+h1{
+    color:black;
+     /* #f3a55d; */
+    font-size:60px;
+    white-space: nowrap;
+    overflow: hidden;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><app-navbar> </app-navbar><body style="text-align:center;">    <div class="centeredBody">        <p>            Welcome: {{user?.firstName }} {{user?.lastName}}        </p>    </div>    <div class="container">        <div class="row surveys">            <div class="centered"><h1>Staging Management System</h1></div>            <div class="below-centered">Revature associates who have completed training                 and are awaiting a job assignment.</div>            <!-- <div class="btn"><a routerLink="surveyList">SURVEYS</a></div> -->        </div>        <div class="row manage" *ngIf=\'fullAccess\'>            <div class="btn"><a routerLink="reportRoute">MANAGE</a></div>        </div>        <div class="row interviews" *ngIf=\'fullAccess;else elseBlock\'>            <div class="btn"><a routerLink="reportRoute">INTERVIEWS</a></div>        </div>        <ng-template #elseBlock>            <div class="row interviews">                <div class="btn"><a routerLink=" interviewlistForCurUser">INTERVIEWS</a></div>            </div>        </ng-template>               <div class="row reports" *ngIf=\'fullAccess\'>            <div class="btn"><a routerLink="reportRoute">REPORTS</a></div>        </div>         <br>        <br>        <br>    </div></body></div>'
+    var COMPONENTS = [{'name': 'AnswerData1Component', 'selector': 'app-answer-data1'},{'name': 'AnswerData2Component', 'selector': 'app-answer-data2'},{'name': 'AnswerData3Component', 'selector': 'app-answer-data3'},{'name': 'AnswerData4Component', 'selector': 'app-answer-data4'},{'name': 'AnswerData5Component', 'selector': 'app-answer-data5'},{'name': 'AnswerData6Component', 'selector': 'app-answer-data6'},{'name': 'AnswerData7Component', 'selector': 'app-answer-data7'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AssignSurveyComponent', 'selector': 'app-assign-survey'},{'name': 'AssociateFeedbackFormComponent', 'selector': 'app-associate-feedback-form'},{'name': 'AuthLoadingComponent', 'selector': 'app-auth-loading'},{'name': 'AutodataComponent', 'selector': 'app-autodata'},{'name': 'CohortModalComponent', 'selector': 'app-cohort-modal'},{'name': 'DaynoticeGraphComponent', 'selector': 'app-daynotice-graph'},{'name': 'DaynoticeReportComponent', 'selector': 'app-daynotice-report'},{'name': 'FakeServiceComponent', 'selector': 'app-fake-service'},{'name': 'FeedbackReportComponent', 'selector': 'app-feedback-report'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'InterviewComponent', 'selector': 'app-interview'},{'name': 'InterviewComponent', 'selector': 'app-interview'},{'name': 'InterviewListComponent', 'selector': 'app-interview-list'},{'name': 'InterviewListForCurUserComponent', 'selector': 'app-interview-list-for-cur-user'},{'name': 'JobdescReportComponent', 'selector': 'app-jobdesc-report'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'ManageComponent', 'selector': 'app-manage'},{'name': 'MngrSubAssociatesComponent', 'selector': 'app-mngr-sub-associates'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'NewInterviewComponent', 'selector': 'app-new-interview'},{'name': 'ProfileInfoComponent', 'selector': 'app-profile-info'},{'name': 'RegistrationComponent', 'selector': 'app-registration'},{'name': 'ReportsComponent', 'selector': 'app-reports'},{'name': 'StagingMgrFeedbackComponent', 'selector': 'app-staging-mgr-feedback'},{'name': 'SubMan2CohortComponent', 'selector': 'app-sub-man2-cohort'},{'name': 'SurveyComponent', 'selector': 'app-survey'},{'name': 'SurveyCreatorComponent', 'selector': 'app-survey-creator'},{'name': 'SurveyDataComponent', 'selector': 'app-survey-data'},{'name': 'SurveyGridComponent', 'selector': 'app-survey-grid'},{'name': 'SurveyListComponent', 'selector': 'app-survey-list'},{'name': 'SurveyRespondentsComponent', 'selector': 'app-survey-respondents'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'HomeComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'HomeComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
