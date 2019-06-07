@@ -1,0 +1,150 @@
+$revature-orange-light: #f3a55d;
+$revature-orange: #f26925;
+$drew-orange: #f3a55d;
+
+.container {
+    width: 75%;
+ /*    margin-top: 200px;
+    margin-left: 380px; */
+}
+h2 {
+    background-color: #f3a55d;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.bolding{
+font-weight: bold;
+}
+.associatefeedback{
+    
+    background-color:white;
+    border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+
+border: 1px solid #d3d3d3;
+    padding: 1rem; 
+    width: 700px;
+}
+
+#buttonSubmit {
+    background-color: #f3a55d;
+    border-color: #f3a55d;
+}
+
+
+/* Original hexcolor: #e3165b */
+
+.e-date-wrapper span.e-input-group-icon.e-date-icon.e-icons.e-active {
+    color: $revature-orange-light;
+}
+
+.e-radio:checked+label::before {
+    background-color: #fff;
+    border-color: $revature-orange-light;
+}
+
+.e-radio:checked+label::after {
+    background-color: $revature-orange-light;
+    color: $revature-orange-light;
+}
+
+.e-input-group:not(.e-float-icon-left):not(.e-float-input)::before,
+.e-input-group:not(.e-float-icon-left):not(.e-float-input)::after,
+.e-input-group.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::before,
+.e-input-group.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::after,
+.e-input-group.e-control-wrapper:not(.e-float-icon-left):not(.e-float-input)::before,
+.e-input-group.e-control-wrapper:not(.e-float-icon-left):not(.e-float-input)::after,
+.e-input-group.e-control-wrapper.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::before,
+.e-input-group.e-control-wrapper.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::after {
+    background: $revature-orange-light;
+}
+
+// .e-btn.e-flat.e-primary,
+// .e-css.e-btn.e-flat.e-primary {
+//     color: blue;
+// }
+.e-btn.e-flat.e-primary,
+.e-css.e-btn.e-flat.e-primary {
+    background-color: green;
+    border-color: transparent;
+    color: green;
+}
+
+.e-btn.e-flat.e-primary:hover,
+.e-css.e-btn.e-flat.e-primary:hover {
+    background-color: purple;
+    border-color: transparent;
+    color: purple;
+}
+
+.e-btn.e-flat.e-primary:focus,
+.e-css.e-btn.e-flat.e-primary:focus {
+    background-color: black;
+    border-color: transparent;
+    color: black;
+}
+
+.e-btn.e-flat.e-primary:active,
+.e-btn.e-flat.e-primary.e-active,
+.e-css.e-btn.e-flat.e-primary:active,
+.e-css.e-btn.e-flat.e-primary.e-active {
+    background-color: yellow;
+    border-color: transparent;
+    color: yellow;
+}
+
+.e-btn.e-flat.e-primary:disabled,
+.e-css.e-btn.e-flat.e-primary:disabled {
+    background-color: rgba(0, 0, 0, 0.12);
+    border-color: transparent;
+    box-shadow: none;
+    color: rgba(0, 0, 0, 0.26);
+}
+
+.e-btn.e-flat.e-primary .e-ripple-element,
+.e-css.e-btn.e-flat.e-primary .e-ripple-element {
+    background-color: rgba(227, 22, 91, 0.12);
+}
+
+.e-calendar .e-content td.e-today.e-selected span.e-day {
+    background-color: $revature-orange;
+    border: 1px solid $revature-orange;
+  //  box-shadow: inset 0 0 0 2px #fff;
+    color: #fff;
+}
+
+.datepicker table tr td.active,
+.datepicker table tr td.active:hover {
+    background: green;
+    text-shadow: none;
+}
+
+.datepicker table tr td.active:active,
+.datepicker table tr td.active:hover:active,
+.datepicker table tr td.active.disabled:active,
+.datepicker table tr td.active.disabled:hover:active,
+.datepicker table tr td.active.active,
+.datepicker table tr td.active:hover.active,
+.datepicker table tr td.active.disabled.active,
+.datepicker table tr td.active.disabled:hover.active {
+    background-image: linear-gradient(to bottom, green, green);
+}
+
+.datepicker table tr td.active:active,
+.datepicker table tr td.active.highlighted:active,
+.datepicker table tr td.active.active,
+.datepicker table tr td.active.highlighted.active {
+    background-color: green;
+}
+
+.e-input-group.e-disabled .e-input-group-icon,
+.e-input-group.e-control-wrapper.e-disabled .e-input-group-icon {
+    background: transparent;
+    border-color: green;
+}
+
+

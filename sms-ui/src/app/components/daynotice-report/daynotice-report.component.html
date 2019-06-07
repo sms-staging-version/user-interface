@@ -1,0 +1,48 @@
+<app-navbar></app-navbar>
+
+
+<div class="container">
+
+  <h2>24 Hour Notice Report </h2>
+
+  <div class='panel-body'>
+    <div class='row'>
+      <div class='col-md-2'><b>Search:</b></div>
+      <div class='col-md-3'>
+        <input type='text' [(ngModel)]='listFilter' />
+      </div>
+      <div class='col-md-2'><b>Day Notice:</b></div>
+      <div class='col-md-3'>
+        <select autofocus type='text' [(ngModel)]='reviewFilter'>
+          <option value="all">All</option>
+          <option value="true">True</option>
+          <option value="false">False</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <table id="manage-users-table" class="tableUsers table table-striped" id="box-shadow">
+
+    <thead class="rev-background-color">
+      <tr>
+        <th>Associate Email</th>
+        <th>Associate Name</th>
+        <th>24 Hour Associate</th>
+        <th>24 Hour Manager</th>
+        <th>Interview Date</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="rev-table-row" *ngFor='let temp of dayNoticeListFilter'>
+        <td>{{temp.assocEmail}}</td>
+        <td>{{temp.assocName}}</td>
+        <td *ngIf="temp.twentyFourAssoc == null"> N/A</td>
+        <td *ngIf="temp.twentyFourAssoc != null">{{temp.twentyFourAssoc}}</td>
+        <td *ngIf="temp.twentyFourManager == null"> N/A</td>
+        <td *ngIf="temp.twentyFourManager != null">{{temp.twentyFourManager}}</td>
+        <td>{{temp.interviewDate | date}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

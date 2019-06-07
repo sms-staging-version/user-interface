@@ -1,0 +1,111 @@
+<app-navbar> </app-navbar>
+<div class="container">
+
+    <h2> Create Surveys</h2>
+    <div class="form-horizontal">
+
+        <!-- Form Name -->
+        <!-- Should say creator -FINAL -->
+        <legend>Survey Creator</legend>
+        <!-- Text input-->
+        <div class="survey_title">
+            <label class="col-md-4 control-label" for="textinput">Survey Title</label>
+            <div class="col-md-4">
+                <input id="textinput" name="textinput" type="text" class="form-control input-md" [(ngModel)]='title'>
+            </div>
+        </div>
+        <br>
+        <!-- Checkbox (inline) -->
+        <div class="template_check">
+            <label class="col-md-4 control-label" for="checkboxes">Is This A New Template?</label>
+            <label class="checkbox-inline" for="checkboxes-0">
+        <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1" [(ngModel)]='isTemplate'>
+        yes
+      </label>
+
+        </div>
+        <br>
+        <!-- Textarea -->
+        <div class="survey_description">
+            <label class="col-md-4 control-label" for="textarea">Survey Description</label>
+            <div class="col-md-4">
+                <textarea class="form-control" id="textarea" name="textarea" [(ngModel)]='description'></textarea>
+            </div>
+        </div>
+        <br>
+        <div class="survey_question">
+            <label class="col-md-4 control-label" for="textarea">Question</label>
+            <div class="col-md-4">
+                <textarea class="form-control" id="textarea" name="textarea" [(ngModel)]='curQuestionString'></textarea>
+            </div>
+        </div>
+        <br>
+        <!-- Select Basic -->
+        <div class="questioncontainer">
+            <label class="col-md-4 control-label" for="selectquestiontype">Select Question Type</label>
+            <div class="questiontype" id="dropdown">
+                <select id="selectquestiontype" name="selectquestiontype" class="form-control" [(ngModel)]='curQuestionType' (change)="selectOption($event.target.value)">
+          <option value="1">True/False</option>
+          <option value="2">Multiple Choice</option>
+          <option value="3">Checkboxes for Multiple Answers</option>
+          <option value="4">Rating</option>
+          <option value="5">Feedback</option>
+          <option value="6">Yes/No</option>
+          <option value="7">Strongly Agree - Strongly Disagree</option>
+        </select>
+
+            </div>
+            <br>
+            <div *ngIf="curQuestionType&&curQuestionType!=5" id="answerdesc">
+                <br>
+
+                <p style="margin-left: 5px">Possible Answer Value:</p>
+                <div style="margin-left: 5px" id="answerlist" *ngFor='let temp of curAnswerList'>
+                    <ul>
+                        <li>{{temp.answer}}</li>
+                    </ul>
+                </div>
+                <div *ngIf="curQuestionType==2||curQuestionType==3">
+                    <input style="margin-left: 5px" class="form-control input-md" type='text' id="answerText" [(ngModel)]='inputAnswerString' />
+                    <br>
+                    <button id="addAnswer" name="addbutton" class="btn btn-dark" (click)='addAnswer()'>Add to Answers</button>
+                    <button *ngIf="curAnswerList.length" id="removeAnswer" name="addbutton" class="btn btn-danger" (click)='undo()'>Undo</button>
+
+
+
+                </div>
+                <br>
+            </div>
+            <br>
+            <!-- Add buttons should be light not dark - FINAL-->
+            <div style="padding-left: 5px">
+                <button id="addquestion" name="addbutton" class="btn rev-btn" (click)='addQuestion()'>Add Question</button>
+            </div>
+            <br>
+            <div id="questionlist">
+                <div *ngFor='let temp of questionList; index as i'>{{"Q"+(i+1)+": "+temp.question}}
+                    <ul>
+                        <li *ngFor='let answers of arrofAnswerList[i]'>{{answers.answer}}</li>
+                    </ul>
+
+                </div>
+            </div>
+            <br>
+            <!-- Button -->
+
+            <!--    type="button" [disabled]="buttonDisabled" (click)="sendInterviewData()" class="btn rev-btn btn-lg btn-block" >Confirm
+          Interview</button> -->
+
+
+            <div class="submit-button">
+                <!-- Buttons should be light -- FINAL-->
+                <button id="singlebutton" name="singlebutton" class="btn rev-btn" (click)='submit()'>Submit</button>
+                <br><br>
+                <!-- Exit should not say exit but reset --FINAL-->
+                <button id="singlebutton" name="singlebutton" class="btn btn-danger" (click)='drop()'>Reset</button>
+            </div>
+
+        </div>
+
+    </div>
+    <!--<router-outlet></router-outlet>-->

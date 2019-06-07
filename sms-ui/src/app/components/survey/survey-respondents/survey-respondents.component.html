@@ -1,0 +1,24 @@
+
+
+<table class="table table-striped" id="resptable">
+    <thead align="center">
+        <tr id="tableheader">
+            <th scope="col">User Email</th>
+            <th scope="col">Date Assigned</th>
+            <th scope="col">Date Completed</th>
+        </tr>
+    </thead>
+    <tbody align="center">
+
+        <!-- ngFor loop to iterate through and display all respondents of survey-->
+        <tr *ngFor='let resp of listOfResp; index as i'>
+            <td class="dataElement">{{resp.userEmail}}</td>
+            <td class="dataElement">{{resp.dateAssigned | showTimestamp}}</td>
+            <td class="dataElement">{{resp.dateCompleted | showTimestamp}}</td>
+        </tr>
+
+    </tbody>
+</table>
+
+<!--<router-outlet></router-outlet>-->
+

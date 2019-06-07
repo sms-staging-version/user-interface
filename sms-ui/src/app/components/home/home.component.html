@@ -1,3 +1,23 @@
-<p>
-  home works! Welcome: {{user?.firstName }} {{user?.lastName}}
-</p>
+<app-navbar> </app-navbar>
+
+<body style="text-align:center;">
+
+    <div class="container">
+        <div class="row surveys">
+        
+            <div class="centered"><h1 style= "margin-top: -50px;">Staging Management System</h1></div>
+
+            <div class="buttons">
+                <div class="btn" id= "surveys"><a routerLink="/surveyList">SURVEYS</a></div>
+                <div class="btn" id= "manage"><a routerLink="/ManageRoute">MANAGE</a></div>
+                <div class="btn" id= "interviews"><a routerLink="/InterviewListRoute">INTERVIEWS</a></div>
+                <div class="btn" id= "reports"><a routerLink="/DayNoticeRoute">REPORTS</a></div>
+            </div>
+
+            </div>
+        </div>
+
+    <div class="below-centered"><b>Welcome Revature employees, the Staging Management System allows associates to stay up to date with 
+        interviews until they are hired by a client. Staging managers are able to send interview notice and provide the 
+    assoicate with feedback from their interviews. </b></div>
+</body>
