@@ -3,13 +3,12 @@
     <div id="navbar-header c-pointer shift-left" *ngIf ='fullAccess;else elseBlock'>
         <!-- not in global sass -->
         <a routerLink="/home"> <img id="rev-logo" src="../../../assets/rev-logo.png" alt="revature logo"></a>
-
         <div class="inlineNav" style="display: inline;">
 
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
-
-                <span>{{email}} </span>
+                <!-- Gmail is there to just look delete after email injection working -->
+                <span> Gmail@gmail.com <!-- {{email}} --> </span>
 
             </a>
 

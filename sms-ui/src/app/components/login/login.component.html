@@ -1,7 +1,8 @@
 <div id="login-container">
   <div class="shadow-lg p-3 mb-5 bg-white rounded top-lev-div">
-
-    <h4 id="titleHead">Sign in to SMS</h4>
+    <div id="LoginLogo"><img src="https://revature.com/wp-content/uploads/2017/12/revature-logo-600x219.png" height=50 length=60></div>
+    <br>
+    <h4 id="titleHead">Login</h4>
     <form id="login-form" (ngSubmit)="submit()" *ngIf="!newPasswordRequired">
       <input name="username" type="text" class="form-control txt-bx" placeholder="Username" [(ngModel)]="username"
         required />
@@ -26,3 +27,10 @@
 
   </div>
 </div>
+
+<div id="steps">
+  <img src="https://revature.com/wp-content/themes/revature/imgs/horizontal_steps_4.png">
+</div>
+<div class="clearfix"></div>
+
+<footer></footer>
