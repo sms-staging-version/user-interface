@@ -11,7 +11,9 @@ export class UsersClientService {
 
   private context = 'user-service/users';
 
-  constructor(private http: HttpClient) { }
+  public currentEmail: string;
+
+  constructor(private http: HttpClient) {}
 
   findById(id: number) {
     return this.http.get<User>(`${this.context}/${id}`);
@@ -19,6 +21,7 @@ export class UsersClientService {
 
   findByEmail(email: string) {
     console.log("the email we are using to check is : " +email);
+    this.currentEmail = email;
     return this.http.get<User>(`${this.context}/email/${email}`);
   }
 

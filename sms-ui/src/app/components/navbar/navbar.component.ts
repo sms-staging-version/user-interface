@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { User } from 'src/app/sms-client/dto/User';
 import { CognitoService } from 'src/app/services/cognito.service';
 import { HttpClient } from '@angular/common/http';
+import { $ } from 'protractor';
 
 @Component({
   selector: 'app-navbar',
@@ -15,12 +16,13 @@ export class NavbarComponent implements OnInit {
   email: string;
   fullAccess = false;
 
-  constructor(private router: Router, private cognito: CognitoService, private http: HttpClient) { }
+  constructor(private router: Router, private cognito: CognitoService, private http: HttpClient) {   }
   public user: User;
 
   showSurveyPage() {
     this.router.navigateByUrl('/surveyList');
   }
+
   ngOnInit() {
     this.user = JSON.parse(localStorage.getItem('user'));
     this.email = localStorage.getItem('userEmail');
@@ -30,6 +32,7 @@ export class NavbarComponent implements OnInit {
       this.fullAccess = true;
     }
   }
+  
   logout() {
     localStorage.clear();
     this.cognito.logout().then(data => {
