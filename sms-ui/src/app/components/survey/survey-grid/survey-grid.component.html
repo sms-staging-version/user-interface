@@ -1,0 +1,80 @@
+<app-navbar> </app-navbar>
+<div id="main-content-container">
+        <div class='panel-body'>
+                <div class='row'>
+                  <div class='col-md-3'><b id= "search">Search:</b></div>
+                  <div class='col-md-2' id='search-container'>
+                   <input id="searchbar" class="form-control" type="text" [(ngModel)]='listFilter' placeholder="Search">
+                  </div>
+                </div>
+              </div>
+    <table class='table' *ngIf='listOfSurvey && listOfSurvey.length' id="box-shadow">
+
+
+        <thead>
+
+            <th class="Title">Title</th>
+            <th class="Description">Description</th>
+            <th class="DateCreated">Date Created</th>
+
+        </thead>
+        <tbody>
+            <tr *ngFor='let temp of filteredListOfSurvey; index as i' (click)='checkTemplate(temp.surveyId)'
+                data-toggle="modal" data-target="#exampleModalLong">
+                <td>{{temp.title}}</td>
+                <td>{{temp.description}}</td>
+                <td>{{temp.dateCreated | showTimestamp}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title h4">
+                    <div class="surveyInfoCircle"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                            viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
+                            </path>
+                        </svg> <strong>This is how your survey will look</strong></div>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+                    width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M512 199.652c0 23.625-20.65 43.826-44.8 43.826h-99.851c16.34 17.048 18.346 49.766-6.299 70.944 14.288 22.829 2.147 53.017-16.45 62.315C353.574 425.878 322.654 448 272 448c-2.746 0-13.276-.203-16-.195-61.971.168-76.894-31.065-123.731-38.315C120.596 407.683 112 397.599 112 385.786V214.261l.002-.001c.011-18.366 10.607-35.889 28.464-43.845 28.886-12.994 95.413-49.038 107.534-77.323 7.797-18.194 21.384-29.084 40-29.092 34.222-.014 57.752 35.098 44.119 66.908-3.583 8.359-8.312 16.67-14.153 24.918H467.2c23.45 0 44.8 20.543 44.8 43.826zM96 200v192c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V200c0-13.255 10.745-24 24-24h48c13.255 0 24 10.745 24 24zM68 368c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20z">
+
+                    </path>
+                </svg> <i><span class="noteDiv">Note that you can edit both the survey title and description</span></i>
+            </div>
+            <div class="modalHeading" *ngIf='curTemplate' id="modal-heading"><strong>Survey Title</strong>:&nbsp;<input type="text"
+                    class="surveyName"
+                    [value]='curTemplate[0].surveyId.title'>&nbsp;<strong>Description</strong>:&nbsp;<input type="text"
+                    class="surveyDescription" [value]='curTemplate[0].surveyId.description'></div>
+            <div class="modal-body">
+                <ul *ngIf='curTemplate'>
+                    <br>
+                    <li *ngFor='let temp of curTemplate; index as i;'>
+                        <strong>
+                            <p>{{"Q"+(i+1)+": "+temp.questionId.question}}</p>
+                        </strong>
+                        <p *ngFor='let ans of curTempAnswers[i]'>{{ans?.answer+" "}}</p>
+                        <hr><br>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="modal-footer"><button type="button" class="buttonBack btn btn-primary"
+                    data-dismiss="modal">Back</button>
+                <button type="button" class="buttonCreate btn btn-primary" (click)='create()'>Create</button></div>
+        </div>
+    </div>
+</div>

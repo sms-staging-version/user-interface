@@ -22,13 +22,13 @@ export class SmsInterceptor implements HttpInterceptor {
 
   intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
 
+    this.cognito.someMethod();
     request = request.clone({
       url: `${environment.smsGateway}/${request.url}/`,
       setHeaders: {
         Authorization: `Bearer ${this.token}`
       }
     });
-
     return next.handle(request);
   }
 }

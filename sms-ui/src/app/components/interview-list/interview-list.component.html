@@ -1,0 +1,104 @@
+<app-navbar></app-navbar>
+<div class='table-container'>
+
+    <h2> Interview List</h2>
+    <div class='panel panel-primary'>
+        <div class='panel-heading'>
+            {{pageTitle}}
+        </div>
+
+        <div class='panel-body'>
+            <div class='row'>
+                <div class='col-md-3'><b>Search:</b></div>
+                <div class='col-md-2' id='search-container'>
+                    <input type='text' [(ngModel)]='listFilter' />
+                </div>
+                <div class='col-md-3'><b>Review Status:</b></div>
+                <div class='col-md-2' id='status-container'>
+                    <select autofocus type='text' [(ngModel)]='reviewFilter'>
+                <option value="all">Any</option>
+                <option value="reviewed">Reviewed</option>
+                <option value="notreviewed">Not Reviewed</option>
+              </select>
+                </div>
+            </div>
+        </div>
+
+        <div class='table-responsive'>
+            <table class='table table-striped' *ngIf='interviewList && interviewList.length'>
+                <thead class='rev-background-color'>
+                    <tr>
+                        <th>Reviewed</th>
+                        <th (click)='sortByAssociateEmail()'>Associate Email</th>
+                        <th (click)='sortByManagerEmail()'>Manager Email</th>
+                        <th (click)='sortByLocation()'>Location</th>
+                        <th (click)='sortByClient()'>Client</th>
+                        <th (click)='sortByDateNotified()'>Date Notified</th>
+                        <th (click)='sortByDateScheduled()'>Date Scheduled</th>
+                        <th (click)='sortByDateReviewed()'>Date Reviewed</th>
+                        <th>Associate Feedback</th>
+                        <th>Interview Feedback</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let temp of filteredInterviewList'>
+                        <td *ngIf='temp.reviewed'>Yes</td>
+                        <td *ngIf='!temp.reviewed'>No</td>
+                        <td>{{temp.associateEmail}}</td>
+                        <td>{{temp.managerEmail}}</td>
+                        <td>{{temp.place}}</td>
+                        <td>{{temp.client.clientName}}</td>
+                        <td>{{temp.notified | date}}</td>
+                        <td>{{temp.scheduled | date}}</td>
+                        <td>{{temp.reviewed | date}}</td>
+
+                        <td *ngIf='temp.associateInput'>
+                            <button type="button" id={{$id}} class="modalbtn" (click)='openAssociateInputModal(temp.id)' data-toggle="modal" data-target='#associateInputModal'>Display</button>
+
+                            <div class="modal fade bd-example-modal-lg" id='associateInputModal' tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-body" id='modal-text'>
+                                            <h4>Associate Feedback</h4>
+                                            <hr>
+                                            <label for='notificationReceived'><b>Notification Received:</b> {{notificationDate | date}}</label><br>
+                                            <label *ngIf='fullDayNotice' for='fullDayNotice'><b>Was 24 Hour Notice Provided:</b> Yes</label>
+                                            <label *ngIf='!fullDayNotice' for='fullDayNotice'><b>Was 24 Hour Notice Provided:</b> No</label><br>
+                                            <label *ngIf='descriptionProvided' for='descriptionProvided'><b>Was Description Provided:</b> Yes</label>
+                                            <label *ngIf='!descriptionProvided' for='descriptionProvided'><b>Was Description Provided:</b> No</label><br><br>
+                                            <label for='proposedFormat'><b>Proposed Interview Format:</b> {{proposedFormat}}</label><br>
+                                            <label for='actualFormat'><b>Actual Interview Format:</b> {{actualFormat}}</label><br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td *ngIf='!temp.associateInput'>N/A</td>
+
+                        <td *ngIf='temp.feedback'>
+                            <button type="button" id={{$id}} class="modalbtn" (click)='openInterviewFeedbackModal(temp.id)' data-toggle="modal" data-target='#interviewFeedbackModal'>Display</button>
+
+                            <div class="modal fade bd-example-modal-lg" id='interviewFeedbackModal' tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-body" id='modal-text'>
+                                            <h4>Interview Feedback</h4>
+                                            <hr>
+                                            <label for='dateRequested'><b>Date Feedback Requested:</b> {{interviewFeedbackDateReq | date}}</label><br>
+                                            <label for='feedbackReceived'><b>Date Feedback Received:</b> {{interviewFeedbackDateRec | date}}</label><br>
+                                            <label for='feedbackDelivered'><b>Date Feedback Delivered:</b> {{interviewFeedbackDateDel | date}}</label><br>
+                                            <label for='feedbackStatus'><b>Feedback Status:</b> {{interviewFeedbackStatus}}</label><br><br>
+                                            <label for='feedback'><b>Comments:</b> {{interviewFeedbackComments}}</label><br>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td *ngIf='!temp.feedback'>N/A</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

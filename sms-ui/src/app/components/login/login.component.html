@@ -1,7 +1,8 @@
 <div id="login-container">
   <div class="shadow-lg p-3 mb-5 bg-white rounded top-lev-div">
-
-    <h4 id="titleHead">Sign in to SMS</h4>
+    <div id="LoginLogo"><img src="https://revature.com/wp-content/uploads/2017/12/revature-logo-600x219.png" height=50 length=60></div>
+    <br>
+    <h4 id="titleHead">Sign In</h4>
     <form id="login-form" (ngSubmit)="submit()" *ngIf="!newPasswordRequired">
       <input name="username" type="text" class="form-control txt-bx" placeholder="Username" [(ngModel)]="username"
         required />
@@ -20,9 +21,16 @@
     </form>
     <div class="row reset-div">
 
-      <button id="forgot-pass-btn">Forgot Password</button>
+      <button id="forgot-pass-btn" data-toggle="modal" data-target="#exampleModal">Forgot Password</button>
     </div>
     <!-- <h6 id="invalidCredHead">Invalid Credentials</h6> -->
 
   </div>
 </div>
+
+<div id="steps">
+  <img src="https://revature.com/wp-content/themes/revature/imgs/horizontal_steps_4.png">
+</div>
+<div class="clearfix"></div>
+
+<footer></footer>

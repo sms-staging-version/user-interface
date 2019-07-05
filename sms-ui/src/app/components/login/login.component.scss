@@ -2,14 +2,14 @@
 
 #login-container {
   display: flex;
-  flex-direction: column;
-  width: 100%;
+  float: left;
+  // flex-direction: column;
+  width: 25%;
   align-items: center;
   margin:auto;
+  margin-left: 50px;
   margin-top: 50px;
-  @include md {
-    max-width: 80%
-  }
+  
 }
 
 #forgot-pass-btn{
@@ -37,6 +37,7 @@
 #titleHead{
   margin:auto;
   display: flex;
+  font-family: Garmond;
   justify-content: center;
   padding-bottom: 10px;
 }
@@ -56,4 +57,36 @@
 
 #forgot-pass-btn {
   margin: auto;
+}
+
+/* #send {
+  background: #f3a55d;
+} */
+
+#send {
+  background: #f3a55d;
+}
+
+#LoginLogo{
+  margin-top: 1em;
+}
+
+#LoginLogo img{
+  margin-left: 65px;
+}
+
+#steps{
+  margin-top: 130px;
+  width: 60%;
+  float: left;
+  padding: 10px;
+}
+
+.clearfix{
+  clear:both
+}
+
+footer{
+  height: 15px;
+  background: #f3a55d;
 }

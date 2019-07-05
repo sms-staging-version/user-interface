@@ -1,0 +1,51 @@
+<app-navbar></app-navbar>
+
+
+<body style="text-align:center; ">
+    <div class="centeredBody" >
+    <div class="profile-container">
+      <div><h3>Edit Profile</h3></div>
+      <div class="userinfo">
+        <b id="adjustTL">Training Location:</b> &nbsp;&nbsp; <div id="trainWork"> <button
+            (click)="changeTrainingAddress()"
+            style="position: relative; left: -160px; border-radius: 5px; background:#f3a55d; color: white">{{currentUser.trainingAddress.alias}}</button></div>
+        <br>
+        <br>
+        <b>First Name:</b> &nbsp; <input value="{{currentUser.firstName}}" id="fName">
+        <br>
+        <br>
+        <b>Last Name:</b> &nbsp;&nbsp; <input value="{{currentUser?.lastName}}" id="lName">
+        <br>
+        <br>
+        <b>Email:</b> &nbsp;&nbsp; <input value="{{currentUser.email}}" id="email">
+        <br>
+        <br>
+        <b>Phone Number:</b> &nbsp;&nbsp; <input value="{{currentUser?.phoneNumber}}" id="phoneN">
+        <br>
+        <br>
+        <b>Address:</b> &nbsp;&nbsp; <input value="{{currentUser.personalAddress.street}}" id="address">
+        <br>
+        <br>
+        <b>City:</b> &nbsp;&nbsp; <input value="{{currentUser.personalAddress.city}}" id="city">
+        <br>
+        <br>
+        <b>State:</b> &nbsp;&nbsp; <input value="{{currentUser.personalAddress.state}}" id="state">
+        <br>
+        <br>
+        <b>Country: </b> &nbsp;&nbsp; <input value="{{currentUser.personalAddress.country}}" id="country">
+        <br>
+        <br>
+        <b>Zip Code:</b> &nbsp;&nbsp; <input value="{{currentUser.personalAddress.zip}}" id="zip">
+        <br>
+        <br>
+        <b>Name Alias:</b> &nbsp;&nbsp; <input value="{{currentUser.personalAddress.alias}}" id="alias">
+        <br>
+        <br>
+        <b>Company Status:</b> &nbsp;&nbsp; <input value="{{currentUser.userStatus.generalStatus}}" readonly id="companyStat">
+        <br>
+        <br>
+        <button type="button" class="btn btn-info" (click)="someMethodToUpdateAddressOrUserInfo()" style="font: black;">Update</button>
+      </div>
+    </div>
+  </div>
+</body>
